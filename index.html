@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<style>
+    /* Customize the pop-up content */
+    .leaflet-popup-content {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
+    }
+
+    /* Add custom styles for images in pop-ups */
+    .leaflet-popup-content img {
+        max-width: 100%;
+        /* Ensure the image fits within the pop-up */
+        height: auto;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+
+    /* Optional: Customize the pop-up container */
+    .leaflet-popup-content-wrapper {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+<script>
+    // Initialize the map
+    const map = L.map('map');
+
+    // Add OpenStreetMap tiles to the map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add markers
+    const markers = [
+        L.marker([49.758056, 6.640417]).bindPopup(`
+            <b>Trier</b><br>
+            Known for its Roman history and the Porta Nigra.<br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Porta_Nigra_morgens_%28100MP%29.jpg/1920px-Porta_Nigra_morgens_%28100MP%29.jpg" alt="Porta Nigra">
+            <span>© Thomas Wolf, <a rel="nofollow" class="external text" href="http://www.foto-tw.de">www.foto-tw.de</a> (<a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.de">CC&nbsp;BY-SA&nbsp;3.0 DE</a>)</span>
+        `),
+        L.marker([49.811889, 6.421556]).bindPopup(`
+            <b>Echternach</b><br>
+            A charming town in Luxembourg with a famous abbey.<br>
+        `),
+        L.marker([49.320158, 6.883177]).bindPopup(`
+            <b>Elm-Sprengen</b><br>
+            A small village with beautiful surroundings.<br>
+        `),
+        L.marker([50.356910502033124, 7.587524276382721]).bindPopup('<b>Koblenz</b><br>Located at the confluence of the Rhine and Moselle rivers.'),
+        L.marker([49.62552733395762, 7.914743650494934]).bindPopup('<b>Donnersberg</b><br>The highest peak in the Palatinate region.'),
+        L.marker([49.60623349410185, 5.077116739558518]).bindPopup('<b>Mosomagos</b><br>A historical site with ancient ruins.'),
+        L.marker([50.16387161111531, 5.647048040443026]).bindPopup('<b>Bérismenil</b><br>A picturesque village in Belgium.'),
+        L.marker([50.36120151691149, 7.460141533059256]).bindPopup('<b>Goloring (Bassenheim)</b><br>An ancient Celtic ring fort.')
+    ];
+
+    // Add all markers to the map
+    const markerGroup = L.featureGroup(markers).addTo(map);
+
+    // Adjust the map view to fit all markers comfortably
+    map.fitBounds(markerGroup.getBounds());
+</script>
+</body>
+</html>
