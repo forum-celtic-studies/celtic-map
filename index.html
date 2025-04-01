@@ -46,23 +46,62 @@
     </style>
 
     <script>
+        const MAPTILER_API_KEY="EXAMPLE_KEY";
+
         // Initialize the map
         const map = L.map('map');
 
-        // Add OpenStreetMap tiles to the map, raster
-        /*
+        let maptilerLayer;
+
+        try {
+            // Attempt to load the MapTiler layer
+            maptilerLayer = L.maptiler.maptilerLayer({
+                style: L.maptiler.MapStyle.STREETS,
+                apiKey: MAPTILER_API_KEY,
+                maxZoom: 19,
+            });
+
+            // Add an error event listener to handle cases where the MapTiler layer fails
+            maptilerLayer.on('tileerror', function () {
+                loadOpenStreetMapLayer();
+            });
+
+            // Add the MapTiler layer to the map
+            maptilerLayer.addTo(map);
+
+            // Explicitly check if the API key is valid by making a test request
+            validateMapTilerApiKey(MAPTILER_API_KEY);
+        } catch (error) {
+            // Fallback to OpenStreetMap if an error occurs
+            loadOpenStreetMapLayer();
+        }
+
+        // Function to validate the MapTiler API key
+        async function validateMapTilerApiKey(apiKey) {
+            try {
+                const response = await fetch(`https://api.maptiler.com/maps/basic/256/0/0/0.png?key=${apiKey}`);
+                if (!response.ok) {
+                    // Invalid MapTiler API key or request limit exceeded. Falling back to OpenStreetMap
+                    loadOpenStreetMapLayer();
+                }
+            } catch (error) {
+                console.error('Error validating MapTiler API key:', error);
+                loadOpenStreetMapLayer();
+            }
+        }
+
+        // Function to load OpenStreetMap tiles as a fallback
+        function loadOpenStreetMapLayer() {
+            if (map.hasLayer(maptilerLayer)) {
+                // Remove the MapTiler layer if it exists
+                map.removeLayer(maptilerLayer);
+            }
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             }).addTo(map);
-        */
+        }
 
-        //this is the vector-version
-        L.maptiler.maptilerLayer({
-            style: L.maptiler.MapStyle.STREETS,
-            apiKey: 'YOUR_MAPTILER_API_KEY', // Replace with your MapTiler API key
-            maxZoom: 19,
-        }).addTo(map);
         // Add markers
         const markers = [
             L.marker([49.7596, 6.6439]).bindPopup(`
