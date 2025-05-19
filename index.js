@@ -33,7 +33,8 @@ const markers = [
                 and Old Breton glosses, which belong to the oldest of their kind.
                 The name <em class="emphasis-primary">Echternach</em> goes back to
                 <em class="emphasis-secondary">Epternācum</em>, derived from the personal name
-                Epternos, which is known, in its Latin form Epternus, from a local inscription.
+                <em class="emphasis-secondary">Epternos</em>, which is known, in its Latin form
+                <em class="emphasis-secondary">Epternus</em>, from a local inscription.
             </p>
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/EchternachRomanVilla.jpg" alt="Echternach Roman Villa">
                 <small>
