@@ -16,6 +16,14 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
 <style>
+    .emphasis-primary {
+        font-weight: bold;
+    }
+
+    .emphasis-secondary {
+        font-style: italic;
+    }
+
     /* Customize the pop-up content */
     .leaflet-popup-content {
         font-family: Arial, sans-serif;
@@ -53,15 +61,36 @@
 
     // Add markers
     const markers = [
-        L.marker([49.7596, 6.6439]).bindPopup(`
-            <b>Trier</b><br>
-            Known for its Roman history and the Porta Nigra.<br>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Porta_Nigra_morgens_%28100MP%29.jpg/1920px-Porta_Nigra_morgens_%28100MP%29.jpg" alt="Porta Nigra">
-            <span>© Thomas Wolf, <a rel="nofollow" class="external text" href="http://www.foto-tw.de">www.foto-tw.de</a> (<a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by-sa/3.0/de/deed.de">CC&nbsp;BY-SA&nbsp;3.0 DE</a>)</span>
-        `),
+        L.marker([49.7596, 6.6439]).bindPopup(`<h4>Trier</h4>`),
         L.marker([49.814444, 6.421389]).bindPopup(`
-            <b>Echternach</b><br>
-            A charming town in Luxembourg with a famous abbey.<br>
+            <h4>Epternācum (Echternach)</h4>
+            <p>
+                The valley of Echternach has already been inhabited in the Celtic La Tène period,
+                during the last centuries BCE. In the first century CE, one of the largest Roman
+                villas of the northwest provinces of the Empire was constructed there.
+                Another important factor for the history of the region was the imperial abbey
+                <em class="emphasis-secondary">(Reichsabtei Echternach)</em>,
+                founded by St Willibrord in 698. Willibrord hailed from
+                Northumbria and received his training at the Irish monastery of Rathmelsigi.
+                He is known as the "apostle of the Frisians" and bishop of Utrecht. He died at
+                Echternach on 7 November 739. The saint was accompanied by Irish scribes, a fact
+                apparent from illuminated books preserved and produced at the local scriptorium.
+                A Latin manuscript from the ninth century, kept in Paris today
+                (BNF Paris lat. 10290), a grammar of Priscian in insular script, contains Old Irish
+                and Old Breton glosses, which belong to the oldest of their kind.
+                The name <em class="emphasis-primary">Echternach</em> goes back to
+                <em class="emphasis-secondary">Epternācum</em>, derived from the personal name
+                Epternos, which is known, in its Latin form Epternus, from a local inscription.
+            </p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/EchternachRomanVilla.jpg" alt="Echternach Roman Villa">
+                <small>
+                    The Roman villa
+                    <em class="emphasis-secondary">(Photo: David Edgar, CC-BY-SA-3.0)</em>
+                </small>
+            </img>
+            <p>
+                <a href="http://gallica.bnf.fr/ark:/12148/btv1b84790031/f9.item">The Priscian grammar (BNF Paris lat. 10290, f. 3r)</a>
+            </p>
         `),
         L.marker([49.30221951295557, 6.848619912641792]).bindPopup(`
             <b>Elm-Sprengen</b><br>
@@ -92,7 +121,8 @@
         L.marker([49.5562537385328, 6.819946421895424]).bindPopup('<b>Weißkirchen</b><br>'),
         L.marker([49.336344309886925, 6.606950190519136]).bindPopup('<b>Enja (Ihn; Sudelfels)</b><br>'),
         L.marker([49.355776978263634, 6.564342943056346]).bindPopup('<b>Niedaltdorf</b><br>'),
-        L.marker([49.355776978263634, 6.564342943056346]).bindPopup('<b>Merzig-Besseringen</b><br>'), L.marker([49.63448147168677, 5.599712437080059]).bindPopup('<b>Buzenol-Montauban</b><br>Montauban-Buzenol?'),
+        L.marker([49.355776978263634, 6.564342943056346]).bindPopup('<b>Merzig-Besseringen</b><br>'),
+        L.marker([49.63448147168677, 5.599712437080059]).bindPopup('<b>Buzenol-Montauban</b><br>Montauban-Buzenol?'),
         L.marker([49.684722, 5.815556]).bindPopup('<b>Orolaunum (Arlon)</b><br>'),
         L.marker([49.542036032965136, 5.859888862725093]).bindPopup('<b>Titelberg</b><br>'),
         L.marker([49.473611, 5.957778]).bindPopup('<b>Audun-le-tiche</b><br>'),
