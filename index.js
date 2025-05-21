@@ -50,8 +50,15 @@ const markers = [
             </p>
         `, commonPopupConfig),
     L.marker([49.30221951295557, 6.848619912641792]).bindPopup(`
-            <b>Elm-Sprengen</b><br>
-            A small village with beautiful surroundings.<br>
+        <h4>Elm-Sprengen (Sauwasen)</h4>
+        <p>
+            In a stretch of the "European Celtic Route" in the forest of Herchenbach, four burial
+            mounds were found, containing grave goods of the late Hallstatt period (5th century BCE,
+            Ha D). One of the mounds has been reconstructed as a recognizable hillock in 2005, a
+            wagon tomb (mound 3) in vertical section in 2007. In the wooden burial chamber, the
+            wagon can be seen, besides a dummy of the deceased and examples of grave goods, which
+            were not preserved at this site except for a golden earring.
+        </p>
         `, commonPopupConfig),
     L.marker([50.35669146049006, 7.588382581952168]).bindPopup('<b>Koblenz</b><br>Located at the confluence of the Rhine and Moselle rivers.', commonPopupConfig),
     L.marker([49.62559683321979, 7.914808023342875]).bindPopup('<b>Donnersberg</b><br>The highest peak in the Palatinate region.', commonPopupConfig),
