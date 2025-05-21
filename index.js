@@ -36,12 +36,15 @@ const markers = [
                 <em class="emphasis-secondary">Epternos</em>, which is known, in its Latin form
                 <em class="emphasis-secondary">Epternus</em>, from a local inscription.
             </p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/EchternachRomanVilla.jpg" alt="Echternach Roman Villa">
+            <div class="popup-image-container">
+                <a href="https://upload.wikimedia.org/wikipedia/commons/8/80/EchternachRomanVilla.jpg" target="_blank" rel="noopener noreferrer">
+                    <img class="popup-image" src="https://upload.wikimedia.org/wikipedia/commons/8/80/EchternachRomanVilla.jpg" alt="Echternach Roman Villa" />
+                </a>
                 <small>
                     The Roman villa
                     <em class="emphasis-secondary">(Photo: David Edgar, CC-BY-SA-3.0)</em>
                 </small>
-            </img>
+            </div>
             <p>
                 <a href="http://gallica.bnf.fr/ark:/12148/btv1b84790031/f9.item">The Priscian grammar (BNF Paris lat. 10290, f. 3r)</a>
             </p>
@@ -53,7 +56,26 @@ const markers = [
     L.marker([50.35669146049006, 7.588382581952168]).bindPopup('<b>Koblenz</b><br>Located at the confluence of the Rhine and Moselle rivers.', commonPopupConfig),
     L.marker([49.62559683321979, 7.914808023342875]).bindPopup('<b>Donnersberg</b><br>The highest peak in the Palatinate region.', commonPopupConfig),
     L.marker([49.606111, 5.075556]).bindPopup('<b>Mosomagos (Mouzon)</b><br>A historical site with ancient ruins.', commonPopupConfig),
-    L.marker([50.178333, 5.665]).bindPopup('<b>Bérismenil</b><br>A picturesque village in Belgium.', commonPopupConfig),
+    L.marker([50.178333, 5.665]).bindPopup(`
+        <h4>Bérismenil</h4>
+        <p>
+            On a rocky promontory above the river Ourthe, called "Le Cheslé", a large fortification of
+            about 13 hectares has been constructed. It was in use from the fifth century BCE on
+            (LT A and B). It has a double rampart system of more than 1.7 km length. The access was
+            originally in the north and later on a little more to the northwest. All other sides are
+            protected by steep slopes. There have been excavations from the 1960s on, and in 1980, part
+            of the rampart has been reconstructed. Most probably, Le Cheslé is just outside the
+            territory of the Treveri.
+        </p>
+        <div class="popup-image-container">
+            <a href="https://upload.wikimedia.org/wikipedia/commons/c/c7/Reconstitution_porte.JPG" target="_blank" rel="noopener noreferrer">
+                <img class="popup-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Reconstitution_porte.JPG" alt="Bérismenil" />
+            </a>
+            <small>
+                <em class="emphasis-secondary">(Photo: commons.wikimedia.org, Anabase4, CC-BY-SA-3.0)</em>
+            </small>
+        </div>
+    `, commonPopupConfig),
     L.marker([50.33922878806975, 7.439752298915589]).bindPopup('<b>Goloring (Bassenheim)</b><br>An ancient Celtic ring fort.', commonPopupConfig),
     L.marker([49.803333, 5.205]).bindPopup('<b>Cugnon</b><br>', commonPopupConfig),
     L.marker([49.411389, 5.230278]).bindPopup('<b>Lion-devant-dun</b><br>', commonPopupConfig),
