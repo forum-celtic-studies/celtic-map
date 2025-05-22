@@ -14,7 +14,12 @@ const commonPopupConfig = {
 
 // Add markers
 const markers = [
-    L.marker([49.7596, 6.6439]).bindPopup(`<h4>Trier</h4>`),
+    L.marker([49.7596, 6.6439]).bindPopup(
+        buildPopupHtml({
+            title: 'Trier',
+        }),
+        commonPopupConfig
+    ),
     L.marker([49.814444, 6.421389]).bindPopup(
         buildPopupHtml({
             title: 'Epternācum (Echternach)',
@@ -64,7 +69,12 @@ const markers = [
             }),
         commonPopupConfig
     ),
-    L.marker([50.35669146049006, 7.588382581952168]).bindPopup('<b>Koblenz</b><br>Located at the confluence of the Rhine and Moselle rivers.', commonPopupConfig),
+    L.marker([50.35669146049006, 7.588382581952168]).bindPopup(
+        buildPopupHtml({
+            title: 'Koblenz',
+        }),
+        commonPopupConfig
+    ),
     L.marker([49.62559683321979, 7.914808023342875]).bindPopup('<b>Donnersberg</b><br>The highest peak in the Palatinate region.', commonPopupConfig),
     L.marker([49.606111, 5.075556]).bindPopup('<b>Mosomagos (Mouzon)</b><br>A historical site with ancient ruins.', commonPopupConfig),
     L.marker([50.178333, 5.665]).bindPopup(
