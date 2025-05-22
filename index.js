@@ -89,7 +89,21 @@ const markers = [
     L.marker([50.33922878806975, 7.439752298915589]).bindPopup('<b>Goloring (Bassenheim)</b><br>An ancient Celtic ring fort.', commonPopupConfig),
     L.marker([49.803333, 5.205]).bindPopup('<b>Cugnon</b><br>', commonPopupConfig),
     L.marker([49.411389, 5.230278]).bindPopup('<b>Lion-devant-dun</b><br>', commonPopupConfig),
-    L.marker([49.91561284272628, 5.377023740733322]).bindPopup('<b>Libramont-Chevigny</b><br>', commonPopupConfig),
+    L.marker([49.91561284272628, 5.377023740733322]).bindPopup(
+        buildPopupHtml({
+            title: 'Libramont-Chevigny, Musée des Celtes',
+            description: `
+                The "Museum of the Celts" is dedicated to the the study of the Celtic culture in
+                the Ardennes. It intends to unite numerous small collections, to add new items,
+                especially from the research carried out by the <em class="emphasis-secondary">
+                Centre de Recherches Archéologiques en Ardenne</em>, to preserve the findings and
+                to present them to the public. The Museum lays particular emphasis on the correction
+                of current stereotypes and prejudices about the Celts. Among others, it houses
+                findings from Bérismenil, Cherain-Brisy and Cugnon.
+            `,
+        }),
+        commonPopupConfig
+    ),
     L.marker([49.5675, 5.5325]).bindPopup('<b>Verdunum (Virton)</b><br>', commonPopupConfig),
     L.marker([50.248259232415485, 7.446738062884804]).bindPopup('<b>Alkena (Alken)</b><br>', commonPopupConfig),
     L.marker([49.848582, 7.392168]).bindPopup('<b>Bundenbach (Altburg)</b><br>', commonPopupConfig),
