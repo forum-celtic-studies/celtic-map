@@ -81,7 +81,37 @@ const markers = [
         }),
         commonPopupConfig
     ),
-    L.marker([49.606111, 5.075556]).bindPopup('<b>Mosomagos (Mouzon)</b><br>A historical site with ancient ruins.', commonPopupConfig),
+    L.marker([49.606111, 5.075556]).bindPopup(
+        buildPopupHtml({
+            title: 'Mosomagos (Mouzon)',
+            description: `
+                The village in the French department Ardennes is situated on the western border of
+                the Treveran territory, itself already being part of the polity of the Remi. During
+                the Celtic period, there was a harbour and certainly a ferry service across the
+                river Meuse. In the Roman period, the settlement was expanded to a
+                <em class="emphasis-secondary">vicus</em> on the road from Reims to Trier (Trèves).
+                The village probably appears on the famous road map, Tabula Peutingeriana, from the
+                fourth century under the entry "Mosa". Approximately 3 km to the southeast of
+                Mouzon, in the "Bois de Flavier", a Gallo-Roman sanctuary, a
+                <em class="emphasis-secondary">Fanum</em>, was found and excavated in 1967. The
+                foundation walls of the temple site have been preserved. The sanctuary had a Celtic
+                predecessor as well as an earlier Roman one from the era of Augustus. A number of
+                weapons in miniature were found on the site, which were used as offerings in the
+                first century CE. The name <em class="emphasis-primary">Mouzon</em> goes back to
+                Celtic *<em class="emphasis-secondary">Moso-magos</em>, 'Meuse field'.
+            `,
+            imageHref: 'https://upload.wikimedia.org/wikipedia/commons/f/f1/Mouzon_%2808_Ardennes%29_-_Site_Gallo-Romain_du_Flavier_%E2%80%93_lieu_de_culte_%E2%80%93_le_Fanum_-_Photo_Francis_Neuvens_lesardennesvuesdusol.fotoloft.fr.JPG',
+            imageAltText: 'Excavation site of the Gallo-Roman sanctuary in Mouzon',
+            imageCredit: 'Photo source: commons.wikimedia.org, photo by Francis Neuvens, CC-BY-SA-3.0',
+            furtherLinks: [
+                {
+                    text: 'Wikipedia: Tabula Peutingeriana',
+                    href: 'https://en.wikipedia.org/wiki/Tabula_Peutingeriana',
+                },
+            ]
+        }),
+        commonPopupConfig
+    ),
     L.marker([50.178333, 5.665]).bindPopup(
         buildPopupHtml({
             title: 'Bérismenil',
