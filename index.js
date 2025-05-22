@@ -75,7 +75,12 @@ const markers = [
         }),
         commonPopupConfig
     ),
-    L.marker([49.62559683321979, 7.914808023342875]).bindPopup('<b>Donnersberg</b><br>The highest peak in the Palatinate region.', commonPopupConfig),
+    L.marker([49.62559683321979, 7.914808023342875]).bindPopup(
+        buildPopupHtml({
+            title: 'Donnersberg',
+        }),
+        commonPopupConfig
+    ),
     L.marker([49.606111, 5.075556]).bindPopup('<b>Mosomagos (Mouzon)</b><br>A historical site with ancient ruins.', commonPopupConfig),
     L.marker([50.178333, 5.665]).bindPopup(
         buildPopupHtml({
