@@ -131,8 +131,27 @@ const markers = [
         }),
         commonPopupConfig
     ),
-    L.marker([50.33922878806975, 7.439752298915589]).bindPopup('<b>Goloring (Bassenheim)</b><br>An ancient Celtic ring fort.', commonPopupConfig),
-    L.marker([49.803333, 5.205]).bindPopup('<b>Cugnon</b><br>', commonPopupConfig),
+    L.marker([50.33922878806975, 7.439752298915589]).bindPopup(
+        buildPopupHtml({
+            title: 'Goloring (Bassenheim)',
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.803333, 5.205]).bindPopup(
+        buildPopupHtml({
+            title: 'Casaecongidunus (Cugnon)',
+            description: `
+                "Le Trînchi" near Cugnon is a fortification of the late Hallstatt
+                (c. 500 BCE, Ha D) and the middle La Tène periods (c. 250 BCE, LT C). The rampart,
+                which has been reconstructed up to a length of 50 m, is assigned to the type 
+                "Altkönig-Preist". The place name is recorded in c. 644 as 
+                <em class="emphasis-secondary">Casaecongidunus</em>, 'in the house of Congidunus',
+                casae being a precursor of French chez. The personal name has been compared to
+                Brittonic <em class="emphasis-secondary">Cogidubnus</em>.
+            `
+        }),
+        commonPopupConfig
+    ),
     L.marker([49.411389, 5.230278]).bindPopup('<b>Lion-devant-dun</b><br>', commonPopupConfig),
     L.marker([49.91561284272628, 5.377023740733322]).bindPopup(
         buildPopupHtml({
