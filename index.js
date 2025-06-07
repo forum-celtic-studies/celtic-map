@@ -251,13 +251,29 @@ const markers = [
     ),
     L.marker([49.75445538415072, 7.166859817310713]).bindPopup(
         buildPopupHtml({
-            title: '<b>Allenbach</b><br>'
+            title: 'Allenbach'
         }),
         commonPopupConfig,
     ),
     L.marker([49.99312013585362, 7.108027612129568]).bindPopup(
         buildPopupHtml({
-            title: '<b>Kröv (Burgberg)</b><br>'
+            title: '<b>Kröv (Burgberg)</b><br>',
+            description: `
+                The <em class="emphasis-secondary">Burgberg</em> near Kröv is a spur fortification
+                of the Hunsrück-Eifel culture (HEK I), which was constructed around 500 BCE.
+                On three sides, the plateau is secured by steep slopes. To the north-east, two
+                sectional walls with narrow passages have been erected, which enclose a usable 
+                area of about 6000 square metres. In the north-west corner, the wall continues
+                about 60 m for no apparent reason. Pottery and a socketed axe have been found on
+                the site. The name <em class="emphasis-primary">Kröv</em>, known from documents of
+                the years 747 to 751 in copies of 1222, was Crovia, from a word for
+                'crooked terrain, hill flank', Proto-Indo-European
+                <em class="emphasis-secondary">*krou̯-</em> (IEW 938), cf. the French toponym Crouy.
+                Another derivative, <em class="emphasis-secondary">*krou̯ko-</em>, 'heap, hill'
+                is widespread in modern Celtic languages such as Irish
+                <em class="emphasis-secondary">cruach</em>,
+                Welsh <em class="emphasis-secondary">crug</em>.
+            `,
         }),
         commonPopupConfig,
     ),
