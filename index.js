@@ -212,34 +212,174 @@ const markers = [
         }),
         commonPopupConfig
     ),
-    L.marker([49.82548182583125, 7.298186249122467]).bindPopup('<b>Hottenbach</b><br>', commonPopupConfig),
-    L.marker([50.17835793056453, 7.286190842781618]).bindPopup('<b>Martberg</b><br>', commonPopupConfig),
-    L.marker([49.61510671168662, 7.187182191804576]).bindPopup('<b>Hoppstädten-Weiersbach</b><br>', commonPopupConfig),
-    L.marker([49.855393504521366, 7.164632626566603]).bindPopup('<b>Belginum (Wederath; Archäologiepark)</b><br>', commonPopupConfig),
-    L.marker([49.75445538415072, 7.166859817310713]).bindPopup('<b>Allenbach</b><br>', commonPopupConfig),
-    L.marker([49.99312013585362, 7.108027612129568]).bindPopup('<b>Kröv (Burgberg)</b><br>', commonPopupConfig),
-    L.marker([49.97043087904943, 7.054190197900325]).bindPopup('<b>Kinheim-Kindel</b><br>', commonPopupConfig),
-    L.marker([49.98560180938939, 7.022102376678921]).bindPopup('<b>Arduena (Erden; Borberg/Burgberg)</b><br>', commonPopupConfig),
-    L.marker([49.62215672921777, 7.002182760164149]).bindPopup('<b>Otzenhausen</b><br>', commonPopupConfig),
-    L.marker([49.48298166460118, 7.031079347856441]).bindPopup('<b>Tholey</b><br>', commonPopupConfig),
-    L.marker([49.57965, 6.91395]).bindPopup('<b>Lustara (Wadern-Oberlöstern)</b><br>', commonPopupConfig),
-    L.marker([49.5562537385328, 6.819946421895424]).bindPopup('<b>Weißkirchen</b><br>', commonPopupConfig),
-    L.marker([49.336344309886925, 6.606950190519136]).bindPopup('<b>Enja (Ihn; Sudelfels)</b><br>', commonPopupConfig),
-    L.marker([49.355776978263634, 6.564342943056346]).bindPopup('<b>Niedaltdorf</b><br>', commonPopupConfig),
-    L.marker([49.355776978263634, 6.564342943056346]).bindPopup('<b>Merzig-Besseringen</b><br>', commonPopupConfig),
-    L.marker([49.63448147168677, 5.599712437080059]).bindPopup('<b>Buzenol-Montauban</b><br>Montauban-Buzenol?', commonPopupConfig),
-    L.marker([49.684722, 5.815556]).bindPopup('<b>Orolaunum (Arlon)</b><br>', commonPopupConfig),
-    L.marker([49.542036032965136, 5.859888862725093]).bindPopup('<b>Titelberg</b><br>', commonPopupConfig),
-    L.marker([49.473611, 5.957778]).bindPopup('<b>Audun-le-tiche</b><br>', commonPopupConfig),
-    L.marker([49.666667, 5.966667]).bindPopup('<b>Goeblange</b><br>', commonPopupConfig),
-    L.marker([50.144875, 5.847911]).bindPopup('<b>Cherain-Brisy</b><br>', commonPopupConfig),
-    L.marker([49.481003, 6.083492]).bindPopup('<b>Dudelange</b><br>', commonPopupConfig),
-    L.marker([49.567909444370024, 6.364009724092962]).bindPopup('<b>Stadtbredimus/Palzem</b><br>', commonPopupConfig),
-    L.marker([49.74749641273402, 6.330077606029646]).bindPopup('<b>Altrier</b><br>', commonPopupConfig),
-    L.marker([49.879444, 6.289444]).bindPopup('<b>Wallendorf</b><br>', commonPopupConfig),
-    L.marker([49.84211179910747, 6.423807368700288]).bindPopup('<b>Arantia (Ernzen)</b><br>', commonPopupConfig),
-    L.marker([50.180147, 6.914683]).bindPopup('<b>Steineberg</b><br>', commonPopupConfig),
-    L.marker([49.564722, 6.559722]).bindPopup('<b>Kastel-Staadt</b><br>', commonPopupConfig),
+    L.marker([49.82548182583125, 7.298186249122467]).bindPopup(
+        buildPopupHtml({
+            title: 'Hottenbach'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([50.17835793056453, 7.286190842781618]).bindPopup(
+        buildPopupHtml({
+            title: 'Martberg'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.61510671168662, 7.187182191804576]).bindPopup(
+        buildPopupHtml({
+            title: 'Hoppstädten-Weiersbach'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.855393504521366, 7.164632626566603]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Belginum (Wederath; Archäologiepark)</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.75445538415072, 7.166859817310713]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Allenbach</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.99312013585362, 7.108027612129568]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Kröv (Burgberg)</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.97043087904943, 7.054190197900325]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Kinheim-Kindel</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.98560180938939, 7.022102376678921]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Arduena (Erden; Borberg/Burgberg)</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.62215672921777, 7.002182760164149]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Otzenhausen</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.48298166460118, 7.031079347856441]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Tholey</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.57965, 6.91395]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Lustara (Wadern-Oberlöstern)</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.5562537385328, 6.819946421895424]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Weißkirchen</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.336344309886925, 6.606950190519136]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Enja (Ihn; Sudelfels)</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.355776978263634, 6.564342943056346]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Niedaltdorf</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.355776978263634, 6.564342943056346]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Merzig-Besseringen</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.63448147168677, 5.599712437080059]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Buzenol-Montauban</b><br>Montauban-Buzenol?'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.684722, 5.815556]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Orolaunum (Arlon)</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.542036032965136, 5.859888862725093]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Titelberg</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.473611, 5.957778]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Audun-le-tiche</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.666667, 5.966667]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Goeblange</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([50.144875, 5.847911]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Cherain-Brisy</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.481003, 6.083492]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Dudelange</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.567909444370024, 6.364009724092962]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Stadtbredimus/Palzem</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.74749641273402, 6.330077606029646]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Altrier</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.879444, 6.289444]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Wallendorf</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.84211179910747, 6.423807368700288]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Arantia (Ernzen)</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([50.180147, 6.914683]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Steineberg</b><br>'
+        }),
+        commonPopupConfig,
+    ),
+    L.marker([49.564722, 6.559722]).bindPopup(
+        buildPopupHtml({
+            title: '<b>Kastel-Staadt</b><br>'
+        }),
+        commonPopupConfig,
+    ),
 ];
 
 function buildPopupHtml(
