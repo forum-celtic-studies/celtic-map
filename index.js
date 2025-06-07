@@ -181,9 +181,37 @@ const markers = [
         }),
         commonPopupConfig
     ),
-    L.marker([49.5675, 5.5325]).bindPopup('<b>Verdunum (Virton)</b><br>', commonPopupConfig),
-    L.marker([50.248259232415485, 7.446738062884804]).bindPopup('<b>Alkena (Alken)</b><br>', commonPopupConfig),
-    L.marker([49.848582, 7.392168]).bindPopup('<b>Bundenbach (Altburg)</b><br>', commonPopupConfig),
+    L.marker([49.5675, 5.5325]).bindPopup(
+        buildPopupHtml({
+            title: 'Verdūnum (Virton)',
+        }),
+        commonPopupConfig
+    ),
+    L.marker([50.248259232415485, 7.446738062884804]).bindPopup(
+        buildPopupHtml({
+            title: '*Alkenā (Alken)',
+        }),
+        commonPopupConfig),
+    L.marker([49.848582, 7.392168]).bindPopup(
+        buildPopupHtml({
+            title: 'Bundenbach',
+            description: `
+                <h4>Altburg near Bundenbach</h4>
+                The open air museum Altburg shows the reconstruction of a small Celtic fortification,
+                as it might have looked like in the second and first centuries BCE.
+                The building complex was excavated between 1971 and 1974 by Rheinisches Landesmuseum
+                Trier. The second of the three building phases has been reconstructed on the site.
+                It is part of re-enactment events such as the "Altburg Festival", with a
+                "Celtic fair" and a music festival each year in August, see Altburgfestival 
+                (<em class="emphasis-secondary">in German</em>). For part of the year, the
+                settlement is inhabited by modern "Celtic" enthusiasts.
+            `,
+            imageHref: 'https://upload.wikimedia.org/wikipedia/commons/1/11/Altburg_plateau.jpg',
+            imageAltText: 'Reconstruction of the Altburg near Bundenbach',
+            imageCredit: 'Photo: Chris mz, CC-BY-SA 3.0',
+        }),
+        commonPopupConfig
+    ),
     L.marker([49.82548182583125, 7.298186249122467]).bindPopup('<b>Hottenbach</b><br>', commonPopupConfig),
     L.marker([50.17835793056453, 7.286190842781618]).bindPopup('<b>Martberg</b><br>', commonPopupConfig),
     L.marker([49.61510671168662, 7.187182191804576]).bindPopup('<b>Hoppstädten-Weiersbach</b><br>', commonPopupConfig),
