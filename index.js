@@ -232,7 +232,20 @@ const markers = [
     ),
     L.marker([49.855393504521366, 7.164632626566603]).bindPopup(
         buildPopupHtml({
-            title: '<b>Belginum (Wederath; Archäologiepark)</b><br>'
+            title: 'Belgīnum (Wederath; Archäologiepark)',
+            description: `
+                The museum near Morbach shows the findings of a Roman village, the
+                <em class="emphasis-secondary">vicus Belginum</em>, its burial ground, a 
+                Gallo-Roman temple complex and a Roman military camp.
+                The necropolis is particularly interesting, as its tombs date from the long period
+                between c. 400 BCE to 400 CE. The name <em class="emphasis-primary">Belginum</em>
+                derives from the personal name (and ethnonym) Belgos, which probably means 'with a
+                swell of pride', from Proto-Indo-European
+                <em class="emphasis-secondary">*bʰelgʰ-</em> 'swell'.
+            `,
+            imageHref: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Archaeologiepark_Belginum.jpg/1920px-Archaeologiepark_Belginum.jpg',
+            imageAltText: 'Archaeologiepark Belginum',
+            imageCredit: 'Photo: <a href="https://commons.wikimedia.org/wiki/User:MSeses" target="_blank" rel="noopener noreferrer">MSeses</a>, CC BY-SA 3.0',
         }),
         commonPopupConfig,
     ),
