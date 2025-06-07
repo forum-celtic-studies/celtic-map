@@ -152,7 +152,20 @@ const markers = [
         }),
         commonPopupConfig
     ),
-    L.marker([49.411389, 5.230278]).bindPopup('<b>Lion-devant-dun</b><br>', commonPopupConfig),
+    L.marker([49.411389, 5.230278]).bindPopup(
+        buildPopupHtml({
+            title: 'Lion-devant-Dun',
+            description: `
+                East of the modern village in the department Meuse, there is an elongated ridge
+                with an oppidum of approximately 18 hectares on top of it. The southern flank is
+                protected by a rampart, which is still up to 6 m high. In front of the wall, two
+                ditches of c. 10 m width have been constructed. Sondages revealed pottery of the
+                late La Tène period (1st century BCE, LT D) and of the Roman imperial period (3rd
+                to 4th centuries CE). The name "Lion" derives from Latin
+                <em class="emphasis-secondars">Ad Leones</em>.
+            `,
+        }),
+        commonPopupConfig),
     L.marker([49.91561284272628, 5.377023740733322]).bindPopup(
         buildPopupHtml({
             title: 'Libramont-Chevigny, Musée des Celtes',
