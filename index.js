@@ -262,11 +262,11 @@ function buildPopupHtml(
         const img = document.createElement('img');
         img.alt = imageAltText ?? "Unfortunately there is no description for this image.";
         img.src = imageHref;
-        img.setAttribute('rel', 'noopener noreferrer');
-        img.setAttribute('target', '_blank');
         img.classList.add('popup-image');
         const anchor = document.createElement('a');
         anchor.href = imageHref;
+        anchor.setAttribute('target', '_blank');
+        anchor.setAttribute('rel', 'noopener noreferrer');
         anchor.appendChild(img);
         imageContainer.appendChild(anchor);
         if (imageCredit) {
