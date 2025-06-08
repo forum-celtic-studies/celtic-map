@@ -329,19 +329,37 @@ const markers = [
     ),
     L.marker([49.62215672921777, 7.002182760164149]).bindPopup(
         buildPopupHtml({
-            title: '<b>Otzenhausen</b><br>'
+            title: 'Otzenhausen',
         }),
         commonPopupConfig,
     ),
     L.marker([49.48298166460118, 7.031079347856441]).bindPopup(
         buildPopupHtml({
-            title: '<b>Tholey</b><br>'
+            title: 'Tholey'
         }),
         commonPopupConfig,
     ),
     L.marker([49.57965, 6.91395]).bindPopup(
         buildPopupHtml({
-            title: '<b>Lustara (Wadern-Oberlöstern)</b><br>'
+            title: '*Lustarā (Wadern-Oberlöstern)',
+            description: `
+                 In the vicinity of early Celtic burial mounds, two Gallo-Roman monumental tumuli
+                 dating from the second or third century CE were excavated from 1991 to 1995.
+                 These representative buildings with a diametre of 20 m were framed by square
+                 settings of sandstones and crowned by pine-cones of stone. The hill shape is
+                 untypical of the period. The name <em class="emphasis-primary">Wadern</em>,
+                 attested as <em class="emphasis-secondary">Waderella</em> in a document of 950
+                 CE, derives from late Gaulish <em class="emphasis-secondary">*u̯adr-ellā</em>
+                 'little water' and ultimately from Proto-Indo-European
+                 <em class="emphasis-secondary">*u̯odr̥-, u̯edōr</em> 'water' and the diminutive suffix
+                 <em class="emphasis-secondary">*-ellā</em>; the vowel
+                 <em class="emphasis-secondary">o</em> changes to
+                 <em class="emphasis-secondary">a</em> after the half vowel
+                 <em class="emphasis-secondary">u̯</em> as in Gaulish and Brittonic in general.
+            `,
+            imageHref: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Wadern_Oberl%C3%B6stern_Gr%C3%A4ber.JPG',
+            imageAltText: 'Monumental tumulus in Wadern-Oberlöstern',
+            imageCredit: 'Photo: L. Sieht, CC-BY-SA-3.0',
         }),
         commonPopupConfig,
     ),
