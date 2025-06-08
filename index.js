@@ -257,7 +257,7 @@ const markers = [
     ),
     L.marker([49.99312013585362, 7.108027612129568]).bindPopup(
         buildPopupHtml({
-            title: '<b>Kröv (Burgberg)</b><br>',
+            title: 'Kröv (Burgberg)',
             description: `
                 The <em class="emphasis-secondary">Burgberg</em> near Kröv is a spur fortification
                 of the Hunsrück-Eifel culture (HEK I), which was constructed around 500 BCE.
@@ -301,7 +301,29 @@ const markers = [
     ),
     L.marker([49.98560180938939, 7.022102376678921]).bindPopup(
         buildPopupHtml({
-            title: '<b>Arduena (Erden; Borberg/Burgberg)</b><br>'
+            title: '*Arduenā (Erden; Borberg/Burgberg)',
+            description: `
+                The "Borberg" or "Burgberg" north of Erden, on the opposite bank of the river
+                Moselle, drops steeply towards the valley. On top of it, there is a fortification
+                enclosing an area of about 3 hectares. It is secured by a semicircular sectional
+                wall on its north side, a <em class="emphasis-secondary">Pfostenschlitzmauer</em>
+                ("post-slit-wall") that was erected in two phases. Oak wood from a rectangular post
+                structure of approximately 5 x 8 m on the highest point date from around 67 BCE.
+                Pottery from this enclosure shows middle and late La Tène dates (LT C, c. 250 to
+                150 BCE and LT D, c. 150 to 15 BCE), although the first occupation may have already
+                started in the fourth century BCE. The mountain top was shortly inhabited during the
+                Roman period in the third century CE. The name
+                <em class="emphasis-primary">Erden</em> and the first element of the river name
+                <em class="emphasis-primary">Erdgemund</em> both go back to
+                <em class="emphasis-secondary">*Arduena</em> 'at the high mountain', derived from
+                the adjective <em class="emphasis-secondary">*arduo-</em> 'high'. The copy of a
+                document from Echternach of 774/775 reads
+                <em class="emphasis-secondary">super fluvio Muselle in monte Ardinigo</em>
+                "above the river Moselle on mount Ard(u)inius".
+            `,
+            imageHref: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Burgberg_von_Westen.JPG',
+            imageAltText: 'The Borberg from the west',
+            imageCredit: 'Photo: IMercileZz, CC-BY-SA-4.0',
         }),
         commonPopupConfig,
     ),
