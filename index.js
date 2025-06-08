@@ -279,7 +279,23 @@ const markers = [
     ),
     L.marker([49.97043087904943, 7.054190197900325]).bindPopup(
         buildPopupHtml({
-            title: '<b>Kinheim-Kindel</b><br>'
+            title: 'Kinheim-Kindel',
+            description: `
+                In the wine producing village on the Moselle, a representation of the Gallo-Roman
+                god Sucellus in high relief was found in a villa complex in 1976. It measures
+                80 cm in height and dates to the third century CE. A copy of the effigy and the
+                foundation walls of the villa can be seen on the spot, other architectural remains
+                have been covered with earth to protect them. Sucellus is shown with a beard and
+                with a mallet, grapes and barrels. He was a Celtic god, venerated as a deity of the
+                woods and of fertility. In the Gallo-Roman period, he was primarily a divinity of
+                viticulture. The name <em class="emphasis-primary">Sucellus</em> probably means
+                "he who strikes well", from Celtic <em class="emphasis-secondary">*su-</em> 'good'
+                and <em class="emphasis-secondary">*kell-</em>, from Proto-Indo-European
+                <em class="emphasis-secondary">*kelh₂-</em> 'to strike'.
+            `,
+            imageHref: 'https://www.uni-trier.de/fileadmin/forschung/projekte/ZAT/CEL/Sucellus_2.jpeg',
+            imageAltText: 'Representation of the Gallo-Roman god Sucellus',
+            imageCredit: 'Photo: Forum Celtic Studies',
         }),
         commonPopupConfig,
     ),
