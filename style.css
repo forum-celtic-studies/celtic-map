@@ -8,13 +8,21 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 html, body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
 }
+
 h1 {
     padding-top: 10px;
     margin: 0;
+}
+
+.introduction {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #map {
