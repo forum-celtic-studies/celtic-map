@@ -454,8 +454,8 @@ export function getPlaces() {
                 vicinity of a necropolis of the early Middle Ages at "Le Calvaire" in the
                 "Bois de Butte", a Gallo-Roman temple (<em class="emphasis-secondary">fanum</em>)
                 of the second or third century CE was found, whose foundation walls can still be
-                seen. Nearby, a group of figures from a Jupiter column (
-                <em class="emphasis-secondary">cavalier à l'anguipède</em>) came to light. The
+                seen. Nearby, a group of figures from a Jupiter column 
+                (<em class="emphasis-secondary">cavalier à l'anguipède</em>) came to light. The
                 Jupiter columns translate an indigenous Celtic mythological motif into Roman
                 imagery. Heads from statues, probably of Juno, and of Minerva with a helmet were
                 also unearthed in the area. A Roman inscription from Rue de Bétiel shows a number
@@ -532,7 +532,7 @@ export function getPlaces() {
                 constructed around 430 BCE, as dendrodates of wooden beams from the burial chamber
                 revealed. An iron sword, a golden bracelet and a fibula, a bronce bucket and
                 remains of the cremation were found, which are being kept in the
-                <a href="https://www.mnaha.lu/en/">Musée Nationale d'Histoire et d'Art de Luxembourg</a>.
+                Musée Nationale d'Histoire et d'Art de Luxembourg.
             `,
             images: [
                 {
@@ -543,6 +543,12 @@ export function getPlaces() {
                     imageByLink: 'https://www.uni-trier.de/forschung/zat/celtic-studies/start',
                     license: 'Public domain',
                     licenseLink: 'https://creativecommons.org/public-domain/pdm/',
+                }
+            ],
+            furtherLinks: [
+                {
+                    text: `Musée Nationale d'Histoire et d'Art de Luxembourg`,
+                    href: 'https://www.mnaha.lu/en/',
                 }
             ],
         },
