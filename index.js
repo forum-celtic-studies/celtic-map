@@ -391,19 +391,34 @@ const markers = [
     ),
     L.marker([49.355776978263634, 6.564342943056346]).bindPopup(
         buildPopupHtml({
-            title: '<b>Niedaltdorf</b><br>'
+            title: 'Niedaltdorf',
+            description: `
+                After the discovery of twelve Celtic tombs dating from the period from c. 600 to c.
+                200 BCE (Ha D to LT C), a Celtic farmstead, consisting of a dwelling and a
+                storehouse, has been reconstructed from 2003 to 2006. The farmstead is part of the
+                "Druid Way", a circular route stretching approximately 6 km on the border of France.
+                Each year on 1 May, the Irish spring festival Bealtaine is adapted on the site.
+            `,
         }),
         commonPopupConfig,
     ),
     L.marker([49.355776978263634, 6.564342943056346]).bindPopup(
         buildPopupHtml({
-            title: '<b>Merzig-Besseringen</b><br>'
+            title: 'Merzig-Besseringen',
+            description: `
+                In the 19th century, a chariot tomb of the La Tène period was found on the hill
+                'Müllersknüppchen'. The tomb was equipped with a richly ornamented golden torque,
+                bronze fragments of the chariot with ornamental fittings, an Etruscan bronze beak
+                flagon and incinerated bone remains of a woman. Unfortunately, most burial objects
+                are lost. The torque is still being withheld in Russia as "looted art", the chariot
+                fittings are being kept in Rheinisches Landesmuseum Trier.
+            `,
         }),
         commonPopupConfig,
     ),
     L.marker([49.63448147168677, 5.599712437080059]).bindPopup(
         buildPopupHtml({
-            title: '<b>Buzenol-Montauban</b><br>Montauban-Buzenol?'
+            title: 'Buzenol-Montauban'
         }),
         commonPopupConfig,
     ),
