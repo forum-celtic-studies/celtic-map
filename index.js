@@ -14,6 +14,35 @@ const commonPopupConfig = {
     className: 'popup'
 }
 
+// Store label markers so you can add/remove them
+const labelMarkers = getPlaces().map((place) => {
+    return L.marker(place.coordinates, {
+        icon: L.divIcon({
+            className: 'marker-short-info',
+            html: `<span>${place.shortInfo || place.modernName}</span>`,
+            iconSize: null, // adjust as needed
+            iconAnchor: [-25, 45], // adjust as needed
+        }),
+        interactive: false // so clicks go to the main marker
+    });
+});
+
+// Add/remove labels based on zoom
+const LABEL_ZOOM = 11; // show labels at this zoom or higher
+
+map.on('zoomend', () => {
+    if (map.getZoom() >= LABEL_ZOOM) {
+        labelMarkers.forEach(label => label.addTo(map));
+    } else {
+        labelMarkers.forEach(label => map.removeLayer(label));
+    }
+});
+
+// Optionally, show labels if already zoomed in on load
+if (map.getZoom() >= LABEL_ZOOM) {
+    labelMarkers.forEach(label => label.addTo(map));
+}
+
 // Add markers
 const markers = getPlaces().map((place) => {
     return L.marker(place.coordinates).bindPopup(

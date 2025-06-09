@@ -2,6 +2,18 @@
     height: 100vh;
 }
 
+.marker-short-info {
+    font-size: 14px;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    text-align: center;
+    z-index: 1000;
+}
+
 .popup-title_modern-name {
     font-size: 1.2em;
     font-weight: bold;
