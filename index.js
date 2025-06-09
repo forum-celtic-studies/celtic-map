@@ -418,79 +418,142 @@ const markers = [
     ),
     L.marker([49.63448147168677, 5.599712437080059]).bindPopup(
         buildPopupHtml({
-            title: 'Buzenol-Montauban'
+            title: 'Buzenol-Montauban',
         }),
         commonPopupConfig,
     ),
     L.marker([49.684722, 5.815556]).bindPopup(
         buildPopupHtml({
-            title: '<b>Orolaunum (Arlon)</b><br>'
+            title: 'Orolaunum (Arlon)',
         }),
         commonPopupConfig,
     ),
     L.marker([49.542036032965136, 5.859888862725093]).bindPopup(
         buildPopupHtml({
-            title: '<b>Titelberg</b><br>'
+            title: 'Titelberg',
         }),
         commonPopupConfig,
     ),
     L.marker([49.473611, 5.957778]).bindPopup(
         buildPopupHtml({
-            title: '<b>Audun-le-tiche</b><br>'
+            title: 'Audun-le-tiche',
+            description: `
+                The small town near Esch-sur-Alzette in Luxemburg hosts interesting finds of the
+                Celtic and Roman ages as well as a large cemetery of the Merovingian period. In the
+                vicinity of a necropolis of the early Middle Ages at "Le Calvaire" in the
+                "Bois de Butte", a Gallo-Roman temple (<em class="emphasis-secondary">fanum</em>)
+                of the second or third century CE was found, whose foundation walls can still be
+                seen. Nearby, a group of figures from a Jupiter column (
+                <em class="emphasis-secondary">cavalier à l'anguipède</em>) came to light. The
+                Jupiter columns translate an indigenous Celtic mythological motif into Roman
+                imagery. Heads from statues, probably of Juno, and of Minerva with a helmet were
+                also unearthed in the area. A Roman inscription from Rue de Bétiel shows a number
+                of Celtic names, including Solitumarus, Sorina, Carantillus und Carassouna. These
+                names, superficially adapted to the Latin language by changing the original ending
+                <em class="emphasis-secondary">-os</em> to <em class="emphasis-secondary">-us</em>, 
+                show clearly how strong the Celtic language remained in the onomastics of the
+                region. The findings can be viewed at the Musée d’Archéologie et d'Histoire locale.
+                The cemetary and the fanum belong to an archeological site
+                (<em class="emphasis-secondary">espace archéologique</em>).
+            `,
+            imageHref: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Tombe_de_la_n%C3%A9cropole_d%27Audun-le-Tiche.jpg',
+            imageAltText: 'Tomb in the Merovingian cemetery of Audun-le-Tiche',
+            imageCredit: 'Photo: <a href="https://fr.wikipedia.org/wiki/Utilisateur:Aimelaime">Aimelaime</a>, Public domain',
         }),
         commonPopupConfig,
     ),
     L.marker([49.666667, 5.966667]).bindPopup(
         buildPopupHtml({
-            title: '<b>Goeblange</b><br>'
+            title: 'Goeblange'
         }),
         commonPopupConfig,
     ),
     L.marker([50.144875, 5.847911]).bindPopup(
         buildPopupHtml({
-            title: '<b>Cherain-Brisy</b><br>'
+            title: 'Cherain-Brisy'
         }),
         commonPopupConfig,
     ),
     L.marker([49.481003, 6.083492]).bindPopup(
         buildPopupHtml({
-            title: '<b>Dudelange</b><br>'
+            title: 'Dudelange',
+            description: `
+                <h4>Festival "Zeltik" in Dudelange</h4>
+                Each year since 1998, mostly in March, the celtic celebration takes place in
+                Dudelange (Diddeleng, Düdelingen). It has developed into a major attraction far
+                beyond the local region. Internationally renowned representatives of the
+                "Celtic" music scene regularly appear on stage such as Carlos Núñez, Moya Brennan,
+                Capercaillie, Beoga, Tri Yann, Red Cardell etc.
+            `,
+            imageHref: 'https://upload.wikimedia.org/wikipedia/commons/7/71/Zeltik_Dudelange.jpg',
+            imageCredit: 'Photo: Bagad Naoned de Nantes, 2003, CC-BY-SA 3.0',
         }),
         commonPopupConfig,
     ),
     L.marker([49.567909444370024, 6.364009724092962]).bindPopup(
         buildPopupHtml({
-            title: '<b>Stadtbredimus/Palzem</b><br>'
+            title: 'Stadtbredimus (L)/Palzem (D)',
+            description: `
+                In a construction pit, remains of oak poles from different buildung phases were
+                excavated. Thicker posts belong to a Roman bridge built about 30 CE. Between them,
+                thinner stakes with a diametre of approximately 20 cm and cutting dates of 168 and
+                149 BCE (middle La Tène period, LT C) have been found.
+                The name <em class="emphasis-primary">Bredimus</em> derives from Celtic
+                <em class="emphasis-secondary">*bred-īnā</em> '(place where) one wades' from
+                Proto-Indo-European <em class="emphasis-secondary">*bʰredʰ-</em> 'to wade',
+                obviously an old name of a ford.
+            `,
         }),
         commonPopupConfig,
     ),
     L.marker([49.74749641273402, 6.330077606029646]).bindPopup(
         buildPopupHtml({
-            title: '<b>Altrier</b><br>'
+            title: 'Altrier',
+            description: `
+                The Celtic burial mound with a diametre of 50 m was discovered in 1972. It was
+                constructed around 430 BCE, as dendrodates of wooden beams from the burial chamber
+                revealed. An iron sword, a golden bracelet and a fibula, a bronce bucket and
+                remains of the cremation were found, which are being kept in the
+                <a href="https://www.mnaha.lu/en/">Musée Nationale d'Histoire et d'Art de Luxembourg</a>.
+            `,
+            imageHref: 'https://www.uni-trier.de/fileadmin/forschung/projekte/ZAT/CEL/Altrier_Tumulus.JPG',
+            imageAltText: 'Altrier burial mound',
+            imageCredit: 'Photo: Forum Celtic Studies',
         }),
         commonPopupConfig,
     ),
     L.marker([49.879444, 6.289444]).bindPopup(
         buildPopupHtml({
-            title: '<b>Wallendorf</b><br>'
+            title: 'Wallendorf',
         }),
         commonPopupConfig,
     ),
     L.marker([49.84211179910747, 6.423807368700288]).bindPopup(
         buildPopupHtml({
-            title: '<b>Arantia (Ernzen)</b><br>'
+            title: '*Arantiā (Ernzen)',
         }),
         commonPopupConfig,
     ),
     L.marker([50.180147, 6.914683]).bindPopup(
         buildPopupHtml({
-            title: '<b>Steineberg</b><br>'
+            title: 'Steineberg',
         }),
         commonPopupConfig,
     ),
     L.marker([49.564722, 6.559722]).bindPopup(
         buildPopupHtml({
-            title: '<b>Kastel-Staadt</b><br>'
+            title: 'Kastel-Staadt',
+            description: `
+                The Celtic oppidum, a fortified urban settlement on the plateau above the river
+                Saar, has an inner surface of 30 hectares. The walls are still up to c. 7 m high.
+                The oppidum was in use from at least around 100 BCE. Settlement findungs have been
+                made near the modern church. Potsherds and Celtic gold and silver coins are known
+                from all over the area. In the Roman period, a theatre was constructed on one of the
+                steeply sloping hill-sides.
+                Freudenburg to the south-west of Kastel-Staadt had an old name "Usme", in 1052 
+                Ossima", which derives from Gaulish <em class="emphasis-secondary">*Uxsamā</em>
+                "highest (place), height".
+            `,
         }),
         commonPopupConfig,
     ),
