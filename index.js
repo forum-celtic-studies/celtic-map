@@ -365,13 +365,27 @@ const markers = [
     ),
     L.marker([49.5562537385328, 6.819946421895424]).bindPopup(
         buildPopupHtml({
-            title: '<b>Weißkirchen</b><br>'
+            title: 'Weiskirchen',
         }),
         commonPopupConfig,
     ),
     L.marker([49.336344309886925, 6.606950190519136]).bindPopup(
         buildPopupHtml({
-            title: '<b>Enja (Ihn; Sudelfels)</b><br>'
+            title: '*Enjā (Ihn; Sudelfels)',
+            description: `
+                Near Wallerfangen, in the district of Ihn, there is the Gallo-Roman water sanctuary
+                "Sudelfels", dating from approximately 150 to 250 CE. The sacred enclosure includes an
+                octogonal well building. Findings of figurines and inscriptions indicate pilgrimages to
+                Gallo-Roman deities such as Rosmerta and Sirona as well as to the supraregionally
+                venerated healing god, Apollo. The place name <em class="emphasis-primary">Ihn</em>
+                derives from Celtic <em class="emphasis-secondary">*en-i̯ā</em> '(spring) with cloudy
+                water', from Proto-Indo-European <em class="emphasis-secondary">*pen-</em> 'mud, swamp',
+                cf. Gaulish <em class="emphasis-secondary">anam</em> 'swamp' from
+                <em class="emphasis-secondary">*pn̥-</em>.
+            `,
+            imageHref: 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Quellheiligtum_sudelfels.jpg',
+            imageAltText: 'Sudelfels water sanctuary',
+            imageCredit: 'Photo: Roger Zenner, CC-BY-SA-2.0-DE',
         }),
         commonPopupConfig,
     ),
