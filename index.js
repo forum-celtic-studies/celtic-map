@@ -96,35 +96,38 @@ function buildImagePart(image) {
     img.alt = image.altText || "Unfortunately there is no description for this image.";
     img.classList.add('popup-image');
     anchor.appendChild(img);
+    imageContainer.appendChild(anchor);
 
     if (image.title) {
         img.title = image.title;
+        const caption = document.createElement('span');
+        caption.className = 'image-caption';
+        caption.textContent = image.title;
+        imageContainer.appendChild(caption);
     }
 
-    imageContainer.appendChild(anchor);
-
-    if (image.photographyBy || image.license) {
+    if (image.imageBy || image.license) {
         const credit = document.createElement('small');
         credit.className = 'image-credit';
 
-        if (image.photographyBy) {
+        if (image.imageBy) {
             const em = document.createElement('em');
-            em.className = 'emphasis-secondary';
-            if (image.photographyByLink) {
+            em.className = 'image-by';
+            if (image.imageByLink) {
                 const byLink = document.createElement('a');
-                byLink.href = image.photographyByLink;
+                byLink.href = image.imageByLink;
                 byLink.target = '_blank';
                 byLink.rel = 'noopener noreferrer';
-                byLink.textContent = image.photographyBy;
+                byLink.textContent = image.imageBy;
                 em.appendChild(byLink);
             } else {
-                em.textContent = image.photographyBy;
+                em.textContent = image.imageBy;
             }
             credit.appendChild(em);
         }
 
         if (image.license) {
-            if (image.photographyBy) {
+            if (image.imageBy) {
                 credit.appendChild(document.createTextNode(' | '));
             }
             const licenseSpan = document.createElement('span');

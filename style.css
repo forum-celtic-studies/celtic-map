@@ -18,6 +18,30 @@
     margin-bottom: 5px;
 }
 
+.image-caption {
+    font-size: 0.9em;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.image-credit {
+    font-size: 0.8em;
+    color: #555;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.image-by {
+    font-weight: bold;
+    color: #333;
+}
+
+.image-license {
+    font-style: italic;
+    color: #777;
+}
+
 .emphasis-primary {
     font-weight: bold;
 }
