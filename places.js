@@ -28,6 +28,7 @@ export function getPlaces() {
                 <em class="emphasis-secondary">Epternos</em>, which is known, in its Latin form
                 <em class="emphasis-secondary">Epternus</em>, from a local inscription.
             `,
+            shortInfo: 'Roman Villa',
             images: [
                 {
                     title: 'Echternach Roman Villa',
@@ -57,6 +58,7 @@ export function getPlaces() {
                 wagon can be seen, besides a dummy of the deceased and examples of grave goods, which
                 were not preserved at this site except for a golden earring.
             `,
+            shortInfo: 'Celtic burial mounds',
         },
         { 
             coordinates: [50.35669146049006, 7.588382581952168],
@@ -86,7 +88,7 @@ export function getPlaces() {
                 first century CE. The name <em class="emphasis-primary">Mouzon</em> goes back to
                 Celtic *<em class="emphasis-secondary">Moso-magos</em>, 'Meuse field'.
             `,
-
+            shortInfo: 'Gallo-Roman sanctuary',
             images: [
                 {
                     title: 'Excavation site of the Gallo-Roman sanctuary in Mouzon',
@@ -117,6 +119,7 @@ export function getPlaces() {
                 of the rampart has been reconstructed. Most probably, Le Cheslé is just outside the
                 territory of the Treveri.
             `,
+            shortInfo: 'Celtic fortification',
             images: [
                 {
                     title: 'Reconstruction of the gate at Bérismenil',
@@ -146,6 +149,7 @@ export function getPlaces() {
                 casae being a precursor of French chez. The personal name has been compared to
                 Brittonic <em class="emphasis-secondary">Cogidubnus</em>.
             `,
+            shortInfo: 'Celtic fortification',
         },
         { 
             coordinates: [49.411389, 5.230278],
@@ -159,6 +163,7 @@ export function getPlaces() {
                 to 4th centuries CE). The name "Lion" derives from Latin
                 <em class="emphasis-secondars">Ad Leones</em>.
             `,
+            shortInfo: 'Celtic oppidum',
         },
         { 
             coordinates: [49.91561284272628, 5.377023740733322],
@@ -173,6 +178,7 @@ export function getPlaces() {
                 of current stereotypes and prejudices about the Celts. Among others, it houses
                 findings from Bérismenil, Cherain-Brisy and Cugnon.
             `,
+            shortInfo: 'Museum of the Celts',
         },
         { 
             coordinates: [49.5675, 5.5325],
@@ -198,6 +204,7 @@ export function getPlaces() {
                 (<em class="emphasis-secondary">in German</em>). For part of the year, the
                 settlement is inhabited by modern "Celtic" enthusiasts.
             `,
+            shortInfo: 'Celtic fortification',
             images: [
                 {
                     title: 'Reconstruction of the Altburg near Bundenbach',
@@ -236,6 +243,7 @@ export function getPlaces() {
                 swell of pride', from Proto-Indo-European
                 <em class="emphasis-secondary">*bʰelgʰ-</em> 'swell'.
             `,
+            shortInfo: 'Archaeology Park Belginum',
             images: [
                 {
                     title: 'Archaeologiepark Belginum',
@@ -272,6 +280,7 @@ export function getPlaces() {
                 <em class="emphasis-secondary">cruach</em>,
                 Welsh <em class="emphasis-secondary">crug</em>.
             `,
+            shortInfo: 'Burgberg',
         },
         { 
             coordinates: [49.97043087904943, 7.054190197900325],
@@ -289,6 +298,7 @@ export function getPlaces() {
                 and <em class="emphasis-secondary">*kell-</em>, from Proto-Indo-European
                 <em class="emphasis-secondary">*kelh₂-</em> 'to strike'.
             `,
+            shortInfo: 'Representation of Sucellus',
             images: [
                 {
                     title: 'Representation of the Gallo-Roman god Sucellus',
@@ -325,6 +335,7 @@ export function getPlaces() {
                 <em class="emphasis-secondary">super fluvio Muselle in monte Ardinigo</em>
                 "above the river Moselle on mount Ard(u)inius".
             `,
+            shortInfo: 'Burgberg',
             images: [
                 {
                     title: 'The Borberg from the west',
@@ -363,9 +374,7 @@ export function getPlaces() {
                  <em class="emphasis-secondary">a</em> after the half vowel
                  <em class="emphasis-secondary">u̯</em> as in Gaulish and Brittonic in general.
             `,
-            imageHref: '',
-            imageAltText: 'Monumental tumulus in Wadern-Oberlöstern',
-            imageCredit: 'Photo: L. Sieht, CC-BY-SA-3.0',
+            shortInfo: 'Monumental tumulus',
             images: [
                 {
                     title: 'Monumental tumulus in Wadern-Oberlöstern',
@@ -397,6 +406,7 @@ export function getPlaces() {
                 cf. Gaulish <em class="emphasis-secondary">anam</em> 'swamp' from
                 <em class="emphasis-secondary">*pn̥-</em>.
             `,
+            shortInfo: 'Gallo-Roman water sanctuary',
             images: [
                 {
                     title: 'Sudelfels water sanctuary',
@@ -419,6 +429,7 @@ export function getPlaces() {
                 "Druid Way", a circular route stretching approximately 6 km on the border of France.
                 Each year on 1 May, the Irish spring festival Bealtaine is adapted on the site.
             `,
+            shortInfo: 'Celtic farmstead',
         },
         { 
             coordinates: [49.355776978263634, 6.564342943056346],
@@ -431,6 +442,7 @@ export function getPlaces() {
                 are lost. The torque is still being withheld in Russia as "looted art", the chariot
                 fittings are being kept in Rheinisches Landesmuseum Trier.
             `,
+            shortInfo: 'Chariot tomb',
         },
         { 
             coordinates: [49.63448147168677, 5.599712437080059],
@@ -467,6 +479,7 @@ export function getPlaces() {
                 The cemetary and the fanum belong to an archeological site
                 (<em class="emphasis-secondary">espace archéologique</em>).
             `,
+            shortInfo: 'Gallo-Roman temple and Merovingian cemetery',
             images: [
                 {
                     title: 'Tomb in the Merovingian cemetery of Audun-le-Tiche',
@@ -498,6 +511,7 @@ export function getPlaces() {
                 "Celtic" music scene regularly appear on stage such as Carlos Núñez, Moya Brennan,
                 Capercaillie, Beoga, Tri Yann, Red Cardell etc.
             `,
+            shortInfo: 'Celtic Celebration',
             images: [
                 {
                     title: 'Bagad Naoned de Nantes at Celtic Celebration (Zeltik)',
@@ -523,6 +537,7 @@ export function getPlaces() {
                 Proto-Indo-European <em class="emphasis-secondary">*bʰredʰ-</em> 'to wade',
                 obviously an old name of a ford.
             `,
+            shortInfo: 'Celtic bridge',
         },
         { 
             coordinates: [49.74749641273402, 6.330077606029646],
@@ -534,6 +549,7 @@ export function getPlaces() {
                 remains of the cremation were found, which are being kept in the
                 Musée Nationale d'Histoire et d'Art de Luxembourg.
             `,
+            shortInfo: 'Celtic burial mound',
             images: [
                 {
                     title: 'Altrier burial mound',
@@ -579,6 +595,7 @@ export function getPlaces() {
                 Ossima", which derives from Gaulish <em class="emphasis-secondary">*Uxsamā</em>
                 "highest (place), height".
             `,
+            shortInfo: 'Celtic oppidum',
         },
     ];
 }

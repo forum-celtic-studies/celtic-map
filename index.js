@@ -14,16 +14,15 @@ const commonPopupConfig = {
     className: 'popup'
 }
 
-// Store label markers so you can add/remove them
 const labelMarkers = getPlaces().map((place) => {
     return L.marker(place.coordinates, {
         icon: L.divIcon({
             className: 'marker-short-info',
-            html: `<span>${place.shortInfo || place.modernName}</span>`,
-            iconSize: null, // adjust as needed
-            iconAnchor: [-25, 45], // adjust as needed
+            html: buildShortInfo(place).innerHTML,
+            iconSize: null,
+            iconAnchor: [-25, 45],
         }),
-        interactive: false // so clicks go to the main marker
+        interactive: false,
     });
 });
 
@@ -50,6 +49,40 @@ const markers = getPlaces().map((place) => {
         commonPopupConfig
     );
 });
+
+function buildShortInfo(place) {
+    const container = document.createElement('div');
+    const titleSpan = document.createElement('span');
+    titleSpan.className = 'marker-title';
+
+    if (place.modernName) {
+        const modernSpan = document.createElement('span');
+        modernSpan.className = 'marker-title_modern-name';
+        modernSpan.textContent = place.modernName;
+        titleSpan.appendChild(modernSpan);
+    }
+
+    if (place.modernName && place.ancientName) {
+        titleSpan.appendChild(document.createTextNode(' | '));
+    }
+
+    if (place.ancientName) {
+        const ancientSpan = document.createElement('span');
+        ancientSpan.className = 'marker-title_ancient-name';
+        ancientSpan.textContent = place.ancientName;
+        titleSpan.appendChild(ancientSpan);
+    }
+
+    container.appendChild(titleSpan);
+
+    if(place.shortInfo) {
+        const shortInfoSpan = document.createElement('span');
+        shortInfoSpan.textContent = place.shortInfo;
+        container.appendChild(shortInfoSpan);
+    }
+
+    return container;
+}
 
 function buildPopupHtml({
     modernName = '',
