@@ -17,60 +17,136 @@ const commonPopupConfig = {
 // Add markers
 const markers = getPlaces().map((place) => {
     return L.marker(place.coordinates).bindPopup(
-        buildPopupHtml(place),
+        buildPopupHtml(place).innerHTML,
         commonPopupConfig
     );
 });
 
-function buildPopupHtml(
-    {
-        title,
-        description = '',
-        imageHref = '',
-        imageAltText = '',
-        imageCredit = '',
-        furtherLinks = [],
-    } = {}
-) {
-    let popupHtml = `<h4>${title}</h4>`;
-    if (description) {
-        popupHtml += `<p>${description}</p>`;
+function buildPopupHtml({
+    modernName = '',
+    ancientName = '',
+    description = '',
+    images = [],
+    furtherLinks = [],
+} = {}) {
+    if (!modernName && !ancientName) {
+        return document.createElement('div');
     }
-    if (imageHref) {
-        const imageContainer = document.createElement('div');
-        imageContainer.classList.add('popup-image-container');
-        const img = document.createElement('img');
-        img.alt = imageAltText ?? "Unfortunately there is no description for this image.";
-        img.src = imageHref;
-        img.classList.add('popup-image');
-        const anchor = document.createElement('a');
-        anchor.href = imageHref;
-        anchor.setAttribute('target', '_blank');
-        anchor.setAttribute('rel', 'noopener noreferrer');
-        anchor.appendChild(img);
-        imageContainer.appendChild(anchor);
-        if (imageCredit) {
-            const credit = document.createElement('small');
-            credit.innerHTML = `<em class="emphasis-secondary">${imageCredit}</em>`;
-            imageContainer.appendChild(credit);
-        }
-        popupHtml += imageContainer.outerHTML;
+
+    const container = document.createElement('div');
+
+    if (modernName) {
+        const modernSpan = document.createElement('span');
+        modernSpan.className = 'modernName';
+        modernSpan.textContent = modernName;
+        container.appendChild(modernSpan);
+    }
+
+    if (ancientName) {
+        const ancientSpan = document.createElement('span');
+        ancientSpan.className = 'ancientName';
+        ancientSpan.textContent = ancientName;
+        container.appendChild(ancientSpan);
+    }
+
+    if (description) {
+        const descP = document.createElement('p');
+        descP.innerHTML = description;
+        container.appendChild(descP);
+    }
+
+    if (images && Array.isArray(images) && images.length > 0) {
+        images.forEach(image => {
+            const imagePart = buildImagePart(image);
+            if (imagePart) {
+                container.appendChild(imagePart);
+            }
+        });
     }
 
     if (furtherLinks.length > 0) {
-        popupHtml += `<p>`;
+        const linksP = document.createElement('p');
         furtherLinks.forEach(link => {
             const anchor = document.createElement('a');
             anchor.href = link.href;
             anchor.target = "_blank";
             anchor.rel = "noopener noreferrer";
-            anchor.innerText = link.text;
-            popupHtml += anchor.outerHTML;
+            anchor.textContent = link.text;
+            linksP.appendChild(anchor);
         });
-        popupHtml += `</p>`;
+        container.appendChild(linksP);
     }
 
-    return popupHtml;
+    return container;
+}
+
+function buildImagePart(image) {
+    if (!image.href) return;
+
+    const imageContainer = document.createElement('div');
+    imageContainer.classList.add('popup-image-container');
+
+    const anchor = document.createElement('a');
+    anchor.href = image.href;
+    anchor.target = '_blank';
+    anchor.rel = 'noopener noreferrer';
+
+    const img = document.createElement('img');
+    img.src = image.href;
+    img.alt = image.altText || "Unfortunately there is no description for this image.";
+    img.classList.add('popup-image');
+    anchor.appendChild(img);
+
+    if (image.title) {
+        img.title = image.title;
+    }
+
+    imageContainer.appendChild(anchor);
+
+    if (image.photographyBy || image.license) {
+        const credit = document.createElement('small');
+        credit.className = 'image-credit';
+
+        if (image.photographyBy) {
+            const em = document.createElement('em');
+            em.className = 'emphasis-secondary';
+            if (image.photographyByLink) {
+                const byLink = document.createElement('a');
+                byLink.href = image.photographyByLink;
+                byLink.target = '_blank';
+                byLink.rel = 'noopener noreferrer';
+                byLink.textContent = image.photographyBy;
+                em.appendChild(byLink);
+            } else {
+                em.textContent = image.photographyBy;
+            }
+            credit.appendChild(em);
+        }
+
+        if (image.license) {
+            if (image.photographyBy) {
+                credit.appendChild(document.createTextNode(' | '));
+            }
+            const licenseSpan = document.createElement('span');
+            licenseSpan.className = 'image-license';
+            if (image.licenseLink) {
+                const licenseLink = document.createElement('a');
+                licenseLink.href = image.licenseLink;
+                licenseLink.target = '_blank';
+                licenseLink.rel = 'noopener noreferrer';
+                licenseLink.textContent = image.license;
+                licenseSpan.appendChild(licenseLink);
+            }
+            else {
+                licenseSpan.textContent = image.license;
+            }
+            credit.appendChild(licenseSpan);
+        }
+
+        imageContainer.appendChild(credit);
+    }
+
+    return imageContainer;
 }
 
 // Add all markers to the map
