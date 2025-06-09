@@ -37,14 +37,18 @@ function buildPopupHtml({
 
     if (modernName) {
         const modernSpan = document.createElement('span');
-        modernSpan.className = 'modernName';
+        modernSpan.className = 'popup-title_modern-name';
         modernSpan.textContent = modernName;
         container.appendChild(modernSpan);
     }
 
+    if (modernName && ancientName) {
+        container.appendChild(document.createTextNode(' | '));
+    }
+
     if (ancientName) {
         const ancientSpan = document.createElement('span');
-        ancientSpan.className = 'ancientName';
+        ancientSpan.className = 'popup-title_ancient-name';
         ancientSpan.textContent = ancientName;
         container.appendChild(ancientSpan);
     }

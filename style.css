@@ -2,6 +2,20 @@
     height: 100vh;
 }
 
+.popup-title_modern-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.popup-title_ancient-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
 .popup-image-container {
     display: flex;
     flex-direction: column;
