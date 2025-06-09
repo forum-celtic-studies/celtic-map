@@ -1,5 +1,26 @@
-#map {
+body {
     height: 100vh;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+}
+html, body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+h1 {
+    padding-top: 10px;
+    margin: 0;
+}
+
+#map {
+    flex: 1;
+    border: 2px solid #ccc;
+    margin-bottom: 10px;
 }
 
 .marker-short-info {
