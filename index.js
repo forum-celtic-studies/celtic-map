@@ -1,4 +1,5 @@
 import { getPlaces } from 'places';
+import { getRivers } from 'rivers';
 
 // Initialize the map
 const map = L.map('map');
@@ -220,6 +221,46 @@ function buildImagePart(image) {
 
 // Add all markers to the map
 const markerGroup = L.featureGroup(markers).addTo(map);
+
+const riverData = getRivers();
+const features = [];
+riverData.forEach(river => {
+    const name = river.name || 'Unnamed River';
+    river.features.forEach(feature => {
+        const coordinates = feature.slice(12, -1).split(',').map(coord => {
+            const [lon, lat] = coord.trim().split(' ').map(Number);
+            return [lon, lat];
+        });
+            
+        features.push({
+            type: 'Feature',
+            properties: { name },
+            geometry: {
+                type: 'LineString',
+                coordinates,
+            }
+        });
+    });
+});
+
+const riverGeoJson = {
+    "type": "FeatureCollection",
+    "features": features,
+};
+
+// Add the river GeoJSON to the map with custom style
+const riverLayer = L.geoJSON(riverGeoJson, {
+    style: {
+        color: '#0062ff',
+        weight: 4,
+        opacity: 1,
+    },
+    onEachFeature: function (feature, layer) {
+        if (feature.properties && feature.properties.name) {
+            layer.bindPopup(feature.properties.name);
+        }
+    }
+}).addTo(map);
 
 // Adjust the map view to fit all markers comfortably
 map.fitBounds(markerGroup.getBounds());
