@@ -1,5 +1,6 @@
 import { getPlaces } from 'places';
 import { getRivers } from 'rivers';
+import { TYPE_ARCHITECTURE, TYPE_DOCUMENT, TYPE_EVENT, TYPE_OBJECT, TYPE_PLACE } from 'places';
 
 // Initialize the map
 const map = L.map('map');
@@ -82,8 +83,50 @@ function buildShortInfo(place) {
         container.appendChild(shortInfoSpan);
     }
 
+    let icons = [];
+    if (place.types) {
+        icons = buildTypeIcons(place.types);
+    }
+
+    if (icons.length > 0) {
+        const iconsContainer = document.createElement('div');
+        iconsContainer.className = 'type-icons';
+        icons.forEach(icon => {
+            iconsContainer.appendChild(icon);
+        });
+        container.appendChild(iconsContainer);
+    }
+
     return container;
 }
+
+function buildTypeIcons(types) {
+    const icons = [];
+    types.forEach(type => {
+        const icon = document.createElement('i');
+        icon.className = `icon-medium hgi hgi-stroke`;
+        switch(type) {
+            case TYPE_PLACE:
+                icon.classList.add('hgi-image-02');
+                break;
+            case TYPE_ARCHITECTURE:
+                icon.classList.add('hgi-guest-house');
+                break;
+            case TYPE_DOCUMENT:
+                icon.classList.add('hgi-graduation-scroll');
+                break;
+            case TYPE_EVENT:
+                icon.classList.add('hgi-calendar-01');
+                break;
+            case TYPE_OBJECT:
+                icon.classList.add('hgi-sword-02');
+                break;
+        }
+        icons.push(icon);
+    });
+
+    return icons;
+};
 
 function buildPopupHtml({
     modernName = '',

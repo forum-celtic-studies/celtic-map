@@ -1,3 +1,11 @@
+export const TYPE_PLACE = 'place';
+export const TYPE_ARCHITECTURE = 'architecture';
+export const TYPE_OBJECT = 'object';
+export const TYPE_DOCUMENT = 'document';
+export const TYPE_EVENT = 'event';
+export const TYPE_IMMATERIAL = 'immaterial';
+export const TYPE_OTHER = 'other';
+
 export function getPlaces() {
     return [
         { 
@@ -28,6 +36,7 @@ export function getPlaces() {
                 <em class="emphasis-secondary">Epternos</em>, which is known, in its Latin form
                 <em class="emphasis-secondary">Epternus</em>, from a local inscription.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_DOCUMENT],
             shortInfo: 'Roman Villa',
             images: [
                 {
@@ -58,6 +67,7 @@ export function getPlaces() {
                 wagon can be seen, besides a dummy of the deceased and examples of grave goods, which
                 were not preserved at this site except for a golden earring.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Celtic burial mounds',
         },
         { 
