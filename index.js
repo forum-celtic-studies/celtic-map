@@ -1,6 +1,7 @@
 import { getPlaces } from 'places';
 import { getRivers } from 'rivers';
 import { TYPE_ARCHITECTURE, TYPE_DOCUMENT, TYPE_EVENT, TYPE_OBJECT, TYPE_PLACE } from 'places';
+import { TYPE_IMMATERIAL, TYPE_OTHER } from './places';
 
 // Initialize the map
 const map = L.map('map');
@@ -112,14 +113,20 @@ function buildTypeIcons(types) {
             case TYPE_ARCHITECTURE:
                 icon.classList.add('hgi-guest-house');
                 break;
+            case TYPE_OBJECT:
+                icon.classList.add('hgi-sword-02');
+                break;
             case TYPE_DOCUMENT:
                 icon.classList.add('hgi-graduation-scroll');
                 break;
             case TYPE_EVENT:
                 icon.classList.add('hgi-calendar-01');
                 break;
-            case TYPE_OBJECT:
-                icon.classList.add('hgi-sword-02');
+            case TYPE_IMMATERIAL:
+                icon.classList.add('hgi-border-none-02');
+                break;
+            case TYPE_OTHER:
+                icon.classList.add('hgi-flag-01');
                 break;
         }
         icons.push(icon);
