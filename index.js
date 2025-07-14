@@ -1,7 +1,14 @@
-import { getPlaces } from 'places';
+import { 
+    getPlaces,
+    TYPE_ARCHITECTURE,
+    TYPE_DOCUMENT,
+    TYPE_EVENT,
+    TYPE_OBJECT,
+    TYPE_PLACE,
+    TYPE_IMMATERIAL,
+    TYPE_OTHER
+} from 'places';
 import { getRivers } from 'rivers';
-import { TYPE_ARCHITECTURE, TYPE_DOCUMENT, TYPE_EVENT, TYPE_OBJECT, TYPE_PLACE } from 'places';
-import { TYPE_IMMATERIAL, TYPE_OTHER } from './places';
 
 // Initialize the map
 const map = L.map('map');
@@ -78,7 +85,7 @@ function buildShortInfo(place) {
 
     container.appendChild(titleSpan);
 
-    if(place.shortInfo) {
+    if (place.shortInfo) {
         const shortInfoSpan = document.createElement('span');
         shortInfoSpan.textContent = place.shortInfo;
         container.appendChild(shortInfoSpan);
@@ -106,7 +113,7 @@ function buildTypeIcons(types) {
     types.forEach(type => {
         const icon = document.createElement('i');
         icon.className = `icon-medium hgi hgi-stroke`;
-        switch(type) {
+        switch (type) {
             case TYPE_PLACE:
                 icon.classList.add('hgi-image-02');
                 break;
@@ -281,7 +288,7 @@ riverData.forEach(river => {
             const [lon, lat] = coord.trim().split(' ').map(Number);
             return [lon, lat];
         });
-            
+
         features.push({
             type: 'Feature',
             properties: { name },
