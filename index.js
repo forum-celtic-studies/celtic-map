@@ -221,7 +221,7 @@ function buildImagePart(image) {
 
 // Add all markers to the map
 const markerGroup = L.featureGroup(markers).addTo(map);
-
+/*
 const riverData = getRivers();
 const features = [];
 riverData.forEach(river => {
@@ -261,6 +261,6 @@ const riverLayer = L.geoJSON(riverGeoJson, {
         }
     }
 }).addTo(map);
-
+*/
 // Adjust the map view to fit all markers comfortably
 map.fitBounds(markerGroup.getBounds());
