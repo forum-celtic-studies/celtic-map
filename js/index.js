@@ -1,19 +1,18 @@
 import { getPlaces } from 'places';
-import { getRivers } from 'rivers';
 import { Legend } from 'legend';
 import { createMap } from './map/map.js';
-import { createMarkers, createLabelMarkers } from './map/markers.js';
+import { createPlaceMarkers, createPlaceLabelMarkers } from './map/placeMarkers.js';
 import 'leaflet';
 
-// Initialize the map
 const map = createMap('map');
 
 const places = getPlaces();
-const labelMarkers = createLabelMarkers(places);
+const labelMarkers = createPlaceLabelMarkers(places);
 
-// Add/remove labels based on zoom and filter
-const LABEL_ZOOM = 11; // show labels at this zoom or higher
-let currentActiveTypes = null; // cache for filter state
+// show labels at this zoom or higher
+const LABEL_ZOOM = 11; 
+// cache for filter state
+let currentActiveTypes = null; 
 
 function updateLabelMarkersVisibility() {
     const showLabels = map.getZoom() >= LABEL_ZOOM;
@@ -38,60 +37,14 @@ function updateLabelMarkersVisibility() {
 map.on('zoomend', updateLabelMarkersVisibility);
 updateLabelMarkersVisibility();
 
-// Add markers
-const markers = createMarkers(places);
+const markers = createPlaceMarkers(places);
 
-
-// Add all markers to the map
 const markerGroup = L.featureGroup(markers).addTo(map);
-/*
-const riverData = getRivers();
-const features = [];
-riverData.forEach(river => {
-    const name = river.name || 'Unnamed River';
-    river.features.forEach(feature => {
-        const coordinates = feature.slice(12, -1).split(',').map(coord => {
-            const [lon, lat] = coord.trim().split(' ').map(Number);
-            return [lon, lat];
-        });
-
-        features.push({
-            type: 'Feature',
-            properties: { name },
-            geometry: {
-                type: 'LineString',
-                coordinates,
-            }
-        });
-    });
-});
-
-const riverGeoJson = {
-    "type": "FeatureCollection",
-    "features": features,
-};
-
-// Add the river GeoJSON to the map with custom style
-const riverLayer = L.geoJSON(riverGeoJson, {
-    style: {
-        color: '#0062ff',
-        weight: 4,
-        opacity: 1,
-    },
-    onEachFeature: function (feature, layer) {
-        if (feature.properties && feature.properties.name) {
-            layer.bindPopup(feature.properties.name);
-        }
-    }
-}).addTo(map);
-*/
-// Adjust the map view to fit all markers comfortably
 
 map.fitBounds(markerGroup.getBounds());
 const legendControl = new Legend({ position: 'topright' });
 map.addControl(legendControl);
 
-// --- Filtering logic ---
 const legendContainer = document.querySelector('.legendControl');
 if (legendContainer) {
     legendContainer.addEventListener('filter:update', (e) => {

@@ -1,5 +1,3 @@
-// map.js
-// Handles map initialization and base layers
 import 'leaflet';
 
 export function createMap(targetId) {

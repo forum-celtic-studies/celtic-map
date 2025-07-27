@@ -1,6 +1,3 @@
-// popupBuilders.js
-// Contains UI builder functions for popups and short info
-
 export function buildShortInfo(place) {
     const container = document.createElement('div');
     const titleSpan = document.createElement('span');

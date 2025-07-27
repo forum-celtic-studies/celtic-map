@@ -1,5 +1,3 @@
-// markers.js
-// Handles marker and label creation, filtering, and group management
 import { buildShortInfo, buildPopupHtml } from 'popupBuilders';
 import 'leaflet';
 
@@ -8,7 +6,7 @@ const commonPopupConfig = {
     className: 'popup'
 };
 
-export function createMarkers(places) {
+export function createPlaceMarkers(places) {
     return places.map((place) => {
         const marker = L.marker(place.coordinates).bindPopup(
             buildPopupHtml(place).innerHTML,
@@ -19,7 +17,7 @@ export function createMarkers(places) {
     });
 }
 
-export function createLabelMarkers(places) {
+export function createPlaceLabelMarkers(places) {
     return places.map((place) => {
         const marker = L.marker(place.coordinates, {
             icon: L.divIcon({
