@@ -26,7 +26,7 @@ const commonPopupConfig = {
 }
 
 const labelMarkers = getPlaces().map((place) => {
-    return L.marker(place.coordinates, {
+    const marker = L.marker(place.coordinates, {
         icon: L.divIcon({
             className: 'marker-short-info',
             html: buildShortInfo(place).innerHTML,
@@ -35,23 +35,38 @@ const labelMarkers = getPlaces().map((place) => {
         }),
         interactive: false,
     });
+    marker._allTypes = place.types || [];
+    return marker;
 });
 
-// Add/remove labels based on zoom
+// Add/remove labels based on zoom and filter
 const LABEL_ZOOM = 11; // show labels at this zoom or higher
+let currentActiveTypes = null; // cache for filter state
 
-map.on('zoomend', () => {
-    if (map.getZoom() >= LABEL_ZOOM) {
-        labelMarkers.forEach(label => label.addTo(map));
-    } else {
-        labelMarkers.forEach(label => map.removeLayer(label));
-    }
-});
+function updateLabelMarkersVisibility() {
+    const showLabels = map.getZoom() >= LABEL_ZOOM;
+    labelMarkers.forEach(label => {
+        let show = showLabels;
+        if (show && currentActiveTypes) {
+            const markerHasTypes = label._allTypes && label._allTypes.length > 0;
+            if (markerHasTypes) {
+                show = label._allTypes.some(t => currentActiveTypes.includes(t));
+            } else {
+                show = currentActiveTypes.includes('unlabeled');
+            }
+        }
+        if (show) {
+            label.addTo(map);
+        } else {
+            map.removeLayer(label);
+        }
+    });
+}
+
+map.on('zoomend', updateLabelMarkersVisibility);
 
 // Optionally, show labels if already zoomed in on load
-if (map.getZoom() >= LABEL_ZOOM) {
-    labelMarkers.forEach(label => label.addTo(map));
-}
+updateLabelMarkersVisibility();
 
 // Add markers
 
@@ -343,6 +358,7 @@ const legendContainer = document.querySelector('.legendControl');
 if (legendContainer) {
     legendContainer.addEventListener('filter:update', (e) => {
         const activeTypes = e.detail.activeTypes;
+        currentActiveTypes = activeTypes;
         markers.forEach((marker, i) => {
             let showMarker = false;
             const markerHasTypes = marker._allTypes && marker._allTypes.length > 0;
@@ -359,5 +375,6 @@ if (legendContainer) {
                 markerGroup.removeLayer(marker);
             }
         });
+        updateLabelMarkersVisibility();
     });
 }
