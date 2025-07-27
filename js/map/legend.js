@@ -1,3 +1,5 @@
+import 'leaflet';
+
 export class Legend extends L.Control {
     constructor(options) {
         super(options);

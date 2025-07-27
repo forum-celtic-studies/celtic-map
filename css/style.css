@@ -98,7 +98,7 @@ fieldset {
     margin-bottom: 10px;
 }
 
-.marker-short-info {
+.markerShortInfo {
     display: flex;
     flex-direction: column;
     min-width: 200px;
