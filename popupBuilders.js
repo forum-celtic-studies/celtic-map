@@ -1,0 +1,204 @@
+// popupBuilders.js
+// Contains UI builder functions for popups and short info
+
+export function buildShortInfo(place) {
+    const container = document.createElement('div');
+    const titleSpan = document.createElement('span');
+    titleSpan.className = 'marker-title';
+
+    if (place.modernName) {
+        const modernSpan = document.createElement('span');
+        modernSpan.className = 'marker-title_modern-name';
+        modernSpan.textContent = place.modernName;
+        titleSpan.appendChild(modernSpan);
+    }
+
+    if (place.modernName && place.ancientName) {
+        titleSpan.appendChild(document.createTextNode(' | '));
+    }
+
+    if (place.ancientName) {
+        const ancientSpan = document.createElement('span');
+        ancientSpan.className = 'marker-title_ancient-name';
+        ancientSpan.textContent = place.ancientName;
+        titleSpan.appendChild(ancientSpan);
+    }
+
+    container.appendChild(titleSpan);
+
+    if (place.shortInfo) {
+        const shortInfoSpan = document.createElement('span');
+        shortInfoSpan.textContent = place.shortInfo;
+        container.appendChild(shortInfoSpan);
+    }
+
+    let icons = buildTypeIcons(place.types);
+
+    if (icons.length > 0) {
+        const iconsContainer = document.createElement('div');
+        iconsContainer.className = 'type-icons';
+        icons.forEach(icon => {
+            iconsContainer.appendChild(icon);
+        });
+        container.appendChild(iconsContainer);
+    }
+
+    return container;
+}
+
+export function buildTypeIcons(types) {
+    const icons = [];
+    if (types) {
+        types.forEach(type => {
+            const icon = document.createElement('i');
+            icon.className = `icon-medium hgi hgi-stroke`;
+            switch (type) {
+                case 'place':
+                    icon.classList.add('hgi-image-02');
+                    break;
+                case 'architecture':
+                    icon.classList.add('hgi-guest-house');
+                    break;
+                case 'object':
+                    icon.classList.add('hgi-sword-02');
+                    break;
+                case 'document':
+                    icon.classList.add('hgi-graduation-scroll');
+                    break;
+                case 'event':
+                    icon.classList.add('hgi-calendar-01');
+                    break;
+                case 'immaterial':
+                    icon.classList.add('hgi-border-none-02');
+                    break;
+                case 'other':
+                    icon.classList.add('hgi-flag-01');
+                    break;
+            }
+            icons.push(icon);
+        });
+    }
+    if (icons.length === 0) {
+        const defaultIcon = document.createElement('i');
+        defaultIcon.className = `icon-medium hgi hgi-stroke hgi-help-circle`;
+        icons.push(defaultIcon);
+    }
+    return icons;
+}
+
+export function buildPopupHtml({
+    modernName = '',
+    ancientName = '',
+    description = '',
+    images = [],
+    furtherLinks = [],
+} = {}) {
+    if (!modernName && !ancientName) {
+        return document.createElement('div');
+    }
+    const container = document.createElement('div');
+    if (modernName) {
+        const modernSpan = document.createElement('span');
+        modernSpan.className = 'popup-title_modern-name';
+        modernSpan.textContent = modernName;
+        container.appendChild(modernSpan);
+    }
+    if (modernName && ancientName) {
+        container.appendChild(document.createTextNode(' | '));
+    }
+    if (ancientName) {
+        const ancientSpan = document.createElement('span');
+        ancientSpan.className = 'popup-title_ancient-name';
+        ancientSpan.textContent = ancientName;
+        container.appendChild(ancientSpan);
+    }
+    if (description) {
+        const descP = document.createElement('p');
+        descP.innerHTML = description;
+        container.appendChild(descP);
+    }
+    if (images && Array.isArray(images) && images.length > 0) {
+        images.forEach(image => {
+            const imagePart = buildImagePart(image);
+            if (imagePart) {
+                container.appendChild(imagePart);
+            }
+        });
+    }
+    if (furtherLinks.length > 0) {
+        const linksP = document.createElement('p');
+        furtherLinks.forEach(link => {
+            const anchor = document.createElement('a');
+            anchor.href = link.href;
+            anchor.target = "_blank";
+            anchor.rel = "noopener noreferrer";
+            anchor.textContent = link.text;
+            linksP.appendChild(anchor);
+        });
+        container.appendChild(linksP);
+    }
+    return container;
+}
+
+export function buildImagePart(image) {
+    if (!image.href) return;
+    const imageContainer = document.createElement('div');
+    imageContainer.classList.add('popup-image-container');
+    const anchor = document.createElement('a');
+    anchor.href = image.href;
+    anchor.target = '_blank';
+    anchor.rel = 'noopener noreferrer';
+    const img = document.createElement('img');
+    img.src = image.href;
+    img.alt = image.altText || "Unfortunately there is no description for this image.";
+    img.classList.add('popup-image');
+    anchor.appendChild(img);
+    imageContainer.appendChild(anchor);
+    if (image.title) {
+        img.title = image.title;
+        const caption = document.createElement('span');
+        caption.className = 'image-caption';
+        caption.textContent = image.title;
+        imageContainer.appendChild(caption);
+    }
+    if (image.imageBy || image.license) {
+        const credit = document.createElement('small');
+        credit.className = 'image-credit';
+        if (image.imageBy) {
+            const em = document.createElement('em');
+            em.className = 'image-by';
+            if (image.imageByLink) {
+                const byLink = document.createElement('a');
+                byLink.href = image.imageByLink;
+                byLink.target = '_blank';
+                byLink.rel = 'noopener noreferrer';
+                byLink.textContent = image.imageBy;
+                em.appendChild(byLink);
+            } else {
+                em.textContent = image.imageBy;
+            }
+            credit.appendChild(em);
+        }
+        if (image.license) {
+            if (image.imageBy) {
+                credit.appendChild(document.createTextNode(' | '));
+            }
+            const licenseSpan = document.createElement('span');
+            licenseSpan.className = 'image-license';
+            if (image.licenseLink) {
+                const licenseLink = document.createElement('a');
+                licenseLink.href = image.licenseLink;
+                licenseLink.target = '_blank';
+                licenseLink.rel = 'noopener noreferrer';
+                licenseLink.textContent = image.license;
+                licenseSpan.appendChild(licenseLink);
+            }
+            else {
+                licenseSpan.textContent = image.license;
+            }
+            credit.appendChild(licenseSpan);
+        }
+        imageContainer.appendChild(credit);
+    }
+    return imageContainer;
+}
