@@ -1,3 +1,47 @@
+/* --- Legend Control Styles --- */
+.legend-control {
+  background: rgba(255,255,255,0.95);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 0;
+  min-width: 180px;
+  max-width: 260px;
+  font-size: 15px;
+  transition: max-height 0.2s;
+  overflow: hidden;
+}
+.legend-control .legend-toggle {
+  width: 100%;
+  background: #0062ff;
+  color: #fff;
+  border: none;
+  border-radius: 6px 6px 0 0;
+  padding: 6px 0;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+}
+.legend-control .legend-content {
+  padding: 10px 14px 10px 14px;
+  display: block;
+}
+.legend-control.collapsed .legend-content {
+  display: none;
+}
+.legend-control ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 0;
+}
+.legend-control li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.legend-control i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
 body {
     height: 100vh;
     margin: 0;

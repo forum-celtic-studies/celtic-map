@@ -9,6 +9,7 @@ import {
     TYPE_OTHER
 } from 'places';
 import { getRivers } from 'rivers';
+import { Legend } from 'legend';
 
 // Initialize the map
 const map = L.map('map');
@@ -91,10 +92,9 @@ function buildShortInfo(place) {
         container.appendChild(shortInfoSpan);
     }
 
-    let icons = [];
-    if (place.types) {
-        icons = buildTypeIcons(place.types);
-    }
+    let icons = buildTypeIcons(place.types);
+    console.log(icons.length);
+    
 
     if (icons.length > 0) {
         const iconsContainer = document.createElement('div');
@@ -110,34 +110,43 @@ function buildShortInfo(place) {
 
 function buildTypeIcons(types) {
     const icons = [];
-    types.forEach(type => {
-        const icon = document.createElement('i');
-        icon.className = `icon-medium hgi hgi-stroke`;
-        switch (type) {
-            case TYPE_PLACE:
-                icon.classList.add('hgi-image-02');
-                break;
-            case TYPE_ARCHITECTURE:
-                icon.classList.add('hgi-guest-house');
-                break;
-            case TYPE_OBJECT:
-                icon.classList.add('hgi-sword-02');
-                break;
-            case TYPE_DOCUMENT:
-                icon.classList.add('hgi-graduation-scroll');
-                break;
-            case TYPE_EVENT:
-                icon.classList.add('hgi-calendar-01');
-                break;
-            case TYPE_IMMATERIAL:
-                icon.classList.add('hgi-border-none-02');
-                break;
-            case TYPE_OTHER:
-                icon.classList.add('hgi-flag-01');
-                break;
-        }
-        icons.push(icon);
-    });
+    
+    if (types) {
+        types.forEach(type => {
+            const icon = document.createElement('i');
+            icon.className = `icon-medium hgi hgi-stroke`;
+            switch (type) {
+                case TYPE_PLACE:
+                    icon.classList.add('hgi-image-02');
+                    break;
+                case TYPE_ARCHITECTURE:
+                    icon.classList.add('hgi-guest-house');
+                    break;
+                case TYPE_OBJECT:
+                    icon.classList.add('hgi-sword-02');
+                    break;
+                case TYPE_DOCUMENT:
+                    icon.classList.add('hgi-graduation-scroll');
+                    break;
+                case TYPE_EVENT:
+                    icon.classList.add('hgi-calendar-01');
+                    break;
+                case TYPE_IMMATERIAL:
+                    icon.classList.add('hgi-border-none-02');
+                    break;
+                case TYPE_OTHER:
+                    icon.classList.add('hgi-flag-01');
+                    break;
+            }
+            icons.push(icon);
+        });
+    }
+
+    if (icons.length === 0) {
+        const defaultIcon = document.createElement('i');
+        defaultIcon.className = `icon-medium hgi hgi-stroke hgi-help-circle`;
+        icons.push(defaultIcon);
+    }
 
     return icons;
 };
@@ -321,3 +330,4 @@ const riverLayer = L.geoJSON(riverGeoJson, {
 */
 // Adjust the map view to fit all markers comfortably
 map.fitBounds(markerGroup.getBounds());
+map.addControl(new Legend({ position: 'topright' }));
