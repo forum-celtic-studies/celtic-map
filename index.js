@@ -1,5 +1,15 @@
-import { getPlaces } from 'places';
+import { 
+    getPlaces,
+    TYPE_ARCHITECTURE,
+    TYPE_DOCUMENT,
+    TYPE_EVENT,
+    TYPE_OBJECT,
+    TYPE_PLACE,
+    TYPE_IMMATERIAL,
+    TYPE_OTHER
+} from 'places';
 import { getRivers } from 'rivers';
+import { Legend } from 'legend';
 
 // Initialize the map
 const map = L.map('map');
@@ -44,11 +54,17 @@ if (map.getZoom() >= LABEL_ZOOM) {
 }
 
 // Add markers
-const markers = getPlaces().map((place) => {
-    return L.marker(place.coordinates).bindPopup(
+
+// --- Marker creation with type info ---
+const places = getPlaces();
+
+const markers = places.map((place) => {
+    const marker = L.marker(place.coordinates).bindPopup(
         buildPopupHtml(place).innerHTML,
         commonPopupConfig
     );
+    marker._allTypes = place.types || [];
+    return marker;
 });
 
 function buildShortInfo(place) {
@@ -76,14 +92,68 @@ function buildShortInfo(place) {
 
     container.appendChild(titleSpan);
 
-    if(place.shortInfo) {
+    if (place.shortInfo) {
         const shortInfoSpan = document.createElement('span');
         shortInfoSpan.textContent = place.shortInfo;
         container.appendChild(shortInfoSpan);
     }
 
+    let icons = buildTypeIcons(place.types);
+
+    if (icons.length > 0) {
+        const iconsContainer = document.createElement('div');
+        iconsContainer.className = 'type-icons';
+        icons.forEach(icon => {
+            iconsContainer.appendChild(icon);
+        });
+        container.appendChild(iconsContainer);
+    }
+
     return container;
 }
+
+function buildTypeIcons(types) {
+    const icons = [];
+    
+    if (types) {
+        types.forEach(type => {
+            const icon = document.createElement('i');
+            icon.className = `icon-medium hgi hgi-stroke`;
+            switch (type) {
+                case TYPE_PLACE:
+                    icon.classList.add('hgi-image-02');
+                    break;
+                case TYPE_ARCHITECTURE:
+                    icon.classList.add('hgi-guest-house');
+                    break;
+                case TYPE_OBJECT:
+                    icon.classList.add('hgi-sword-02');
+                    break;
+                case TYPE_DOCUMENT:
+                    icon.classList.add('hgi-graduation-scroll');
+                    break;
+                case TYPE_EVENT:
+                    icon.classList.add('hgi-calendar-01');
+                    break;
+                case TYPE_IMMATERIAL:
+                    icon.classList.add('hgi-border-none-02');
+                    break;
+                case TYPE_OTHER:
+                    icon.classList.add('hgi-flag-01');
+                    break;
+            }
+            icons.push(icon);
+        });
+    }
+
+    if (icons.length === 0) {
+        const defaultIcon = document.createElement('i');
+        defaultIcon.className = `icon-medium hgi hgi-stroke hgi-help-circle`;
+        icons.push(defaultIcon);
+    }
+
+    return icons;
+};
 
 function buildPopupHtml({
     modernName = '',
@@ -231,7 +301,7 @@ riverData.forEach(river => {
             const [lon, lat] = coord.trim().split(' ').map(Number);
             return [lon, lat];
         });
-            
+
         features.push({
             type: 'Feature',
             properties: { name },
@@ -263,4 +333,31 @@ const riverLayer = L.geoJSON(riverGeoJson, {
 }).addTo(map);
 */
 // Adjust the map view to fit all markers comfortably
+
 map.fitBounds(markerGroup.getBounds());
+const legendControl = new Legend({ position: 'topright' });
+map.addControl(legendControl);
+
+// --- Filtering logic ---
+const legendContainer = document.querySelector('.legendControl');
+if (legendContainer) {
+    legendContainer.addEventListener('filter:update', (e) => {
+        const activeTypes = e.detail.activeTypes;
+        markers.forEach((marker, i) => {
+            let showMarker = false;
+            const markerHasTypes = marker._allTypes && marker._allTypes.length > 0;
+
+            if(markerHasTypes) {
+                showMarker = marker._allTypes.some(t => activeTypes.includes(t));
+            } else {
+                showMarker = activeTypes.includes('unlabeled');
+            }
+
+            if (showMarker) {
+                markerGroup.addLayer(marker);
+            } else {
+                markerGroup.removeLayer(marker);
+            }
+        });
+    });
+}

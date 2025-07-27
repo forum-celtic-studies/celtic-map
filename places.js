@@ -1,3 +1,11 @@
+export const TYPE_PLACE = 'place';
+export const TYPE_ARCHITECTURE = 'architecture';
+export const TYPE_OBJECT = 'object';
+export const TYPE_DOCUMENT = 'document';
+export const TYPE_EVENT = 'event';
+export const TYPE_IMMATERIAL = 'immaterial';
+export const TYPE_OTHER = 'other';
+
 export function getPlaces() {
     return [
         { 
@@ -28,6 +36,7 @@ export function getPlaces() {
                 <em class="emphasis-secondary">Epternos</em>, which is known, in its Latin form
                 <em class="emphasis-secondary">Epternus</em>, from a local inscription.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_DOCUMENT],
             shortInfo: 'Roman Villa',
             images: [
                 {
@@ -58,6 +67,7 @@ export function getPlaces() {
                 wagon can be seen, besides a dummy of the deceased and examples of grave goods, which
                 were not preserved at this site except for a golden earring.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Celtic burial mounds',
         },
         { 
@@ -88,6 +98,7 @@ export function getPlaces() {
                 first century CE. The name <em class="emphasis-primary">Mouzon</em> goes back to
                 Celtic *<em class="emphasis-secondary">Moso-magos</em>, 'Meuse field'.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Gallo-Roman sanctuary',
             images: [
                 {
@@ -119,6 +130,7 @@ export function getPlaces() {
                 of the rampart has been reconstructed. Most probably, Le Cheslé is just outside the
                 territory of the Treveri.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE],
             shortInfo: 'Celtic fortification',
             images: [
                 {
@@ -149,6 +161,7 @@ export function getPlaces() {
                 casae being a precursor of French chez. The personal name has been compared to
                 Brittonic <em class="emphasis-secondary">Cogidubnus</em>.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE],
             shortInfo: 'Celtic fortification',
         },
         { 
@@ -163,6 +176,7 @@ export function getPlaces() {
                 to 4th centuries CE). The name "Lion" derives from Latin
                 <em class="emphasis-secondars">Ad Leones</em>.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE],
             shortInfo: 'Celtic oppidum',
         },
         { 
@@ -178,6 +192,7 @@ export function getPlaces() {
                 of current stereotypes and prejudices about the Celts. Among others, it houses
                 findings from Bérismenil, Cherain-Brisy and Cugnon.
             `,
+            types: [TYPE_OBJECT, TYPE_OTHER],
             shortInfo: 'Museum of the Celts',
         },
         { 
@@ -204,6 +219,7 @@ export function getPlaces() {
                 (<em class="emphasis-secondary">in German</em>). For part of the year, the
                 settlement is inhabited by modern "Celtic" enthusiasts.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
             shortInfo: 'Celtic fortification',
             images: [
                 {
@@ -243,6 +259,7 @@ export function getPlaces() {
                 swell of pride', from Proto-Indo-European
                 <em class="emphasis-secondary">*bʰelgʰ-</em> 'swell'.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Archaeology Park Belginum',
             images: [
                 {
@@ -280,6 +297,7 @@ export function getPlaces() {
                 <em class="emphasis-secondary">cruach</em>,
                 Welsh <em class="emphasis-secondary">crug</em>.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Burgberg',
         },
         { 
@@ -298,6 +316,7 @@ export function getPlaces() {
                 and <em class="emphasis-secondary">*kell-</em>, from Proto-Indo-European
                 <em class="emphasis-secondary">*kelh₂-</em> 'to strike'.
             `,
+            types: [TYPE_OBJECT],
             shortInfo: 'Representation of Sucellus',
             images: [
                 {
@@ -335,6 +354,7 @@ export function getPlaces() {
                 <em class="emphasis-secondary">super fluvio Muselle in monte Ardinigo</em>
                 "above the river Moselle on mount Ard(u)inius".
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Burgberg',
             images: [
                 {
@@ -374,6 +394,7 @@ export function getPlaces() {
                  <em class="emphasis-secondary">a</em> after the half vowel
                  <em class="emphasis-secondary">u̯</em> as in Gaulish and Brittonic in general.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE],
             shortInfo: 'Monumental tumulus',
             images: [
                 {
@@ -406,6 +427,7 @@ export function getPlaces() {
                 cf. Gaulish <em class="emphasis-secondary">anam</em> 'swamp' from
                 <em class="emphasis-secondary">*pn̥-</em>.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Gallo-Roman water sanctuary',
             images: [
                 {
@@ -429,6 +451,7 @@ export function getPlaces() {
                 "Druid Way", a circular route stretching approximately 6 km on the border of France.
                 Each year on 1 May, the Irish spring festival Bealtaine is adapted on the site.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
             shortInfo: 'Celtic farmstead',
         },
         { 
@@ -442,6 +465,7 @@ export function getPlaces() {
                 are lost. The torque is still being withheld in Russia as "looted art", the chariot
                 fittings are being kept in Rheinisches Landesmuseum Trier.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Chariot tomb',
         },
         { 
@@ -479,6 +503,7 @@ export function getPlaces() {
                 The cemetary and the fanum belong to an archeological site
                 (<em class="emphasis-secondary">espace archéologique</em>).
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Gallo-Roman temple and Merovingian cemetery',
             images: [
                 {
@@ -511,6 +536,7 @@ export function getPlaces() {
                 "Celtic" music scene regularly appear on stage such as Carlos Núñez, Moya Brennan,
                 Capercaillie, Beoga, Tri Yann, Red Cardell etc.
             `,
+            types: [TYPE_EVENT],
             shortInfo: 'Celtic Celebration',
             images: [
                 {
@@ -537,6 +563,7 @@ export function getPlaces() {
                 Proto-Indo-European <em class="emphasis-secondary">*bʰredʰ-</em> 'to wade',
                 obviously an old name of a ford.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Celtic bridge',
         },
         { 
@@ -549,6 +576,7 @@ export function getPlaces() {
                 remains of the cremation were found, which are being kept in the
                 Musée Nationale d'Histoire et d'Art de Luxembourg.
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Celtic burial mound',
             images: [
                 {
@@ -595,6 +623,7 @@ export function getPlaces() {
                 Ossima", which derives from Gaulish <em class="emphasis-secondary">*Uxsamā</em>
                 "highest (place), height".
             `,
+            types: [TYPE_PLACE, TYPE_ARCHITECTURE],
             shortInfo: 'Celtic oppidum',
         },
     ];
