@@ -1,7 +1,7 @@
 /* --- Legend Control Styles --- */
-.legend-control {
+.legendControl {
   background: rgba(255,255,255,0.95);
-  border-radius: 6px;
+  border-radius: 3px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
   padding: 0;
   min-width: 180px;
@@ -10,38 +10,53 @@
   transition: max-height 0.2s;
   overflow: hidden;
 }
-.legend-control .legend-toggle {
+.legendControl .legendToggle {
   width: 100%;
   background: #0062ff;
   color: #fff;
   border: none;
-  border-radius: 6px 6px 0 0;
+  border-radius: 3px;
   padding: 6px 0;
   font-size: 16px;
   cursor: pointer;
   outline: none;
 }
-.legend-control .legend-content {
+.legendControl .legendContent {
   padding: 10px 14px 10px 14px;
   display: block;
 }
-.legend-control.collapsed .legend-content {
+.legendControl.collapsed .legendContent {
   display: none;
 }
-.legend-control ul {
+.legendControl ul {
   list-style: none;
   padding: 0;
   margin: 0 0 0 0;
 }
-.legend-control li {
+.legendControl li {
   display: flex;
   align-items: center;
   margin-bottom: 6px;
 }
-.legend-control i {
+.legendControl i {
   margin-right: 8px;
   font-size: 1.2em;
 }
+.legend-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.legendLine {
+    display: flex;
+    align-items: center;
+}
+
+.legendItem_label {
+    display: flex;
+    align-items: center;
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -60,6 +75,12 @@ html, body {
 h1 {
     padding-top: 10px;
     margin: 0;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .introduction {

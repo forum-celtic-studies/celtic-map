@@ -54,11 +54,17 @@ if (map.getZoom() >= LABEL_ZOOM) {
 }
 
 // Add markers
-const markers = getPlaces().map((place) => {
-    return L.marker(place.coordinates).bindPopup(
+
+// --- Marker creation with type info ---
+const places = getPlaces();
+
+const markers = places.map((place) => {
+    const marker = L.marker(place.coordinates).bindPopup(
         buildPopupHtml(place).innerHTML,
         commonPopupConfig
     );
+    marker._allTypes = place.types || [];
+    return marker;
 });
 
 function buildShortInfo(place) {
@@ -93,8 +99,6 @@ function buildShortInfo(place) {
     }
 
     let icons = buildTypeIcons(place.types);
-    console.log(icons.length);
-    
 
     if (icons.length > 0) {
         const iconsContainer = document.createElement('div');
@@ -329,5 +333,31 @@ const riverLayer = L.geoJSON(riverGeoJson, {
 }).addTo(map);
 */
 // Adjust the map view to fit all markers comfortably
+
 map.fitBounds(markerGroup.getBounds());
-map.addControl(new Legend({ position: 'topright' }));
+const legendControl = new Legend({ position: 'topright' });
+map.addControl(legendControl);
+
+// --- Filtering logic ---
+const legendContainer = document.querySelector('.legendControl');
+if (legendContainer) {
+    legendContainer.addEventListener('filter:update', (e) => {
+        const activeTypes = e.detail.activeTypes;
+        markers.forEach((marker, i) => {
+            let showMarker = false;
+            const markerHasTypes = marker._allTypes && marker._allTypes.length > 0;
+
+            if(markerHasTypes) {
+                showMarker = marker._allTypes.some(t => activeTypes.includes(t));
+            } else {
+                showMarker = activeTypes.includes('unlabeled');
+            }
+
+            if (showMarker) {
+                markerGroup.addLayer(marker);
+            } else {
+                markerGroup.removeLayer(marker);
+            }
+        });
+    });
+}
