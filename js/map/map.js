@@ -1,5 +1,7 @@
 // map.js
 // Handles map initialization and base layers
+import 'leaflet';
+
 export function createMap(targetId) {
     const map = L.map(targetId);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -8,8 +10,3 @@ export function createMap(targetId) {
     }).addTo(map);
     return map;
 }
-
-export const commonPopupConfig = {
-    maxWidth: 600,
-    className: 'popup'
-};

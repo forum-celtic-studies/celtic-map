@@ -1,8 +1,9 @@
 import { getPlaces } from 'places';
 import { getRivers } from 'rivers';
 import { Legend } from 'legend';
-import { createMap, commonPopupConfig } from './map.js';
-import { createMarkers, createLabelMarkers } from './markers.js';
+import { createMap } from './map/map.js';
+import { createMarkers, createLabelMarkers } from './map/markers.js';
+import 'leaflet';
 
 // Initialize the map
 const map = createMap('map');

@@ -1,7 +1,12 @@
 // markers.js
 // Handles marker and label creation, filtering, and group management
-import { buildShortInfo, buildPopupHtml } from './popupBuilders.js';
-import { commonPopupConfig } from './map.js';
+import { buildShortInfo, buildPopupHtml } from 'popupBuilders';
+import 'leaflet';
+
+const commonPopupConfig = {
+    maxWidth: 600,
+    className: 'popup'
+};
 
 export function createMarkers(places) {
     return places.map((place) => {
@@ -29,3 +34,5 @@ export function createLabelMarkers(places) {
         return marker;
     });
 }
+
+
