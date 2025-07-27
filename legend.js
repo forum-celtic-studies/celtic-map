@@ -48,6 +48,7 @@ export class Legend extends L.Control {
                         </span>
                     </div>
                 </fieldset>
+                <button type="button" class="legendEnableAllButton" title="Reset filters/show all">Reset filters</button>
             </div>
         `;
         // Prevent map interaction when clicking legend
@@ -58,18 +59,26 @@ export class Legend extends L.Control {
 
         // Filtering: dispatch custom event on change
         const checkboxes = container.querySelectorAll('.legendFilter');
+        function dispatchFilterUpdate() {
+            const activeTypes = Array.from(checkboxes)
+                .filter(box => box.checked)
+                .map(box => box.value);
+            container.dispatchEvent(new CustomEvent('filter:update', {
+                detail: { activeTypes },
+                bubbles: true
+            }));
+        }
         checkboxes.forEach(cb => {
-            cb.addEventListener('change', () => {
-                const activeTypes = Array.from(checkboxes)
-                    .filter(box => box.checked)
-                    .map(box => box.value);
-                // Custom event for filtering
-                container.dispatchEvent(new CustomEvent('filter:update', {
-                    detail: { activeTypes },
-                    bubbles: true
-                }));
-            });
+            cb.addEventListener('change', dispatchFilterUpdate);
         });
+
+        const enableAllBtn = container.querySelector('.legendEnableAllButton');
+        if (enableAllBtn) {
+            enableAllBtn.addEventListener('click', () => {
+                checkboxes.forEach(cb => { cb.checked = true; });
+                dispatchFilterUpdate();
+            });
+        }
         return container;
     }
 }
