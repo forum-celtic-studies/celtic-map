@@ -37,7 +37,7 @@ export function getPlaces() {
                 <em class="emphasis-secondary">Epternus</em>, from a local inscription.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_DOCUMENT],
-            shortInfo: 'Roman Villa',
+            shortInfo: 'Römische Villa',
             images: [
                 {
                     title: 'Echternach Roman Villa',
@@ -60,15 +60,14 @@ export function getPlaces() {
             coordinates: [49.30221951295557, 6.848619912641792],
             modernName: 'Elm-Sprengen (Sauwasen)',
             description: `
-                In a stretch of the "European Celtic Route" in the forest of Herchenbach, four burial
-                mounds were found, containing grave goods of the late Hallstatt period (5th century BCE,
-                Ha D). One of the mounds has been reconstructed as a recognizable hillock in 2005, a
-                wagon tomb (mound 3) in vertical section in 2007. In the wooden burial chamber, the
-                wagon can be seen, besides a dummy of the deceased and examples of grave goods, which
-                were not preserved at this site except for a golden earring.
+                In einem Abschnitt der „Europäischen Keltenstraße“ im Herchenbacher Wald wurden vier Grabhügel
+                gefunden, die Beigaben der späten Hallstattzeit (5. Jh. v. Chr., Ha D) enthalten. Einer der Grabhügel
+                wurde 2005 als erkennbarer Hügel rekonstruiert, ein Wagengrab (Grabhügel 3) 2007 im Hochschnitt.
+                In der hölzernen Grabkammer ist der Wagen zu sehen, daneben eine Puppe des Verstorbenen und
+                Beigaben, die bis auf einen goldenen Ohrring an dieser Stelle nicht erhalten waren.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-            shortInfo: 'Celtic burial mounds',
+            shortInfo: 'Keltische Grabhügel',
         },
         { 
             coordinates: [50.35669146049006, 7.588382581952168],
@@ -99,7 +98,7 @@ export function getPlaces() {
                 Celtic *<em class="emphasis-secondary">Moso-magos</em>, 'Meuse field'.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-            shortInfo: 'Gallo-Roman sanctuary',
+            shortInfo: 'Gallo-Römisches Heiligtum',
             images: [
                 {
                     title: 'Excavation site of the Gallo-Roman sanctuary in Mouzon',
@@ -131,7 +130,7 @@ export function getPlaces() {
                 territory of the Treveri.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-            shortInfo: 'Celtic fortification',
+            shortInfo: 'Keltische Befestigungsanlage',
             images: [
                 {
                     title: 'Reconstruction of the gate at Bérismenil',
@@ -153,16 +152,15 @@ export function getPlaces() {
             ancientName: 'Casaecongidunus',
             modernName: 'Cugnon',
             description: `
-                "Le Trînchi" near Cugnon is a fortification of the late Hallstatt
-                (c. 500 BCE, Ha D) and the middle La Tène periods (c. 250 BCE, LT C). The rampart,
-                which has been reconstructed up to a length of 50 m, is assigned to the type 
-                "Altkönig-Preist". The place name is recorded in c. 644 as 
-                <em class="emphasis-secondary">Casaecongidunus</em>, 'in the house of Congidunus',
-                casae being a precursor of French chez. The personal name has been compared to
-                Brittonic <em class="emphasis-secondary">Cogidubnus</em>.
+                „Le Trînchi“ bei Cugnon ist eine Befestigungsanlage der späten Hallstattzeit (ca. 500 v. Chr., Ha D)
+                und der mittleren La-Tène-Zeit (ca. 250 v. Chr., LT C). Der bis auf eine Länge von 50 m rekonstruierte
+                Wall wird dem Typus „Altkönig-Preist“ zugeordnet.
+                Der Ortsname ist um 644 als <em class="emphasis-secondary">Casaecongidunus</em>, „im Haus des Congidunus“, belegt, wobei casae ein
+                Vorläufer des französischen chez ist. Der Personenname wurde mit dem brittonischen <em class="emphasis-secondary">Cogidubnus</em>
+                verglichen.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-            shortInfo: 'Celtic fortification',
+            shortInfo: 'Keltische Befestigungsanlage',
         },
         { 
             coordinates: [49.411389, 5.230278],
@@ -177,7 +175,7 @@ export function getPlaces() {
                 <em class="emphasis-secondars">Ad Leones</em>.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-            shortInfo: 'Celtic oppidum',
+            shortInfo: 'Keltisches Oppidum',
         },
         { 
             coordinates: [49.91561284272628, 5.377023740733322],
@@ -193,7 +191,7 @@ export function getPlaces() {
                 findings from Bérismenil, Cherain-Brisy and Cugnon.
             `,
             types: [TYPE_OBJECT, TYPE_OTHER],
-            shortInfo: 'Museum of the Celts',
+            shortInfo: 'Keltenmuseum',
         },
         { 
             coordinates: [49.5675, 5.5325],
@@ -220,7 +218,7 @@ export function getPlaces() {
                 settlement is inhabited by modern "Celtic" enthusiasts.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
-            shortInfo: 'Celtic fortification',
+            shortInfo: 'Keltische Befestigungsanlage',
             images: [
                 {
                     title: 'Reconstruction of the Altburg near Bundenbach',
@@ -260,10 +258,10 @@ export function getPlaces() {
                 <em class="emphasis-secondary">*bʰelgʰ-</em> 'swell'.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-            shortInfo: 'Archaeology Park Belginum',
+            shortInfo: 'Archäologiepark Belginum',
             images: [
                 {
-                    title: 'Archaeologiepark Belginum',
+                    title: 'Archäologiepark Belginum',
                     href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Archaeologiepark_Belginum.jpg/1920px-Archaeologiepark_Belginum.jpg',
                     altText: 'Archaeologiepark Belginum',
                     imageBy: 'MSeses',
@@ -282,20 +280,16 @@ export function getPlaces() {
             modernName: 'Kröv',
             descriptionTitle: 'Burgberg',
             description: `
-                The <em class="emphasis-secondary">Burgberg</em> near Kröv is a spur fortification
-                of the Hunsrück-Eifel culture (HEK I), which was constructed around 500 BCE.
-                On three sides, the plateau is secured by steep slopes. To the north-east, two
-                sectional walls with narrow passages have been erected, which enclose a usable 
-                area of about 6000 square metres. In the north-west corner, the wall continues
-                about 60 m for no apparent reason. Pottery and a socketed axe have been found on
-                the site. The name <em class="emphasis-primary">Kröv</em>, known from documents of
-                the years 747 to 751 in copies of 1222, was Crovia, from a word for
-                'crooked terrain, hill flank', Proto-Indo-European
-                <em class="emphasis-secondary">*krou̯-</em> (IEW 938), cf. the French toponym Crouy.
-                Another derivative, <em class="emphasis-secondary">*krou̯ko-</em>, 'heap, hill'
-                is widespread in modern Celtic languages such as Irish
-                <em class="emphasis-secondary">cruach</em>,
-                Welsh <em class="emphasis-secondary">crug</em>.
+                Der <em class="emphasis-secondary">Burgberg</em> bei Kröv ist eine Spornbefestigung der Hunsrück-Eifel-Kultur (HEK I), die um 500 v. Chr.
+                errichtet wurde. An drei Seiten ist das Plateau durch steile Hänge gesichert. Im Nordosten sind zwei
+                Abschnittsmauern mit schmalen Durchlässen errichtet worden, die eine Nutzfläche von etwa 6000
+                Quadratmetern umschließen. In der Nordwestecke zieht sich die Mauer ohne ersichtlichen Grund etwa
+                60 m weiter. Auf dem Gelände wurden Töpferwaren und eine getriebene Axt gefunden. Der Name
+                <em class="emphasis-primary">Kröv</em>, der aus Urkunden der Jahre 747 bis 751 in Abschriften von 1222 bekannt ist, war Crovia, von
+                einem Wort für „krummes Gelände, Hügelflanke“, Proto-Indo-Europäisch <em class="emphasis-secondary">*krou‌-</em> (IEW 938), vgl. das
+
+                französische Toponym Crouy. Eine weitere Ableitung, <em class="emphasis-secondary">*krou‌ ko-</em>, „Haufen, Hügel“, ist in modernen kelti-
+                schen Sprachen wie Irisch <em class="emphasis-secondary">cruach</em>, Walisisch <em class="emphasis-secondary">crug</em> weit verbreitet.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Burgberg',
@@ -317,7 +311,7 @@ export function getPlaces() {
                 <em class="emphasis-secondary">*kelh₂-</em> 'to strike'.
             `,
             types: [TYPE_OBJECT],
-            shortInfo: 'Representation of Sucellus',
+            shortInfo: 'Darstellung des Sucellus',
             images: [
                 {
                     title: 'Representation of the Gallo-Roman god Sucellus',
@@ -395,7 +389,7 @@ export function getPlaces() {
                  <em class="emphasis-secondary">u̯</em> as in Gaulish and Brittonic in general.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-            shortInfo: 'Monumental tumulus',
+            shortInfo: 'Monumentaler Tumulus',
             images: [
                 {
                     title: 'Monumental tumulus in Wadern-Oberlöstern',
@@ -415,7 +409,7 @@ export function getPlaces() {
             coordinates: [49.336344309886925, 6.606950190519136],
             ancientName: '*Enjā',
             modernName: 'Ihn',
-            descriptionTitle: 'Sudelfels water sanctuary',
+            descriptionTitle: 'Sudelfels Wasserheiligtum',
             description: `
                 Near Wallerfangen, in the district of Ihn, there is the Gallo-Roman water sanctuary
                 "Sudelfels", dating from approximately 150 to 250 CE. The sacred enclosure includes an
@@ -428,10 +422,10 @@ export function getPlaces() {
                 <em class="emphasis-secondary">*pn̥-</em>.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-            shortInfo: 'Gallo-Roman water sanctuary',
+            shortInfo: 'Gallo-Römisches Wasserheiligtum',
             images: [
                 {
-                    title: 'Sudelfels water sanctuary',
+                    title: 'Sudelfels Wasserheiligtum',
                     href: 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Quellheiligtum_sudelfels.jpg',
                     altText: 'Sudelfels water sanctuary',
                     imageBy: 'Roger Zenner',
@@ -452,7 +446,7 @@ export function getPlaces() {
                 Each year on 1 May, the Irish spring festival Bealtaine is adapted on the site.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
-            shortInfo: 'Celtic farmstead',
+            shortInfo: 'Keltischer Bauernhof',
         },
         { 
             coordinates: [49.355776978263634, 6.564342943056346],
@@ -466,7 +460,7 @@ export function getPlaces() {
                 fittings are being kept in Rheinisches Landesmuseum Trier.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-            shortInfo: 'Chariot tomb',
+            shortInfo: 'Keltisches Wagenbestattungsgrab',
         },
         { 
             coordinates: [49.63448147168677, 5.599712437080059],
@@ -504,7 +498,7 @@ export function getPlaces() {
                 (<em class="emphasis-secondary">espace archéologique</em>).
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-            shortInfo: 'Gallo-Roman temple and Merovingian cemetery',
+            shortInfo: 'Gallo-Römischer Tempel und Merowingischer Friedhof',
             images: [
                 {
                     title: 'Tomb in the Merovingian cemetery of Audun-le-Tiche',
@@ -537,7 +531,7 @@ export function getPlaces() {
                 Capercaillie, Beoga, Tri Yann, Red Cardell etc.
             `,
             types: [TYPE_EVENT],
-            shortInfo: 'Celtic Celebration',
+            shortInfo: 'Keltische Feierlichkeiten',
             images: [
                 {
                     title: 'Bagad Naoned de Nantes at Celtic Celebration (Zeltik)',
@@ -564,7 +558,7 @@ export function getPlaces() {
                 obviously an old name of a ford.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-            shortInfo: 'Celtic bridge',
+            shortInfo: 'Keltische Brücke',
         },
         { 
             coordinates: [49.74749641273402, 6.330077606029646],
@@ -577,7 +571,7 @@ export function getPlaces() {
                 Musée Nationale d'Histoire et d'Art de Luxembourg.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-            shortInfo: 'Celtic burial mound',
+            shortInfo: 'Keltischer Grabhügel',
             images: [
                 {
                     title: 'Altrier burial mound',
@@ -624,7 +618,7 @@ export function getPlaces() {
                 "highest (place), height".
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-            shortInfo: 'Celtic oppidum',
+            shortInfo: 'Keltisches oppidum',
         },
     ];
 }
