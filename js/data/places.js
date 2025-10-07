@@ -288,8 +288,7 @@ export function getPlaces() {
                 <em class="emphasis-primary">Kröv</em>, der aus Urkunden der Jahre 747 bis 751 in Abschriften von 1222 bekannt ist, war Crovia, von
                 einem Wort für „krummes Gelände, Hügelflanke“, Proto-Indo-Europäisch <em class="emphasis-secondary">*krou‌-</em> (IEW 938), vgl. das
 
-                französische Toponym Crouy. Eine weitere Ableitung, <em class="emphasis-secondary">*krou‌ ko-</em>, „Haufen, Hügel“, ist in modernen kelti-
-                schen Sprachen wie Irisch <em class="emphasis-secondary">cruach</em>, Walisisch <em class="emphasis-secondary">crug</em> weit verbreitet.
+                französische Toponym Crouy. Eine weitere Ableitung, <em class="emphasis-secondary">*krou‌ ko-</em>, „Haufen, Hügel“, ist in modernen keltischen Sprachen wie Irisch <em class="emphasis-secondary">cruach</em>, Walisisch <em class="emphasis-secondary">crug</em> weit verbreitet.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Burgberg',
