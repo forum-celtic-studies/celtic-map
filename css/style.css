@@ -186,7 +186,23 @@ fieldset {
     font-weight: bold;
 }
 
-.emphasis-secondary {
+.emphasis-linguistic {
+    font-style: italic;
+}
+
+.emphasis-ancient-name {
+    font-style: italic;
+}
+
+.emphasis-roman-site {
+    font-style: italic;
+}
+
+.emphasis-quote {
+    font-style: italic;
+}
+
+.emphasis-other {
     font-style: italic;
 }
 

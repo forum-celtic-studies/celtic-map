@@ -22,7 +22,7 @@ export function getPlaces() {
                 during the last centuries BCE. In the first century CE, one of the largest Roman
                 villas of the northwest provinces of the Empire was constructed there.
                 Another important factor for the history of the region was the imperial abbey
-                <em class="emphasis-secondary">(Reichsabtei Echternach)</em>,
+                <span class="emphasis-other">(Reichsabtei Echternach)</span>,
                 founded by St Willibrord in 698. Willibrord hailed from
                 Northumbria and received his training at the Irish monastery of Rathmelsigi.
                 He is known as the "apostle of the Frisians" and bishop of Utrecht. He died at
@@ -32,9 +32,9 @@ export function getPlaces() {
                 (BNF Paris lat. 10290), a grammar of Priscian in insular script, contains Old Irish
                 and Old Breton glosses, which belong to the oldest of their kind.
                 The name <em class="emphasis-primary">Echternach</em> goes back to
-                <em class="emphasis-secondary">Epternācum</em>, derived from the personal name
-                <em class="emphasis-secondary">Epternos</em>, which is known, in its Latin form
-                <em class="emphasis-secondary">Epternus</em>, from a local inscription.
+                <em class="emphasis-ancient-name" aria-label="ancient name">Epternācum</em>, derived from the personal name
+                <em class="emphasis-linguistic" aria-label="linguistic">Epternos</em>, which is known, in its Latin form
+                <em class="emphasis-linguistic" aria-label="linguistic">Epternus</em>, from a local inscription.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_DOCUMENT],
             shortInfo: 'Roman Villa',
@@ -87,16 +87,16 @@ export function getPlaces() {
                 the Treveran territory, itself already being part of the polity of the Remi. During
                 the Celtic period, there was a harbour and certainly a ferry service across the
                 river Meuse. In the Roman period, the settlement was expanded to a
-                <em class="emphasis-secondary">vicus</em> on the road from Reims to Trier (Trèves).
+                <em class="emphasis-roman-site" aria-label="roman-site">vicus</em> on the road from Reims to Trier (Trèves).
                 The village probably appears on the famous road map, Tabula Peutingeriana, from the
                 fourth century under the entry "Mosa". Approximately 3 km to the southeast of
                 Mouzon, in the "Bois de Flavier", a Gallo-Roman sanctuary, a
-                <em class="emphasis-secondary">Fanum</em>, was found and excavated in 1967. The
+                <em class="emphasis-roman-site" aria-label="roman-site">Fanum</em>, was found and excavated in 1967. The
                 foundation walls of the temple site have been preserved. The sanctuary had a Celtic
                 predecessor as well as an earlier Roman one from the era of Augustus. A number of
                 weapons in miniature were found on the site, which were used as offerings in the
                 first century CE. The name <em class="emphasis-primary">Mouzon</em> goes back to
-                Celtic *<em class="emphasis-secondary">Moso-magos</em>, 'Meuse field'.
+                Celtic *<em class="emphasis-linguistic" aria-label="linguistic">Moso-magos</em>, 'Meuse field'.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Gallo-Roman sanctuary',
@@ -157,9 +157,9 @@ export function getPlaces() {
                 (c. 500 BCE, Ha D) and the middle La Tène periods (c. 250 BCE, LT C). The rampart,
                 which has been reconstructed up to a length of 50 m, is assigned to the type 
                 "Altkönig-Preist". The place name is recorded in c. 644 as 
-                <em class="emphasis-secondary">Casaecongidunus</em>, 'in the house of Congidunus',
+                <em class="emphasis-ancient-name" aria-label="ancient name">Casaecongidunus</em>, 'in the house of Congidunus',
                 casae being a precursor of French chez. The personal name has been compared to
-                Brittonic <em class="emphasis-secondary">Cogidubnus</em>.
+                Brittonic <em class="emphasis-linguistic" aria-label="linguistic">Cogidubnus</em>.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE],
             shortInfo: 'Celtic fortification',
@@ -174,7 +174,7 @@ export function getPlaces() {
                 ditches of c. 10 m width have been constructed. Sondages revealed pottery of the
                 late La Tène period (1st century BCE, LT D) and of the Roman imperial period (3rd
                 to 4th centuries CE). The name "Lion" derives from Latin
-                <em class="emphasis-secondars">Ad Leones</em>.
+                <em class="emphasis-linguistic" aria-label="linguistic">Ad Leones</em>.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE],
             shortInfo: 'Celtic oppidum',
@@ -182,12 +182,12 @@ export function getPlaces() {
         { 
             coordinates: [49.91561284272628, 5.377023740733322],
             modernName: 'Libramont-Chevigny',
-            decriptionTitle: 'Musée des Celtes',
+            descriptionTitle: 'Musée des Celtes',
             description: `
                 The "Museum of the Celts" is dedicated to the the study of the Celtic culture in
                 the Ardennes. It intends to unite numerous small collections, to add new items,
-                especially from the research carried out by the <em class="emphasis-secondary">
-                Centre de Recherches Archéologiques en Ardenne</em>, to preserve the findings and
+                especially from the research carried out by the <span class="emphasis-other">
+                Centre de Recherches Archéologiques en Ardenne</span>, to preserve the findings and
                 to present them to the public. The Museum lays particular emphasis on the correction
                 of current stereotypes and prejudices about the Celts. Among others, it houses
                 findings from Bérismenil, Cherain-Brisy and Cugnon.
@@ -216,7 +216,7 @@ export function getPlaces() {
                 Trier. The second of the three building phases has been reconstructed on the site.
                 It is part of re-enactment events such as the "Altburg Festival", with a
                 "Celtic fair" and a music festival each year in August, see Altburgfestival 
-                (<em class="emphasis-secondary">in German</em>). For part of the year, the
+                (<span class="emphasis-other">in German</span>). For part of the year, the
                 settlement is inhabited by modern "Celtic" enthusiasts.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
@@ -251,13 +251,13 @@ export function getPlaces() {
             descriptionTitle: 'Archäologiepark Belginum',
             description: `
                 The museum near Morbach shows the findings of a Roman village, the
-                <em class="emphasis-secondary">vicus Belginum</em>, its burial ground, a 
+                <em class="emphasis-ancient-name" aria-label="ancient name">vicus Belginum</em>, its burial ground, a 
                 Gallo-Roman temple complex and a Roman military camp.
                 The necropolis is particularly interesting, as its tombs date from the long period
                 between c. 400 BCE to 400 CE. The name <em class="emphasis-primary">Belginum</em>
                 derives from the personal name (and ethnonym) Belgos, which probably means 'with a
                 swell of pride', from Proto-Indo-European
-                <em class="emphasis-secondary">*bʰelgʰ-</em> 'swell'.
+                <em class="emphasis-linguistic" aria-label="linguistic">*bʰelgʰ-</em> 'swell'.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Archaeology Park Belginum',
@@ -282,7 +282,7 @@ export function getPlaces() {
             modernName: 'Kröv',
             descriptionTitle: 'Burgberg',
             description: `
-                The <em class="emphasis-secondary">Burgberg</em> near Kröv is a spur fortification
+                The <em class="emphasis-primary">Burgberg</em> near Kröv is a spur fortification
                 of the Hunsrück-Eifel culture (HEK I), which was constructed around 500 BCE.
                 On three sides, the plateau is secured by steep slopes. To the north-east, two
                 sectional walls with narrow passages have been erected, which enclose a usable 
@@ -291,11 +291,11 @@ export function getPlaces() {
                 the site. The name <em class="emphasis-primary">Kröv</em>, known from documents of
                 the years 747 to 751 in copies of 1222, was Crovia, from a word for
                 'crooked terrain, hill flank', Proto-Indo-European
-                <em class="emphasis-secondary">*krou̯-</em> (IEW 938), cf. the French toponym Crouy.
-                Another derivative, <em class="emphasis-secondary">*krou̯ko-</em>, 'heap, hill'
+                <em class="emphasis-linguistic" aria-label="linguistic">*krou̯-</em> (IEW 938), cf. the French toponym Crouy.
+                Another derivative, <em class="emphasis-linguistic" aria-label="linguistic">*krou̯ko-</em>, 'heap, hill'
                 is widespread in modern Celtic languages such as Irish
-                <em class="emphasis-secondary">cruach</em>,
-                Welsh <em class="emphasis-secondary">crug</em>.
+                <em class="emphasis-linguistic" aria-label="linguistic">cruach</em>,
+                Welsh <em class="emphasis-linguistic" aria-label="linguistic">crug</em>.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Burgberg',
@@ -312,9 +312,9 @@ export function getPlaces() {
                 with a mallet, grapes and barrels. He was a Celtic god, venerated as a deity of the
                 woods and of fertility. In the Gallo-Roman period, he was primarily a divinity of
                 viticulture. The name <em class="emphasis-primary">Sucellus</em> probably means
-                "he who strikes well", from Celtic <em class="emphasis-secondary">*su-</em> 'good'
-                and <em class="emphasis-secondary">*kell-</em>, from Proto-Indo-European
-                <em class="emphasis-secondary">*kelh₂-</em> 'to strike'.
+                "he who strikes well", from Celtic <em class="emphasis-linguistic" aria-label="linguistic">*su-</em> 'good'
+                and <em class="emphasis-linguistic" aria-label="linguistic">*kell-</em>, from Proto-Indo-European
+                <em class="emphasis-linguistic" aria-label="linguistic">*kelh₂-</em> 'to strike'.
             `,
             types: [TYPE_OBJECT],
             shortInfo: 'Representation of Sucellus',
@@ -339,7 +339,7 @@ export function getPlaces() {
                 The "Borberg" or "Burgberg" north of Erden, on the opposite bank of the river
                 Moselle, drops steeply towards the valley. On top of it, there is a fortification
                 enclosing an area of about 3 hectares. It is secured by a semicircular sectional
-                wall on its north side, a <em class="emphasis-secondary">Pfostenschlitzmauer</em>
+                wall on its north side, a <em class="emphasis-other">Pfostenschlitzmauer</em>
                 ("post-slit-wall") that was erected in two phases. Oak wood from a rectangular post
                 structure of approximately 5 x 8 m on the highest point date from around 67 BCE.
                 Pottery from this enclosure shows middle and late La Tène dates (LT C, c. 250 to
@@ -348,10 +348,10 @@ export function getPlaces() {
                 Roman period in the third century CE. The name
                 <em class="emphasis-primary">Erden</em> and the first element of the river name
                 <em class="emphasis-primary">Erdgemund</em> both go back to
-                <em class="emphasis-secondary">*Arduena</em> 'at the high mountain', derived from
-                the adjective <em class="emphasis-secondary">*arduo-</em> 'high'. The copy of a
+                <em class="emphasis-ancient-name" aria-label="ancient name">*Arduena</em> 'at the high mountain', derived from
+                the adjective <em class="emphasis-linguistic" aria-label="linguistic">*arduo-</em> 'high'. The copy of a
                 document from Echternach of 774/775 reads
-                <em class="emphasis-secondary">super fluvio Muselle in monte Ardinigo</em>
+                <span class="emphasis-quote">super fluvio Muselle in monte Ardinigo</span>
                 "above the river Moselle on mount Ard(u)inius".
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
@@ -385,14 +385,14 @@ export function getPlaces() {
                  These representative buildings with a diametre of 20 m were framed by square
                  settings of sandstones and crowned by pine-cones of stone. The hill shape is
                  untypical of the period. The name <em class="emphasis-primary">Wadern</em>,
-                 attested as <em class="emphasis-secondary">Waderella</em> in a document of 950
-                 CE, derives from late Gaulish <em class="emphasis-secondary">*u̯adr-ellā</em>
+                 attested as <em class="emphasis-ancient-name" aria-label="ancient name">Waderella</em> in a document of 950
+                 CE, derives from late Gaulish <em class="emphasis-linguistic" aria-label="linguistic">*u̯adr-ellā</em>
                  'little water' and ultimately from Proto-Indo-European
-                 <em class="emphasis-secondary">*u̯odr̥-, u̯edōr</em> 'water' and the diminutive suffix
-                 <em class="emphasis-secondary">*-ellā</em>; the vowel
-                 <em class="emphasis-secondary">o</em> changes to
-                 <em class="emphasis-secondary">a</em> after the half vowel
-                 <em class="emphasis-secondary">u̯</em> as in Gaulish and Brittonic in general.
+                 <em class="emphasis-linguistic" aria-label="linguistic">*u̯odr̥-, u̯edōr</em> 'water' and the diminutive suffix
+                 <em class="emphasis-linguistic" aria-label="linguistic">*-ellā</em>; the vowel
+                 <span class="emphasis-linguistic">o</span> changes to
+                 <span class="emphasis-linguistic">a</span> after the half vowel
+                 <span class="emphasis-linguistic">u̯</span> as in Gaulish and Brittonic in general.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE],
             shortInfo: 'Monumental tumulus',
@@ -422,10 +422,10 @@ export function getPlaces() {
                 octogonal well building. Findings of figurines and inscriptions indicate pilgrimages to
                 Gallo-Roman deities such as Rosmerta and Sirona as well as to the supraregionally
                 venerated healing god, Apollo. The place name <em class="emphasis-primary">Ihn</em>
-                derives from Celtic <em class="emphasis-secondary">*en-i̯ā</em> '(spring) with cloudy
-                water', from Proto-Indo-European <em class="emphasis-secondary">*pen-</em> 'mud, swamp',
-                cf. Gaulish <em class="emphasis-secondary">anam</em> 'swamp' from
-                <em class="emphasis-secondary">*pn̥-</em>.
+                derives from Celtic <em class="emphasis-linguistic" aria-label="linguistic">*en-i̯ā</em> '(spring) with cloudy
+                water', from Proto-Indo-European <em class="emphasis-linguistic" aria-label="linguistic">*pen-</em> 'mud, swamp',
+                cf. Gaulish <em class="emphasis-linguistic" aria-label="linguistic">anam</em> 'swamp' from
+                <em class="emphasis-linguistic" aria-label="linguistic">*pn̥-</em>.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Gallo-Roman water sanctuary',
@@ -488,20 +488,19 @@ export function getPlaces() {
                 The small town near Esch-sur-Alzette in Luxemburg hosts interesting finds of the
                 Celtic and Roman ages as well as a large cemetery of the Merovingian period. In the
                 vicinity of a necropolis of the early Middle Ages at "Le Calvaire" in the
-                "Bois de Butte", a Gallo-Roman temple (<em class="emphasis-secondary">fanum</em>)
+                "Bois de Butte", a Gallo-Roman temple (<em class="emphasis-roman-site" aria-label="roman site">fanum</em>)
                 of the second or third century CE was found, whose foundation walls can still be
                 seen. Nearby, a group of figures from a Jupiter column 
-                (<em class="emphasis-secondary">cavalier à l'anguipède</em>) came to light. The
+                (<span class="emphasis-other">cavalier à l'anguipède</span>) came to light. The
                 Jupiter columns translate an indigenous Celtic mythological motif into Roman
                 imagery. Heads from statues, probably of Juno, and of Minerva with a helmet were
                 also unearthed in the area. A Roman inscription from Rue de Bétiel shows a number
                 of Celtic names, including Solitumarus, Sorina, Carantillus und Carassouna. These
                 names, superficially adapted to the Latin language by changing the original ending
-                <em class="emphasis-secondary">-os</em> to <em class="emphasis-secondary">-us</em>, 
+                <span class="emphasis-linguistic">-os</span> to <span class="emphasis-linguistic">-us</span>, 
                 show clearly how strong the Celtic language remained in the onomastics of the
                 region. The findings can be viewed at the Musée d’Archéologie et d'Histoire locale.
-                The cemetary and the fanum belong to an archeological site
-                (<em class="emphasis-secondary">espace archéologique</em>).
+                The cemetary and the fanum belong to an archeological site.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
             shortInfo: 'Gallo-Roman temple and Merovingian cemetery',
@@ -559,8 +558,8 @@ export function getPlaces() {
                 thinner stakes with a diametre of approximately 20 cm and cutting dates of 168 and
                 149 BCE (middle La Tène period, LT C) have been found.
                 The name <em class="emphasis-primary">Bredimus</em> derives from Celtic
-                <em class="emphasis-secondary">*bred-īnā</em> '(place where) one wades' from
-                Proto-Indo-European <em class="emphasis-secondary">*bʰredʰ-</em> 'to wade',
+                <em class="emphasis-linguistic" aria-label="linguistic">*bred-īnā</em> '(place where) one wades' from
+                Proto-Indo-European <em class="emphasis-linguistic" aria-label="linguistic">*bʰredʰ-</em> 'to wade',
                 obviously an old name of a ford.
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
@@ -620,7 +619,7 @@ export function getPlaces() {
                 from all over the area. In the Roman period, a theatre was constructed on one of the
                 steeply sloping hill-sides.
                 Freudenburg to the south-west of Kastel-Staadt had an old name "Usme", in 1052 
-                Ossima", which derives from Gaulish <em class="emphasis-secondary">*Uxsamā</em>
+                Ossima", which derives from Gaulish <em class="emphasis-linguistic" aria-label="linguistic">*Uxsamā</em>
                 "highest (place), height".
             `,
             types: [TYPE_PLACE, TYPE_ARCHITECTURE],
