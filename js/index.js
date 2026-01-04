@@ -16,8 +16,8 @@ function setBasicInfoLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-	const browserLang = navigator.language.startsWith('de') ? 'de' : 'en';
-	setBasicInfoLanguage(browserLang);
+	//const browserLang = navigator.language.startsWith('de') ? 'de' : 'en';
+	setBasicInfoLanguage("en");
 
 	document.querySelectorAll('.lang-btn').forEach(btn => {
 		btn.addEventListener('click', () => {
