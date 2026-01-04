@@ -8,7 +8,7 @@ export class CelticMap {
         this.LABEL_ZOOM = 11;
         this.currentActiveTypes = null;
         this.map = this.setupMap(targetId);
-        this.places = getPlaces();
+        this.places = getPlaces(language);
         this.labelMarkers = createPlaceLabelMarkers(this.places);
         this.markers = createPlaceMarkers(this.places);
         this.markerGroup = L.featureGroup(this.markers).addTo(this.map);
