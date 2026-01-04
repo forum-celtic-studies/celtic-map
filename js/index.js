@@ -8,7 +8,7 @@ const TRANSLATIONS = {
 	de: translations_de
 };
 
-function setLanguage(lang) {
+function setBasicInfoLanguage(lang) {
 	const t = TRANSLATIONS[lang] || TRANSLATIONS['en'];
 	document.getElementById('main-title').textContent = t.mainTitle;
 	document.getElementById('service-info').innerHTML = t.serviceInfo;
@@ -17,20 +17,31 @@ function setLanguage(lang) {
 
 document.addEventListener('DOMContentLoaded', () => {
 	const browserLang = navigator.language.startsWith('de') ? 'de' : 'en';
-	setLanguage(browserLang);
+	setBasicInfoLanguage(browserLang);
 
 	document.querySelectorAll('.lang-btn').forEach(btn => {
 		btn.addEventListener('click', () => {
-			setLanguage(btn.dataset.lang);
-            document.querySelectorAll('.lang-btn').forEach(b => {
-                if (b === btn) {
-                    b.classList.add('hidden');
-                } else {
-                    b.classList.remove('hidden');
-                }
-            });
+			setBasicInfoLanguage(btn.dataset.lang);
+            updateLanguageButtonVisibility(btn);
+            emitLanguageChangeEvent(btn);
 		});
 	});
 });
+
+function emitLanguageChangeEvent(btn) {
+    document.dispatchEvent(new CustomEvent('language:change', {
+        detail: { lang: btn.dataset.lang }
+    }));
+}
+
+function updateLanguageButtonVisibility(btn) {
+    document.querySelectorAll('.lang-btn').forEach(b => {
+        if (b === btn) {
+            b.classList.add('hidden');
+        } else {
+            b.classList.remove('hidden');
+        }
+    });
+}
 
 new CelticMap('map');
