@@ -1,12 +1,14 @@
 import { CelticMap } from 'map';
 
-import translations_en from './data/i18n/translatoins_en.js';
-import translations_de from './data/i18n/translations_de.js';
+import translations_en from 'translations_en';
+import translations_de from 'translations_de';
 
 const TRANSLATIONS = {
 	en: translations_en,
 	de: translations_de
 };
+
+let mapInstance = null;
 
 function setBasicInfoLanguage(lang) {
 	const t = TRANSLATIONS[lang] || TRANSLATIONS['en'];
@@ -23,15 +25,17 @@ document.addEventListener('DOMContentLoaded', () => {
 		btn.addEventListener('click', () => {
 			setBasicInfoLanguage(btn.dataset.lang);
             updateLanguageButtonVisibility(btn);
-            emitLanguageChangeEvent(btn);
+            reloadMap(btn.dataset.lang);
 		});
 	});
 });
 
-function emitLanguageChangeEvent(btn) {
-    document.dispatchEvent(new CustomEvent('language:change', {
-        detail: { lang: btn.dataset.lang }
-    }));
+function reloadMap(language) {
+    if (mapInstance) {
+        mapInstance.map.remove();
+        mapInstance = null;
+    }    
+    mapInstance = new CelticMap('map', language);
 }
 
 function updateLanguageButtonVisibility(btn) {
@@ -44,4 +48,4 @@ function updateLanguageButtonVisibility(btn) {
     });
 }
 
-new CelticMap('map');
+mapInstance = new CelticMap('map', "en");

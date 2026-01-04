@@ -4,7 +4,7 @@ import { Legend } from 'legend';
 import 'leaflet';
 
 export class CelticMap {
-    constructor(targetId) {
+    constructor(targetId, language = 'en') {
         this.LABEL_ZOOM = 11;
         this.currentActiveTypes = null;
         this.map = this.setupMap(targetId);
@@ -13,7 +13,7 @@ export class CelticMap {
         this.markers = createPlaceMarkers(this.places);
         this.markerGroup = L.featureGroup(this.markers).addTo(this.map);
 
-        this.setupLegend();
+        this.setupLegend(language);
         this.setupFiltering();
         this.setupPlaceLabelMarkers();
         this.map.fitBounds(this.markerGroup.getBounds());
@@ -34,8 +34,11 @@ export class CelticMap {
         this.updateLabelMarkersVisibility();
     }
 
-    setupLegend() {
-        const legendControl = new Legend({ position: 'topright' });
+    setupLegend(language = 'en') {
+        const legendControl = new Legend({ 
+            position: 'topright',
+            language: language,
+         });
         this.map.addControl(legendControl);
     }
 
