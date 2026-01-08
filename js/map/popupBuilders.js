@@ -89,6 +89,8 @@ export function buildPopupHtml({
     description = '',
     images = [],
     furtherLinks = [],
+    objects = [],
+    administrativeDivision = '',
 } = {}) {
     if (!modernName && !ancientName) {
         return document.createElement('div');
@@ -108,6 +110,18 @@ export function buildPopupHtml({
         ancientSpan.className = 'popup-title_ancient-name';
         ancientSpan.textContent = ancientName;
         container.appendChild(ancientSpan);
+    }
+    if (administrativeDivision) {
+        const adminDivSpan = document.createElement('span');
+        adminDivSpan.className = 'popup-administrativeDivision';
+        adminDivSpan.textContent = ` (${administrativeDivision})`;
+        container.appendChild(adminDivSpan);
+    }
+    if (objects) {
+        const objectsList = buildObjectsList(objects);
+        if (objectsList) {
+            container.appendChild(objectsList);
+        }
     }
     if (description) {
         const descP = document.createElement('p');
@@ -198,4 +212,53 @@ export function buildImagePart(image) {
         imageContainer.appendChild(credit);
     }
     return imageContainer;
+}
+
+export function buildObjectsList(objects) {
+    if (!objects || objects.length === 0) {
+        return null
+    };
+    const objectOl = document.createElement('ol');
+    objectOl.className = 'popup-objects';
+    objects.forEach(obj => {
+        const li = document.createElement('li');
+        const nameSpan = document.createElement('span');
+        nameSpan.className = 'popup-object_name';
+        nameSpan.textContent = obj.name || 'Unnamed Object';
+        li.appendChild(nameSpan);
+        const details = [];
+        if (obj.culture) {
+            const cultureSpan = document.createElement('span');
+            cultureSpan.className = 'popup-object_culture';
+            cultureSpan.textContent = obj.culture;
+            details.push(cultureSpan);
+        }
+        if (obj.period) {
+            const periodSpan = document.createElement('span');
+            periodSpan.className = 'popup-object_period';
+            periodSpan.textContent = obj.period;
+            details.push(periodSpan);
+        }
+        if (obj.visibility) {
+            const visibilitySpan = document.createElement('span');
+            visibilitySpan.className = 'popup-object_visibility';
+            visibilitySpan.textContent = obj.visibility;
+            details.push(visibilitySpan);
+        }
+        if (details.length > 0) {
+            const detailsSpan = document.createElement('span');
+            detailsSpan.className = 'popup-objectDetails';
+            details.forEach((detail, index) => {
+                detailsSpan.appendChild(detail);
+                if (index < details.length - 1) {
+                    detailsSpan.appendChild(document.createTextNode(' | '));
+                }
+            });
+            li.appendChild(document.createTextNode(' ['));
+            li.appendChild(detailsSpan);
+            li.appendChild(document.createTextNode(']'));
+        }
+        objectOl.appendChild(li);
+    });
+    return objectOl;
 }

@@ -158,6 +158,27 @@ fieldset {
     margin-bottom: 5px;
 }
 
+.popup-administrativeDivision {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 5px;
+}
+
+.popup-objects {
+    padding-left: 13px;
+    margin-top: 5px;
+}
+
+.popup-object_name {
+    font-style: italic;
+    color: #333;
+}
+
+.popup-objectDetails {
+    font-size: 0.9em;
+    color: #333;
+}
+
 .image-caption {
     font-size: 0.9em;
     color: #333;
@@ -186,7 +207,23 @@ fieldset {
     font-weight: bold;
 }
 
-.emphasis-secondary {
+.emphasis-linguistic {
+    font-style: italic;
+}
+
+.emphasis-ancient-name {
+    font-style: italic;
+}
+
+.emphasis-roman-site {
+    font-style: italic;
+}
+
+.emphasis-quote {
+    font-style: italic;
+}
+
+.emphasis-other {
     font-style: italic;
 }
 
@@ -216,4 +253,16 @@ fieldset {
 
 .icon-medium {
     font-size: 1.5em;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 3.0em;
+    margin: 0 5px;
+}
+
+.hidden {
+    display: none;
 }

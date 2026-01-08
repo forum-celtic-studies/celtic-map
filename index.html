@@ -9,19 +9,25 @@
     <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
 </head>
 <body>
-    <div class="introduction">
-        <h1>Discovering the Ancient Country of the Treveri</h1>
-        <small>This service is provided by the <a href="https://www.uni-trier.de/forschung/zat/celtic-studies/start/">Forum
+    <header class="introduction">
+        <h1 id="main-title">Discovering the Ancient Country of the Treveri</h1>
+        <small id="service-info">This service is provided by the <a href="https://www.uni-trier.de/forschung/zat/celtic-studies/start/">Forum
                 Celtic Studies (Trier)</a></small>
-        <p>
+        <p id="intro-text">
             Klick on the markers to learn more about the particular places.
             Zooming in to a certain degree will reveal some shortened information about the places.
         </p>
-    </div>
+        <div class="languages">
+            <button class="lang-btn hidden" data-lang="en" title="English">🇬🇧</button>
+            <button class="lang-btn" data-lang="de" title="Deutsch">🇩🇪</button>
+        </div>
+    </header>
     <div id="map"></div>
     <script type="importmap">
         {
             "imports": {
+                "translations_de": "./js/data/i18n/translations_de.js",
+                "translations_en": "./js/data/i18n/translations_en.js",
                 "places": "./js/data/places.js",
                 "rivers": "./js/data/rivers.js",
                 "legend": "./js/map/legend.js",

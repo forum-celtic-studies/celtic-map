@@ -9,7 +9,8 @@ That's for example possible with the `live-server`-extension in VSCode.
 ---
 ## Place Entry JSON Template
 
-Copy and fill out this template for each new place. Fields marked with * are required. Remove comments (lines starting with //) before submitting!
+Copy and fill out this template for each new place. Fields marked with * are required.
+Remove comments (lines starting with //) before submitting!
 
 ```jsonc
 {
@@ -19,13 +20,14 @@ Copy and fill out this template for each new place. Fields marked with * are req
   "ancientName": "Epternācum",
   // * Required: modern name
   "modernName": "Echternach",
-  // Optional: short info (1-2 words)
+  // Optional: short info 
   "shortInfo": "Roman Villa",
-  // * Required: list of types (choose from: place, architecture, object, document, event, immaterial, other)
+  // * Required: list of types 
+  // choose from: place, architecture, object, document, event, immaterial, other
   "types": ["place", "architecture", "document"],
-  // Optional: description (can use markdown or plain text)
+  // Optional: description (for italics use *word*, for bold text **word**)
   "description": "The valley of Echternach has already been inhabited in the Celtic La Tène period...",
-  // Optional: images (array of objects)
+  // Optional: images (multiple occurences allowed, separate {}-sections with commas)
   "images": [
     {
       "title": "Echternach Roman Villa",
@@ -37,7 +39,7 @@ Copy and fill out this template for each new place. Fields marked with * are req
       "licenseLink": "https://creativecommons.org/licenses/by-sa/3.0/"
     }
   ],
-  // Optional: further links (array of objects)
+  // Optional: further links (multiple occurences allowed, separate {}-sections with commas)
   "furtherLinks": [
     {
       "text": "The Priscian grammar (BNF Paris lat. 10290, f. 3r)",
@@ -47,13 +49,13 @@ Copy and fill out this template for each new place. Fields marked with * are req
 }
 ```
 
-**Cheat Sheet:**
+**Attention:**
 - All field names and string values must be in double quotes.
-- Arrays use square brackets [ ... ] and values are comma-separated.
+- Lists use square brackets [ ... ] and values are comma-separated.
 - Remove any lines (fields) you don't need (except required ones).
-- Do not leave trailing commas after the last item in an array or object.
+- Do not leave trailing commas after the last item in an array or object!
 - For multiple images or links, add more objects inside the respective array.
-- If you copy-paste, check for smart quotes and replace with normal quotes.
+- If you copy-paste, check for double-quotes within values and replace with normal quotes!
 
 **Allowed types:** place, architecture, object, document, event, immaterial, other
 
