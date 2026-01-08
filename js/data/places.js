@@ -813,6 +813,7 @@ const PLACES_DE = [
     {
         coordinates: [49.751332, 7.204774],
         modernName: 'Allenbach',
+        administrativeDivision: "Lkr. Birkenfeld, RLP",
         objects: [
             {
                 name: "Ringwall",
@@ -821,7 +822,7 @@ const PLACES_DE = [
                 visibility: "Gut erhalten, ein Modell des Ringwalls ist im Rheinischen Landesmuseum in Trier zu besichtigen.",
             },
         ],
-        descriptionTitle: 'Ringwall Allenbach',
+        descriptionTitle: 'Ringwall Allenbach, "Ringkopf"',
         description: `
             Die 650 m hohe Kuppe war zur Anlage einer Befestigung genutzt worden. Die ringförmig
             geführten, sichtbaren Steinwälle sind Ruinen von Steinmauern mit stützendem Holzgerüst.
@@ -831,7 +832,7 @@ const PLACES_DE = [
             bewohnt. Wie viele andere zur gleichen Zeit errichtete Anlagen wurde sie nur für wenige
             Jahrzehnte unterhalten und diente als befestigter Stützpunkt.
         `,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
         shortInfo: 'Ringwall',
         images: [
             {
@@ -1021,8 +1022,26 @@ const PLACES_DE = [
     {
         coordinates: [49.74749641273402, 6.330077606029646],
         modernName: 'Altrier',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
+        administrativeDivision: "Kant. Echternach, L",
+        objects: [
+            {
+                name: "Grabhügel",
+                culture: "Jüngere Hunsrück-Eifel-Kultur",
+                period: "ca. 430 v. Chr.",
+                visibility: "gut sichtbar",
+            },
+        ],
+        descriptionTitle: `Grabhügel, Gmd. Bech, „Auf der Schanz“ `,
+        description: `
+            Rund 600 m südwestlich des Ortes wurde 1972 ein Grabhügel mit einem Durchmesser von
+            ursprünglich bis zu 51 m und einer Höhe von bis zu 6 m untersucht. Als Grabkammer
+            diente eine Truhe aus Eichenholz, von der 70–80 cm erhalten sind. Als Urne diente ein
+            bronzener Stamnos, der offenbar mit einem Schaffell abgedeckt wurde, von dem sich Reste
+            im Gefäß erhalten haben. Als Beigaben wurden ein goldener Armreif, eine Maskenfibel und
+            ein Eisenschwert mit Scheide gefunden, das erst 2025 neu untersucht wurde. Die Funde
+            werden im Musée Nationale d’Histoire et d’Art de Luxembourg aufbewahrt.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
         shortInfo: '',
         images: [
             {

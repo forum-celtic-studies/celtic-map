@@ -158,9 +158,15 @@ fieldset {
     margin-bottom: 5px;
 }
 
+.popup-administrativeDivision {
+    font-size: 0.9em;
+    color: #666;
+    margin-left: 5px;
+}
+
 .popup-objects {
-    padding: 13px;
-    margin: 10px 0;
+    padding-left: 13px;
+    margin-top: 5px;
 }
 
 .popup-object_name {

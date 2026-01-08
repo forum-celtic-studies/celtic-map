@@ -90,6 +90,7 @@ export function buildPopupHtml({
     images = [],
     furtherLinks = [],
     objects = [],
+    administrativeDivision = '',
 } = {}) {
     if (!modernName && !ancientName) {
         return document.createElement('div');
@@ -109,6 +110,12 @@ export function buildPopupHtml({
         ancientSpan.className = 'popup-title_ancient-name';
         ancientSpan.textContent = ancientName;
         container.appendChild(ancientSpan);
+    }
+    if (administrativeDivision) {
+        const adminDivSpan = document.createElement('span');
+        adminDivSpan.className = 'popup-administrativeDivision';
+        adminDivSpan.textContent = ` (${administrativeDivision})`;
+        container.appendChild(adminDivSpan);
     }
     if (objects) {
         const objectsList = buildObjectsList(objects);
