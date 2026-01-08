@@ -970,14 +970,45 @@ const PLACES_DE = [
     {
         coordinates: [49.473611, 5.957778],
         modernName: 'Audun-le-tiche',
-        description: ``,
+        administrativeDivision: "Dép. Moselle, F",
+        objects : [
+            {
+                name: "Tempel, Einzelfunde",
+                culture: "gallorömisch",
+                period: "2./3. Jh. n. Chr.",
+                visibility: "Grundmauern sichtbar",
+            },
+            {
+                name: "Inschriften",
+                culture: "vorrömisch",
+            },
+        ],
+        descriptionTitle: 'Gallorömischer Tempel (Fanum) und Merowingerzeitliches Gräberfeld',
+        description: `
+            1. Die kleine Stadt beherbergt interessante Funde aus der keltischen
+             und römischen Zeit sowie ein großes Gräberfeld aus der Merowingerzeit. In der Nähe
+             einer frühmittelalterlichen Nekropole bei „Le Calvaire“ im „Bois de Butte“ wurde ein
+             gallorömischer Tempel (<em class="emphasis-roman-site" aria-label="roman-site">fanum</em>)
+             aus dem 2./3. Jahrhundert n. Chr. gefunden, dessen
+             Grundmauern noch zu sehen sind. In der Nähe kam eine Gruppe von Figuren einer
+             Jupitersäule (<em class="emphasis-other">cavalier à l’anguipède</em>) zum Vorschein. Die Jupitersäulen übersetzen ein
+             Motiv aus der keltischen Mythologie in die römische Bildsprache. Köpfe von Statuen,
+             wahrscheinlich von Juno, und von Minerva mit Helm wurden ebenfalls in der Gegend
+             ausgegraben. Die Funde können im Musée d’Archéologie et d’Histoire locale besichtigt
+             werden. Der Friedhof und das Fanum gehören zu einer archäologischen Stätte
+             (<em class="emphasis-other">espace archéologique</em>).
+            2. Eine römische Inschrift aus der Rue de Bétiel zeigt eine Reihe von keltischen Namen,
+            darunter Solitumarus, Sorina, Carantillus und Carassouna. Diese Namen, oberflächlich an
+            die lateinische Sprache angepasst, zeigen deutlich, wie stark die keltische Sprache in
+            der Onomastik der Region geblieben ist.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
         shortInfo: '',
         images: [
             {
-                title: '',
+                title: 'Nekropole von Audun-le-Tiche',
                 href: 'https://upload.wikimedia.org/wikipedia/commons/6/60/Tombe_de_la_n%C3%A9cropole_d%27Audun-le-Tiche.jpg',
-                altText: '',
+                altText: 'Nekropole von Audun-le-Tiche',
                 imageBy: 'Aimelaime',
                 imageByLink: 'https://fr.wikipedia.org/wiki/Utilisateur:Aimelaime',
                 license: 'Public domain',

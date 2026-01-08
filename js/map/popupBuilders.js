@@ -218,8 +218,8 @@ export function buildObjectsList(objects) {
     if (!objects || objects.length === 0) {
         return null
     };
-    const objectUl = document.createElement('ul');
-    objectUl.className = 'popup-objects';
+    const objectOl = document.createElement('ol');
+    objectOl.className = 'popup-objects';
     objects.forEach(obj => {
         const li = document.createElement('li');
         const nameSpan = document.createElement('span');
@@ -258,7 +258,7 @@ export function buildObjectsList(objects) {
             li.appendChild(detailsSpan);
             li.appendChild(document.createTextNode(']'));
         }
-        objectUl.appendChild(li);
+        objectOl.appendChild(li);
     });
-    return objectUl;
+    return objectOl;
 }
