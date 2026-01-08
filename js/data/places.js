@@ -462,7 +462,7 @@ const PLACES_EN = [
         shortInfo: 'Celtic farmstead',
     },
     {
-        coordinates: [49.355776978263634, 6.564342943056346],
+        coordinates: [49.473333, 6.608611],
         modernName: 'Merzig-Besseringen',
         description: `
                 In the 19th century, a chariot tomb of the La Tène period was found on the hill
@@ -965,9 +965,27 @@ const PLACES_DE = [
         shortInfo: '',
     },
     {
-        coordinates: [49.355776978263634, 6.564342943056346],
+        coordinates: [49.473333, 6.608611],
         modernName: 'Merzig-Besseringen',
-        description: ``,
+        administrativeDivision: "Lkr. Merzig-Wadern, SL",
+        objects: [
+            {
+                name: "Fürstinnengrab mit Wagenbeigabe",
+                culture: "jüngere Hunsrück-Eifel-Kultur / frühe Latènekultur",
+                period: "um 500 v. Chr.",
+                visibility: "Grab zerstört, Hügel sichtbar",
+            },
+        ],
+        descriptionTitle: 'Fürstinnengrab',
+        description: `
+            Im 19. Jahrhundert wurde auf dem Hügel „Müllersknüppchen“ ein „Fürstinnengrab“ mit
+            Wagenbeigabe aus der Latènezeit gefunden. Das Grab war mit einem reich verzierten
+            goldenen Halsring, bronzenen Wagenfragmenten mit Zierbeschlägen, einer etruskischen
+            Bronzeschnabelkanne und verbrannten Knochenresten einer Frau ausgestattet. Leider sind
+            die meisten Grabbeigaben verloren gegangen. Der Halsring wird noch immer in Russland
+            als „Beutekunst“ zurückgehalten, die Wagenbeschläge werden im Rheinischen Landesmuseum
+            Trier aufbewahrt.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
         shortInfo: 'Chariot tomb',
     },
