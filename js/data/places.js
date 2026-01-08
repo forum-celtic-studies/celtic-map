@@ -281,7 +281,7 @@ const PLACES_EN = [
         ],
     },
     {
-        coordinates: [49.75445538415072, 7.166859817310713],
+        coordinates: [49.751332, 7.204774],
         modernName: 'Allenbach'
     },
     {
@@ -811,8 +811,38 @@ const PLACES_DE = [
         ],
     },
     {
-        coordinates: [49.75445538415072, 7.166859817310713],
-        modernName: 'Allenbach'
+        coordinates: [49.751332, 7.204774],
+        modernName: 'Allenbach',
+        objects: [
+            {
+                name: "Ringwall",
+                culture: "Ältere Hunsrück-Eifel-Kultur (HEK I)",
+                period: "um 500 v. Chr.",
+                visibility: "Gut erhalten, ein Modell des Ringwalls ist im Rheinischen Landesmuseum in Trier zu besichtigen.",
+            },
+        ],
+        descriptionTitle: 'Ringwall Allenbach',
+        description: `
+            Die 650 m hohe Kuppe war zur Anlage einer Befestigung genutzt worden. Die ringförmig
+            geführten, sichtbaren Steinwälle sind Ruinen von Steinmauern mit stützendem Holzgerüst.
+            Es handelt sich um die älteste Steinarchitektur in der Region. Das einzige Tor lag
+            zurückgesetzt an der stärker befestigten Zugangsseite im Osten und war nur über eine
+            34 m lange Torgasse zu erreichen. Der 1 Hektar große Innenraum war nicht dauerhaft
+            bewohnt. Wie viele andere zur gleichen Zeit errichtete Anlagen wurde sie nur für wenige
+            Jahrzehnte unterhalten und diente als befestigter Stützpunkt.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
+        shortInfo: 'Ringwall',
+        images: [
+            {
+                title: 'Ringwall',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/b/b8/Ringwall.jpg?20090201180525',
+                altText: 'Ringwall Allenbach',
+                imageBy: 'Matw',
+                imageByLink: 'https://de.wikipedia.org/wiki/Benutzer:Matw',
+                license: 'gemeinfrei',
+            }
+        ],
     },
     {
         coordinates: [49.99312013585362, 7.108027612129568],

@@ -158,6 +158,21 @@ fieldset {
     margin-bottom: 5px;
 }
 
+.popup-objects {
+    padding: 13px;
+    margin: 10px 0;
+}
+
+.popup-object_name {
+    font-style: italic;
+    color: #333;
+}
+
+.popup-objectDetails {
+    font-size: 0.9em;
+    color: #333;
+}
+
 .image-caption {
     font-size: 0.9em;
     color: #333;
