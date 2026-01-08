@@ -708,7 +708,24 @@ const PLACES_DE = [
     {
         coordinates: [50.178333, 5.665],
         modernName: 'Bérismenil',
-        description: ``,
+        administrativeDivision: "La Roche-en-Ardenne, Prov. Luxembourg, B",
+        objects: [
+            {
+                name: 'Befestigung',
+                culture: 'Latènekultur',
+                period: '5.–4. Jh. v. Chr.',
+            }
+        ],
+        descriptionTitle: 'Befestigung, "Le Cheslé"',
+        description: `
+            Auf einem Felsvorsprung oberhalb des Flusses Ourthe, „Le Cheslé“ genannt, wurde eine
+            große Festung von etwa 13 Hektar errichtet. Sie war ab dem 5. Jahrhundert v. Chr. in
+            Betrieb (LT A und B). Sie hat ein doppeltes Wallsystem von mehr als 1,7 km Länge. Der
+            Zugang lag ursprünglich im Norden und später etwas weiter nordwestlich. Alle anderen
+            Seiten sind durch steile Hänge geschützt. Seit den 1960er Jahren fanden Ausgrabungen
+            statt, und 1980 wurde ein Teil des Walls rekonstruiert. Höchstwahrscheinlich liegt
+            Le Cheslé knapp außerhalb des Territoriums der Treverer.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE],
         shortInfo: 'Keltische Befestigung',
         images: [
