@@ -976,7 +976,7 @@ const PLACES_DE = [
                 visibility: "Grab zerstört, Hügel sichtbar",
             },
         ],
-        descriptionTitle: 'Fürstinnengrab',
+        descriptionTitle: 'Fürstinnengrab mit Wagenbeigabe',
         description: `
             Im 19. Jahrhundert wurde auf dem Hügel „Müllersknüppchen“ ein „Fürstinnengrab“ mit
             Wagenbeigabe aus der Latènezeit gefunden. Das Grab war mit einem reich verzierten
@@ -987,7 +987,7 @@ const PLACES_DE = [
             Trier aufbewahrt.
         `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-        shortInfo: 'Chariot tomb',
+        shortInfo: 'Fürstinnengrab mit Wagenbeigabe',
     },
     {
         coordinates: [49.63448147168677, 5.599712437080059],
