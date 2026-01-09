@@ -607,7 +607,7 @@ const PLACES_EN = [
         modernName: 'Wallendorf',
     },
     {
-        coordinates: [49.84211179910747, 6.423807368700288],
+        coordinates: [49.841324, 6.426349],
         ancientName: '*Arantiā',
         modernName: 'Ernzen',
     },
@@ -748,8 +748,32 @@ const PLACES_DE = [
         coordinates: [49.803333, 5.205],
         ancientName: 'Casaecongidunus',
         modernName: 'Cugnon',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        administrativeDivision: "Prov. Luxembourg, B",
+        objects: [
+            {
+                name: 'Befestigung',
+                culture: 'a) späte Hallstattkultur (Ha D), b) und mittlere Latènekultur (LT C)',
+                period: 'a) ca. 500 v. Chr., b) ca. 250 v. Chr.',
+                visibility: 'rekonstruiert',
+            },
+            {
+                name: 'Ortsname',
+            }
+        ],
+        descriptionTitle: 'Befestigung „Le Trînchi“ und Ortsname Cugnon',
+        description: `
+            1. „Le Trînchi“ bei Cugnon ist eine Befestigungsanlage der späten Hallstattzeit und der
+            mittleren La-Tène-Zeit. Der bis auf eine Länge von 50 m rekonstruierte Wall wird dem
+            Typus „Altkönig-Preist“ zugeordnet.
+            2. Der Ortsname ist um 644 als
+            <em class="emphasis-ancient-name" aria-label="ancient name">Casaecongidunus</em>,
+            „im Haus des Congidunus“, belegt, wobei
+            <em class="emphasis-linguistic" aria-label="linguistic">casae</em> ein Vorläufer des
+            französischen <em class="emphasis-linguistic" aria-label="linguistic">chez</em> ist.
+            Der Personenname wurde mit dem britannischen
+            <em class="emphasis-linguistic" aria-label="linguistic">Cogidubnus</em> verglichen.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
         shortInfo: 'Keltische Befestigung',
     },
     {
@@ -1061,11 +1085,26 @@ const PLACES_DE = [
     },
     {
         coordinates: [49.481003, 6.083492],
+        administrativeDivision: "Kanton Esch-sur-Alzette, L",
         modernName: 'Dudelange',
+        objects: [
+            {
+                name: "Keltenfest",
+                culture: "Rezeption",
+                period: "modern",
+                visibility: "interaktiv",
+            }
+        ],
         descriptionTitle: 'Festival "Zeltik" in Dudelange',
-        description: ``,
+        description: `
+            Seit 1998 findet jedes Jahr, meist im März, das Keltenfest „Zeltik“ statt. Der Name ist
+            eine Kombination aus „Celtic“ und „Zelt“, weil das Festival bis 2012 in einem Zelt
+            abgehalten wurde. Düdelingen hat sich damit zu einem Anziehungspunkt weit über die
+            Region hinaus entwickelt. Regelmäßig stehen neben regionalen auch international
+            bekannte Vertreter der „keltischen“ Musikszene auf der Bühne wie Carlos Núñez, Moya
+            Brennan, Capercaillie, Beoga, Tri Yann, Red Cardell usw.`,
         types: [TYPE_EVENT],
-        shortInfo: '',
+        shortInfo: 'keltisches Fest "Zeltik"',
         images: [
             {
                 title: 'Bagad Naoned de Nantes at Celtic Celebration (Zeltik)',
@@ -1132,9 +1171,48 @@ const PLACES_DE = [
         modernName: 'Wallendorf',
     },
     {
-        coordinates: [49.84211179910747, 6.423807368700288],
+        coordinates: [49.841324, 6.426349],
         ancientName: '*Arantiā',
         modernName: 'Ernzen',
+        administrativeDivision: "Eifelkreis Bitburg-Prüm, RLP",
+        objects: [
+            {
+                name: "Altar mit Inschrift",
+                culture: "gallorömisch",
+                period: "1. Hälfte 2. Jh.",
+                visibility: "Altar mit Aedicula rekonstruiert",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorkeltisch",
+                period: "2./1. Jahrtausend v. Chr.",
+            }
+        ],
+        descriptionTitle: 'Weihedenkmal und Ortsname',
+        description: `
+            1. Im Jahr 1964 kam es bei Wegbauarbeiten am nördlichen Ortsrand von Ernzen zur
+            Entdeckung von Resten eines Weihedenkmals (Verbleib: RLM Trier). Vor Ort wurde es als
+            Altar vor einer Aedicula rekonstruiert. Nach neueren Untersuchungen handelt es sich
+            aber um ein einziges Denkmal, wobei auf dem Sockel („Altar“) ein Hochrelief des
+            einheimischen Gottes Intarabus, eher als eine Statue, an der Rückwand der Aedicula zu
+            sehen gewesen sein dürfte. Die Sockelinschrift nennt neben dem Götternamen nur den
+            Weihenden, Lucius Germanius.
+            2. Der Ortsname leitet sich von einem Flussnamen „Ernz“ ab, den es heute in der Umgebung
+            nur noch in Luxemburg gibt: die Weiße und die Schwarze Ernz, die rechts zur Sauer
+            führen. Der Name eines dieser Gewässer ist in einer Urkunde von 876/77 (Kopie 1222) in
+            <em class="emphasis-linguistic" aria-label="linguistic">super fluvio Arantia</em>
+            genannt. Ernzen selbst erscheint 895 und 915 als 
+            <em class="emphasis-linguistic" aria-label="linguistic">Arenza</em>, ab 1095
+            als <em class="emphasis-linguistic" aria-label="linguistic">Erinza</em>.
+            Die Vorform ist klar
+            <em class="emphasis-linguistic" aria-label="linguistic">Arantia</em>, eine
+            indogermanische Bildung mit dem
+            geläufigen Suffix <em class="emphasis-linguistic" aria-label="linguistic">-antia</em>
+            (aus <em class="emphasis-linguistic" aria-label="linguistic">*-n̥t-i̯eh₂</em>) und einer
+            schwer bestimmbaren Wurzel (in der Nullstufe). Arantia muss der Name auch in keltischer
+            Zeit gelautet haben.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
     },
     {
         coordinates: [50.180147, 6.914683],
@@ -1147,4 +1225,33 @@ const PLACES_DE = [
         types: [TYPE_PLACE, TYPE_ARCHITECTURE],
         shortInfo: 'Keltisches oppidum',
     },
+    {
+        coordinates: [50.20193, 6.67871],
+        modernName: 'Büscheich-Niedereich',
+        administrativeDivision: "Lkr. Vulkaneifel, RLP",
+        objects: [
+            {
+                name: "Ringwall",
+                culture: "a) Urnenfelderkultur, b) ältere und jüngere Hunsrück-Eifel-Kultur, c) späte Latènekultur",
+                period: "a) 13.–9./8. Jh., b) 7.–3. Jh. c) 2./1. Jh. v. Chr.",
+                visibility: "gut sichtbar",
+            },
+        ],
+        descriptionTitle: 'Ringwall, "Dietzenley"',
+        description: `
+            Der Ringwall auf der Dietzenley nahe dem „Keltenpfad“ liegt an der höchsten Stelle des
+            Pelmer Waldes. Er umschließt mit einer Gesamtlänge von 250 m und einer maximalen Breite
+            von 100 m ca. 16,6 Hektar des Bergplateaus. An seinem Fuß ist er von einem aus grobem
+            Vulkangestein bestehenden Steinwall umgeben. Der Zugang lag vermutlich an der
+            Nordostseite, kann aber aufgrund eines in neuerer Zeit entstandenen Steinbruchs nicht
+            mehr mit Sicherheit bestimmt werden. Am Osthang des Höhenzuges befindet sich eine
+            Quelle. Die ältesten Funde datieren in die frühe Bronze- und die Urnenfelderzeit. Die
+            Wallanlage ist aber wohl erst im Laufe der Hunsrück-Eifel-Kultur angelegt und,
+            vielleicht nur sporadisch, bis in die Spätlatènezeit genutzt worden. Während dieser
+            Zeit sind wahrscheinlich auch Mahlsteine aus dem vulkanischen Gestein geschlagen
+            worden.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        shortInfo: 'Ringwall',
+    }
 ];
