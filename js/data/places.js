@@ -748,7 +748,31 @@ const PLACES_DE = [
         coordinates: [49.803333, 5.205],
         ancientName: 'Casaecongidunus',
         modernName: 'Cugnon',
-        description: ``,
+        administrativeDivision: "Prov. Luxembourg, B",
+        objects: [
+            {
+                name: 'Befestigung',
+                culture: 'a) späte Hallstattkultur (Ha D), b) und mittlere Latènekultur (LT C)',
+                period: 'a) ca. 500 v. Chr., b) ca. 250 v. Chr.',
+                visibility: 'rekonstruiert',
+            },
+            {
+                name: 'Ortsname',
+            }
+        ],
+        descriptionTitle: 'Befestigung „Le Trînchi“ und Ortsname Cugnon',
+        description: `
+            1. „Le Trînchi“ bei Cugnon ist eine Befestigungsanlage der späten Hallstattzeit und der
+            mittleren La-Tène-Zeit. Der bis auf eine Länge von 50 m rekonstruierte Wall wird dem
+            Typus „Altkönig-Preist“ zugeordnet.
+            2. Der Ortsname ist um 644 als
+            <em class="emphasis-ancient-name" aria-label="ancient name">Casaecongidunus</em>,
+            „im Haus des Congidunus“, belegt, wobei
+            <em class="emphasis-linguistic" aria-label="linguistic">casae</em> ein Vorläufer des
+            französischen <em class="emphasis-linguistic" aria-label="linguistic">chez</em> ist.
+            Der Personenname wurde mit dem britannischen
+            <em class="emphasis-linguistic" aria-label="linguistic">Cogidubnus</em> verglichen.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE],
         shortInfo: 'Keltische Befestigung',
     },
@@ -1062,10 +1086,24 @@ const PLACES_DE = [
     {
         coordinates: [49.481003, 6.083492],
         modernName: 'Dudelange',
+        objects: [
+            {
+                name: "Keltenfest",
+                culture: "Rezeption",
+                period: "modern",
+                visibility: "interaktiv",
+            }
+        ],
         descriptionTitle: 'Festival "Zeltik" in Dudelange',
-        description: ``,
+        description: `
+            Seit 1998 findet jedes Jahr, meist im März, das Keltenfest „Zeltik“ statt. Der Name ist
+            eine Kombination aus „Celtic“ und „Zelt“, weil das Festival bis 2012 in einem Zelt
+            abgehalten wurde. Düdelingen hat sich damit zu einem Anziehungspunkt weit über die
+            Region hinaus entwickelt. Regelmäßig stehen neben regionalen auch international
+            bekannte Vertreter der „keltischen“ Musikszene auf der Bühne wie Carlos Núñez, Moya
+            Brennan, Capercaillie, Beoga, Tri Yann, Red Cardell usw.`,
         types: [TYPE_EVENT],
-        shortInfo: '',
+        shortInfo: 'keltisches Fest "Zeltik"',
         images: [
             {
                 title: 'Bagad Naoned de Nantes at Celtic Celebration (Zeltik)',
@@ -1147,4 +1185,33 @@ const PLACES_DE = [
         types: [TYPE_PLACE, TYPE_ARCHITECTURE],
         shortInfo: 'Keltisches oppidum',
     },
+    {
+        coordinates: [50.20193, 6.67871],
+        modernName: 'Büscheich-Niedereich',
+        administrativeDivision: "Lkr. Vulkaneifel, RLP",
+        objects: [
+            {
+                name: "Ringwall",
+                culture: "a) Urnenfelderkultur, b) ältere und jüngere Hunsrück-Eifel-Kultur, c) späte Latènekultur",
+                period: "a) 13.–9./8. Jh., b) 7.–3. Jh. c) 2./1. Jh. v. Chr.",
+                visibility: "gut sichtbar",
+            },
+        ],
+        descriptionTitle: 'Ringwall, "Dietzenley"',
+        description: `
+            Der Ringwall auf der Dietzenley nahe dem „Keltenpfad“ liegt an der höchsten Stelle des
+            Pelmer Waldes. Er umschließt mit einer Gesamtlänge von 250 m und einer maximalen Breite
+            von 100 m ca. 16,6 Hektar des Bergplateaus. An seinem Fuß ist er von einem aus grobem
+            Vulkangestein bestehenden Steinwall umgeben. Der Zugang lag vermutlich an der
+            Nordostseite, kann aber aufgrund eines in neuerer Zeit entstandenen Steinbruchs nicht
+            mehr mit Sicherheit bestimmt werden. Am Osthang des Höhenzuges befindet sich eine
+            Quelle. Die ältesten Funde datieren in die frühe Bronze- und die Urnenfelderzeit. Die
+            Wallanlage ist aber wohl erst im Laufe der Hunsrück-Eifel-Kultur angelegt und,
+            vielleicht nur sporadisch, bis in die Spätlatènezeit genutzt worden. Während dieser
+            Zeit sind wahrscheinlich auch Mahlsteine aus dem vulkanischen Gestein geschlagen
+            worden.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        shortInfo: 'Ringwall',
+    }
 ];
