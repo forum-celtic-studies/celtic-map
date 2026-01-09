@@ -607,7 +607,7 @@ const PLACES_EN = [
         modernName: 'Wallendorf',
     },
     {
-        coordinates: [49.84211179910747, 6.423807368700288],
+        coordinates: [49.841324, 6.426349],
         ancientName: '*Arantiā',
         modernName: 'Ernzen',
     },
@@ -773,7 +773,7 @@ const PLACES_DE = [
             Der Personenname wurde mit dem britannischen
             <em class="emphasis-linguistic" aria-label="linguistic">Cogidubnus</em> verglichen.
         `,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
         shortInfo: 'Keltische Befestigung',
     },
     {
@@ -1085,6 +1085,7 @@ const PLACES_DE = [
     },
     {
         coordinates: [49.481003, 6.083492],
+        administrativeDivision: "Kanton Esch-sur-Alzette, L",
         modernName: 'Dudelange',
         objects: [
             {
@@ -1170,9 +1171,48 @@ const PLACES_DE = [
         modernName: 'Wallendorf',
     },
     {
-        coordinates: [49.84211179910747, 6.423807368700288],
+        coordinates: [49.841324, 6.426349],
         ancientName: '*Arantiā',
         modernName: 'Ernzen',
+        administrativeDivision: "Eifelkreis Bitburg-Prüm, RLP",
+        objects: [
+            {
+                name: "Altar mit Inschrift",
+                culture: "gallorömisch",
+                period: "1. Hälfte 2. Jh.",
+                visibility: "Altar mit Aedicula rekonstruiert",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorkeltisch",
+                period: "2./1. Jahrtausend v. Chr.",
+            }
+        ],
+        descriptionTitle: 'Weihedenkmal und Ortsname',
+        description: `
+            1. Im Jahr 1964 kam es bei Wegbauarbeiten am nördlichen Ortsrand von Ernzen zur
+            Entdeckung von Resten eines Weihedenkmals (Verbleib: RLM Trier). Vor Ort wurde es als
+            Altar vor einer Aedicula rekonstruiert. Nach neueren Untersuchungen handelt es sich
+            aber um ein einziges Denkmal, wobei auf dem Sockel („Altar“) ein Hochrelief des
+            einheimischen Gottes Intarabus, eher als eine Statue, an der Rückwand der Aedicula zu
+            sehen gewesen sein dürfte. Die Sockelinschrift nennt neben dem Götternamen nur den
+            Weihenden, Lucius Germanius.
+            2. Der Ortsname leitet sich von einem Flussnamen „Ernz“ ab, den es heute in der Umgebung
+            nur noch in Luxemburg gibt: die Weiße und die Schwarze Ernz, die rechts zur Sauer
+            führen. Der Name eines dieser Gewässer ist in einer Urkunde von 876/77 (Kopie 1222) in
+            <em class="emphasis-linguistic" aria-label="linguistic">super fluvio Arantia</em>
+            genannt. Ernzen selbst erscheint 895 und 915 als 
+            <em class="emphasis-linguistic" aria-label="linguistic">Arenza</em>, ab 1095
+            als <em class="emphasis-linguistic" aria-label="linguistic">Erinza</em>.
+            Die Vorform ist klar
+            <em class="emphasis-linguistic" aria-label="linguistic">Arantia</em>, eine
+            indogermanische Bildung mit dem
+            geläufigen Suffix <em class="emphasis-linguistic" aria-label="linguistic">-antia</em>
+            (aus <em class="emphasis-linguistic" aria-label="linguistic">*-n̥t-i̯eh₂</em>) und einer
+            schwer bestimmbaren Wurzel (in der Nullstufe). Arantia muss der Name auch in keltischer
+            Zeit gelautet haben.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
     },
     {
         coordinates: [50.180147, 6.914683],
