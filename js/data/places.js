@@ -641,36 +641,65 @@ const PLACES_DE = [
         modernName: 'Trier',
     },
     {
-        coordinates: [49.814444, 6.421389],
+        coordinates: [49.811667, 6.421667],
         ancientName: 'Epternācum',
-        modernName: 'Echternach',
-        description: ``,
+        modernName: 'Echternach (lux. Iechternach, Eechternoach)',
+        administrativeDivision: "Kanton Echternach, L",
+        objects: [
+            {
+                name: "Siedlung",
+                culture: "Latènekultur",
+                period: "2./1. Jh. v. Chr. (?)",
+                visibility: "Nicht sichtbar",
+            },
+            {
+                name: "Missionierung",
+                culture: "Iro-schottische Mission",
+                period: "Ende 7. Bis 9. Jh.",
+                visibility: "Handschriften insularer Tradition",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        description: `1. Das Tal von Echternach war bereits in der keltischen Latènezeit, in den letzten 
+            Jahrhunderten vor Christus, besiedelt. Im 1. Jahrhundert n. Chr. wurde hier eine der größten römischen 
+            Villen der nordwestlichen Provinzen des Reiches errichtet. 
+            2. Im Jahr 698 wurde die Reichsabtei Echternach vom Heiligen Willibrord gegründet. Er stammte aus 
+            Northumbria und erhielt seine Ausbildung im irischen Kloster Rathmelsigi. Er ist auch als „Apostel 
+            der Friesen“ und Bischof von Utrecht bekannt, am 7. November 739 starb er in Echternach. Der Heilige 
+            wurde von irischen Schriftgelehrten begleitet, die in illuminierten Handschriften genannt werden, die 
+            im örtlichen Skriptorium aufbewahrt bzw. hergestellt wurden. 
+            3. Der Name Echternach geht auf Epternācum zurück, abgeleitet von dem Personennamen Epternos, der mit 
+            lateinischer Endung als Epternus in einer lokalen Inschrift erscheint. 
+`,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_DOCUMENT],
         shortInfo: 'Römische Villa',
-        images: [
-            {
-                title: 'Echternach, römische Villa',
-                href: 'https://upload.wikimedia.org/wikipedia/commons/8/80/EchternachRomanVilla.jpg',
-                altText: 'Echternach, römische Villa',
-                imageBy: 'David Edgar',
-                imageByLink: 'https://commons.wikimedia.org/wiki/User:David_Edgar',
-                license: 'CC-BY-SA-3.0',
-                licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
-            }
-        ],
-        furtherLinks: [
-            {
-                text: 'The Priscian grammar (BNF Paris lat. 10290, f. 3r)',
-                href: 'http://gallica.bnf.fr/ark:/12148/btv1b84790031/f9.item'
-            }
-        ],
     },
     {
         coordinates: [49.30221951295557, 6.848619912641792],
-        modernName: 'Elm-Sprengen (Sauwasen)',
-        description: ``,
+        modernName: 'Elm-Sprengen, Gmd. Schwalbach',
+        administrativeDivision: "Lkr. Saarlouis, SL",
+            objects: [
+            {
+                name: "Grabhügel",
+                culture: "späte Hallstattkultur (Ha D)",
+                period: "5. Jh. v. Chr.",
+                visibility: "teils rekonstruiert",
+            }
+        ],
+
+        descriptionTitle: 'Elm-Sprengen"',
+        description: `
+            Im Herchenbacher Wald, heute einem Abschnitt der „Europäischen Keltenstraße“, wurden vier Grabhügel gefunden, die 
+            Beigaben der späten Hallstattzeit (Ha D, 5. Jh. v. Chr.) enthalten. Das Wagengrab in Hügel 3 wurde 2005 als 
+            erkennbarer Hügel, 2007 im Hochschnitt rekonstruiert. In der hölzernen Grabkammer ist der Wagen zu sehen, daneben 
+            eine Puppe des Verstorbenen und Beigaben, die bis auf einen goldenen Ohrring an dieser Stelle nicht erhalten waren.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-        shortInfo: '',
+        shortInfo: 'Grabhügel',
+
     },
     {
         coordinates: [50.35669146049006, 7.588382581952168],
@@ -916,20 +945,36 @@ const PLACES_DE = [
         coordinates: [49.98560180938939, 7.022102376678921],
         ancientName: '*Arduenā',
         modernName: 'Erden',
-        descriptionTitle: 'Borberg (Burgberg)',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-        shortInfo: 'Burgberg',
-        images: [
+        administrativeDivision: "Lkr. Bernkastel-Wittlich, RLP",
+        objects: [
             {
-                title: '',
-                href: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Burgberg_von_Westen.JPG',
-                altText: '',
-                imageBy: 'IMercileZz',
-                license: 'CC-BY-SA-4.0',
-                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+                name: "Ringwall",
+                culture: "(mittlere? bis) späte Latènekultur, LT C–D",
+                period: "(3./2. Jh.? bis) 1. Jh. v. Chr.",
+                visibility: "Mauerreste im Norden sichtbar (?)",
+            },
+            {
+                name: "Ortsname",
             }
         ],
+        descriptionTitle: 'Borberg (Burgberg)',
+        description: `1. Auf dem „Burgberg, Borberg“ nördlich von Erden ist eine Befestigung der Mittel- und 
+            Spätlatènezeit von ca. 3 ha Größe nachgewiesen worden. Die Südflanke fällt extrem steil zur ca. 250 m 
+            tiefer liegenden Mosel ab. An seiner weniger steilen Nordseite befindet sich ein halbkreisförmig 
+            verlaufender Abschnittswall. R. Schindlers Grabungen von 1975 erbrachten den Nachweis von zwei Phasen 
+            einer Pfostenschlitzmauer mit vorgelagertem Graben. Die in Wall­schnitten und an der Ostspitze der 
+            Befestigung gefundene Keramik ist in die späte Latènezeit datiert. Die dendrochronologische Auswertung 
+            von Eichenhölzern eines Pfostenbaus von 5 x 8 m an der höchsten Stelle ergaben ein Fälldatum von 
+            67 v. Chr. oder später. Die mittlere Latènezeit (LT C, 3./2. Jh. v. Chr.) ist nicht sicher zu belegen. 
+            Römische Streufunde weisen auf eine kurzfristige Nutzung im 3. Jh. hin.
+            2. Der Ortsname Erden und der erste Bestandteil des Flussnamens Erdgemund gehen beide auf keltisch 
+            *Ard(u̯)ena „(Siedlung/Fluss am) hohen Bergzug“ zurück, das von dem Adjektiv *ardu̯o- „hoch“ abgeleitet 
+            ist. In der Kopie einer Echternacher Urkunde aus den Jahren 774/75, die heute in der Landesbibliothek 
+            Gotha aufbewahrt wird, heißt es in pago Muslense super fluvio Muselle in monte Ardinigo „im Moselgau, 
+            oberhalb des Flusses Model, auf dem Berg Ard(u̯)inius“, d.h. „dem zu *Arduena gehörenden Berg“.
+`,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Burgberg',
     },
     {
         coordinates: [49.62215672921777, 7.002182760164149],
@@ -937,15 +982,81 @@ const PLACES_DE = [
     },
     {
         coordinates: [49.48298166460118, 7.031079347856441],
-        modernName: 'Tholey'
+        modernName: 'Tholey',
+        administrativeDivision: "Lkr. St. Wendel, SL",
+        objects: [
+            {
+                name: "Museum",
+                culture: "Latènekultur und gallorömisch",
+                period: "3. Jh. v. Chr. bis ca. 400 n. Chr.",
+            },
+            {
+                name: "Grab und Tempel im Vicus Wareswald",
+                culture: "Latènekultur und gallorömisch",
+                period: "3. Jh. v. Chr. bis ca. 400 n. Chr.",
+                visibility: "Ausgrabungsstätte (s. Abb.), ergänzt durch Informationstafeln",
+            },
+            {
+                name: "Inschriften mit Götternamen",
+            }
+        ],
+        descriptionTitle: 'Museum Theulegium',
+
+        description: `1. Das Kulturhistorische Museum Theulegium in Tholey ist in fünf Bereiche aufgeteilt: Vor- und Frühgeschichte, 
+            Abtei Tholey, Amt Schaumberg, Zeitgeschichte, Geologie. Exponate zum Themengebiet „Kelten“ sind im Saal 1: „Vor- und 
+            Frühgeschichte“ zu finden. Insbesondere sind dort Beigaben aus dem keltischen Fürstengrab Fuchshügel ausgestellt. Das 
+            Grab wurde in den 1830er Jahren entdeckt und stammt aus der Frühlatène-Zeit (ca. 450 v. Chr.). Des Weiteren sind 
+            keltische Gefäße sowie handwerkliche Erzeugnisse, wie beispielsweise Glasperlen, zu sehen.
+            2. Der Vicus im Wareswald liegt am Fuß des Schaumbergs, zwischen den Gemeinden Marpingen, Oberthal und Tholey. Er 
+            entstand in der 1. Hälfte des 1. Jh. am Kreuzungspunkt der zur damaligen Zeit bedeutsamen Straßen zwischen Metz und 
+            Mainz sowie Straßburg und Trier. 200 m südwestlich des Siedlungskerns wurde der Grundriss eines größeren Tempels 
+            freigelegt, der vermutlich um 100 n. Chr. gegründet wurde und dem Mars geweiht war. Die Anlage des Tempels störte 
+            teilweise ein Grab der Mittellatènezeit (ca. 250–150 v. Chr.). Münzfunde der Latènezeit haben auch zu Vermutungen 
+            einer Vorgängersiedlung Anlass gegeben.
+            3. Eine 1826 entdeckte, heute verlorene Inschrift (CIL XIII 4258) nennt Mars Cnabetius, eine weitere (CIL XIII 4256) 
+            erwähnt Mercurius Iovantucarus, keltisch „den, der die Jugend liebt“.`,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Museum, Grab und Tempel, Inschriften',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ausgrabungsstaette_Wareswald.jpg/1280px-Ausgrabungsstaette_Wareswald.jpg',
+                altText: '',
+                imageBy: 'Pascal Dihé',
+                license: 'CC-BY-SA-4.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+            }
+        ],
     },
     {
         coordinates: [49.57965, 6.91395],
         ancientName: '*Lustarā',
-        modernName: "Wadern-Oberlöstern",
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-        shortInfo: 'Monumentaler tumulus',
+        modernName: "Oberlöstern, Löstertal, Stadt Wadern",
+
+        administrativeDivision: "Lkr. Merzig-Wadern, SL",
+        objects: [
+            {
+                name: "Grabhügel",
+                culture: "gallorömisch",
+                period: "2./3. Jhd. n. Chr.",
+                visibility: "rekonstruiert",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Grabhügel',
+
+        description: `1. In der Nähe von frühkeltischen Grabhügeln wurden von 1991 bis 1995 zwei gallorömische Grabhügel aus dem 
+            zweiten oder dritten Jahrhundert n. Chr. ausgegraben. Diese repräsentativen Bauten mit einem Durchmesser von 20 m wurden 
+            von quadratischen Sandsteinsetzungen umrahmt und von Pinienzapfen aus Stein gekrönt. Die Hügelform ist untypisch für diese 
+            Zeit.
+            2. Der Name Wadern, in einer Urkunde von 950 n. Chr. als Waderella bezeugt, leitet sich vom spätgallischen *u̯adr-ellā 
+            „kleines Wasser“ und letztlich vom indogermanischen *u̯odr̥-, *u̯edōr „Wasser“ und dem Diminutivsuffix *-ellā ab; der Vokal 
+            o wird nach dem Halbvokal u̯ wie im Gallischen und im Britannischen allgemein zu a. `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Grabhügel',
         images: [
             {
                 title: '',
@@ -1119,9 +1230,31 @@ const PLACES_DE = [
     },
     {
         coordinates: [49.567909444370024, 6.364009724092962],
-        modernName: 'Stadtbredimus (L)/Palzem (D)',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
+        modernName: 'Stadtbredimus (L) / Palzem (D)',
+        administrativeDivision: "Kant. Remich, L / Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Brücke",
+                culture: "mittlere Latènekultur (LT C)",
+                period: "168 und 149 v. Chr.",
+                visibility: "zerstört",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Ringwall, "Dietzenley"',
+        description: `
+            1. In einer Baugrube wurden Reste von Eichenpfählen aus verschiedenen Bauphasen ausgegraben. 
+            Dickere Pfähle gehören zu einer römischen Brücke, die um 30 n. Chr. errichtet wurde. Dazwischen 
+            wurden dünnere Pfähle mit einem Durchmesser von etwa 20 cm gefunden, die dendrochronologisch in 
+            die Jahre 168 v. Chr. und 149 v. Chr. datiert werden konnten.
+            2. Der Name (Stadt-/Wald-) Bredimus leitet sich vom keltischen *bred-īnā‚ „(Ort, an dem) man 
+            watet“ aus dem indogermanischen *bʰredʰ- „waten“ ab, offensichtlich ein alter Name für eine Furt.
+
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
         shortInfo: 'Keltische Brücke',
     },
     {
@@ -1253,5 +1386,186 @@ const PLACES_DE = [
         `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE],
         shortInfo: 'Ringwall',
+    },
+    {
+        coordinates: [49.793333, 6.791389],
+        modernName: 'Riol',
+        administrativeDivision: "Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Schlachtfeld",
+                culture: "Gallorömisch",
+                period: "70 n. Chr.",
+                visibility: "zerstört",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Schlachtfeld und Ortsname',
+        description: `
+            1. Nach einem Bericht des Tacitus (Historien 4, 71; 76.3) wurde eine Koalition von rebellierenden 
+            Treverern, Lingonen u.a. im sogenannten Bataver-Aufstand 70 n. Chr. von Petilius Cerialis und seinen 
+            römischen Truppen bei Rigodulum nahe Trier geschlagen. Das Schlachtfeld könnte sich am Engpass des 
+            „Molesbach“-Einschnitts befunden haben.
+            2. Der Ortsname Riol ist im 10. Jh. als Regiodola überliefert, was sich von gallisch *Rig(i)o-dolon 
+            „Königstal“ o.ä. herleitet. Es dürfte sich ursprünglich um eine Bezeichnung der gesamten Talweite gehandelt haben.
+
+        `,
+        types: [TYPE_PLACE, TYPE_IMMATERIAL],
+        shortInfo: 'Schlachtfeld',
+    },
+    {
+        coordinates: [49.529749, 6.384828],
+        modernName: 'Perl',
+        administrativeDivision: "Lkr. Merzig-Wadern, SL",
+        objects: [
+            {
+                name: "Siedlung?, später römische Villa",
+                culture: "gallorömisch, römische Kaiserzeit",
+                visibility: "Mosaik gut erhalten",
+            },
+            {
+                name: "Grabhügel",
+                culture: "gallorömisch, römische Kaiserzeit",
+                visibility: "Teilweise rekonstruiert",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Perl, Villa Nennig',
+        description: `
+            1. Die römische Villa Nennig zählt neben der Villa Borg zu den größten bekannten Villenanlagen der Region.
+            Besonders hervorzuheben ist ein gut erhaltenes Mosaik von etwa 16 × 11 m, das Szenen aus einem Amphitheater zeigt.
+            2. Der Grabhügel „Mahlknopf“ liegt unweit der Villa Nennig. Er war von einer Ringmauer aus Kalkstein mit einem 
+            Durchmesser von 44,5 m eingefasst und zusätzlich von einem rechteckigen Mauerring von etwa 94 × 100 m umgeben. 
+            Nach den Ausgrabungen wurden der Hügel sowie Teile der Ringmauer rekonstruiert. Nördlich davon befand sich ein 
+            weiterer Grabhügel, von dem heute keine sichtbaren Reste mehr erhalten sind.
+            3. Der Name der Villa Nennig ist urkundlich belegt im Jahre 924 Nannec, 1147 Nannicho, aus gallisch *Nanniācum 
+            „Domäne des Nannius“ mit vorrömischem Personennamen.
+
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT, TYPE_IMMATERIAL],
+        shortInfo: 'Römische Villa',
+    },
+    {
+        coordinates: [49.497651, 6.457999],
+        modernName: 'Borg',
+        administrativeDivision: "Lkr. Merzig-Wadern, SL",
+        objects: [
+            {
+                name: "Siedlung, später römische Villa",
+                culture: "gallorömisch, römische Kaiserzeit; mit vorrömischer (spätlatènezeitlicher) Besiedlung",
+                visibility: "Rekonstruierte Villenanlage",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Perl, Villa Borg',
+        description: `
+            Zahlreiche Grabfunde der Bronze- und Eisenzeit belegen die Bedeutung der Region bereits in prähistorischer und 
+            keltischer Zeit. Auch die Umgebung ist reich an Ortsnamen mit keltischen Wurzeln.
+            1. Das Areal der römischen Villa Borg war bereits vor der römischen Okkupation besiedelt. Vermutlich lebte dort 
+            eine keltische Adelsfamilie. Die Besiedlung konnte anhand von Holzpfosten in der Erde nachgewiesen werden. Die 
+            spätere Villenanlage entwickelte sich aus älteren keltischen Vorgängerbauten, wie es für den regionalen gallorömischen 
+            Villentyp charakteristisch ist. Die heutige Rekonstruktion im „Archäologiepark römische Villa Borg“ umfasst das 
+            Hauptgebäude mit Badeanlage, Gartenanlagen sowie eine Taverne und vermittelt einen Einblick in das Leben zur 
+            römischen Zeit.
+            2. Der Name der Villa Borg ist urkundlich belegt im Jahr 893 Burnacha, 1331 Burnigh, was auf gallisch *Burnācum 
+            „Domäne des Burnus“ zurückgeht, mit einem vorrömischen Personennamen.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT, TYPE_IMMATERIAL],
+        shortInfo: 'Römische Villa',
+    },
+    {
+        coordinates: [49.543061, 6.532551],
+        modernName: 'Freudenburg, „Bering“',
+        administrativeDivision: "Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Ortsname",
+                culture: "keltisch bzw. gallisch, vorrömische Zeit",
+            }
+        ],
+        descriptionTitle: 'Ortsname',
+        description: `
+            Im Freudenburger Bering, der Ringmauer um die mittelalterliche Burg, wird im Jahr 1054 ein Dorf oder Hof Ossima 
+            erwähnt, dessen Name öfters auch als Usme erscheint (z.B. 1152/69 Theoderich von Usmen). Beide Namensformen gehen 
+            auf keltisch *uχsamā „höchste (Stelle)“ zurück, was sich vielleicht auf den Eiderberg (439 m) bezieht, an dessen 
+            Fuß Freudenburg liegt.
+        `,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Ortsname',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Freudenburg5.jpg/1280px-Freudenburg5.jpg',
+                altText: '',
+                imageBy: 'Thomas Johannes',
+                license: 'CC-BY-SA-3.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
+            }
+        ],
+    },
+    {
+        coordinates: [49.9356797, 7.0643917],
+        modernName: 'Graach, „Erbesroth“',
+        administrativeDivision: "Lkr. Bernkastel-Wittlich, RLP",
+        objects: [
+            {
+                name: "Gräberfeld",
+                culture: "Jüngere Hunsrück-Eifel-Kultur, HEK II (Keramik HEK II A2–3)",
+                period: "um 470/450 v. Chr.",
+                visibility: "zerstört, Funde im RLM Trier",
+            }
+        ],
+        descriptionTitle: 'Gräberfeld',
+        description: `
+            Die am Eingang eines Plateausporns, des „Wolfer Berges“, gelegene Hügelgruppe umfasst sechs verschliffene Grabhügel, 
+            weitere sind wahrscheinlich zerstört oder unerkannt. Hügel 3 enthielt zwei Männer- und eine Frauenbestattung. Hügel 
+            5 mit 18 m Durchmesser hatte eine 1,8 x 2,8 m messende Steinpackung, war aber beraubt und daher fundleer. Hügel 6 
+            mit 13 m Durch­messer enthielt eine 4 m breite rund-ovale Steinpackung und war wohl mehrfach, wenn auch nur 
+            kleinflächig, beraubt. Die Funde sind nicht mehr in ihrer primären Lage gewesen. An Keramik wurde ein Fußgefäß 
+            mit einer Verzierung mit Kreisaugen festgestellt. Bedeutend sind 18 eiserne Radreifenfragmente, Nägel und Fragmente 
+            eines Nabenringes. Sie gehören zu einem Wagen des Typs der hallstattzeitlichen Wagen vom Mittelrhein.
+        `,
+        types: [TYPE_PLACE, TYPE_OBJECT],
+        shortInfo: 'Gräberfeld',
+    },
+    {
+        coordinates: [50.198611, 6.831944],
+        modernName: 'Daun',
+        administrativeDivision: "Lkr. Vulkaneifel, RLP",
+        objects: [
+            {
+                name: "Ortsname",
+                culture: "keltisch: regionales Gallisch, vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Ortsname',
+        description: `
+            Der Name der Stadt Daun ist zum ersten Mal in einer Kopie einer Urkunde des Jahres 747 als Duna überliefert. In 
+            Dokumenten der Jahre 1075, 1179 und 1204 begegnet er ebenfalls in dieser Form. Bereits 1107 erscheint daneben die 
+            abgeschwächte Endsilbe als Dune. Der Vokal u in Duna muss ein Langvokal gewesen sein, wie die frühneuhochdeutsche 
+            Diphthongierung zu au zeigt. Der Name geht auf keltisch *dūno- „(Berg)festung“ zurück, das latinisiert als -dunum 
+            häufig als Hinterglied in zusammengesetzten Namen auftritt wie z.B. Vero-dunum, heute Verdun, dép. Meuse.
+        `,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Ortsname',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/c/c6/Daunpanorama.jpg',
+                altText: '',
+                imageBy: 'W. Koch',
+                license: 'CC-BY-SA-3.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
+            }
+        ],
     }
 ];
