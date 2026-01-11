@@ -679,8 +679,8 @@ const PLACES_DE = [
     },
     {
         coordinates: [49.30221951295557, 6.848619912641792],
-        modernName: 'Elm-Sprengen, Gmd. Schwalbach',
-        administrativeDivision: "Lkr. Saarlouis, SL",
+        modernName: 'Elm-Sprengen',
+        administrativeDivision: "Gmd. Schwalbach, Lkr. Saarlouis, SL",
             objects: [
             {
                 name: "Grabhügel",
@@ -833,20 +833,37 @@ const PLACES_DE = [
     {
         coordinates: [49.848582, 7.392168],
         modernName: 'Bundenbach',
+        administrativeDivision: "Lkr. Birkenfeld, RLP",
         descriptionTitle: 'Altburg nahe Bundenbach',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
-        shortInfo: 'Celtic fortification',
-        images: [
+        objects: [
             {
-                title: 'Rekonstruktion der Altburg nahe Bundenbach',
-                href: 'https://upload.wikimedia.org/wikipedia/commons/1/11/Altburg_plateau.jpg',
-                altText: 'Rekonstruktion der Altburg nahe Bundenbach',
-                imageBy: 'Chris mz',
-                license: 'CC-BY-SA-3.0',
-                licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
-            }
+                name: "Befestigte Siedlung",
+                culture: "Jüngere Hunsrück-Eifel-Kultur, Latènekultur",
+                period: "4.–1. Jh. v. Chr.",
+                visibility: "Felsenkeller, sonst rekonstruiert",
+            },
+            {
+                name: "Reenactment",
+            },
         ],
+        descriptionTitle: 'Ringwall Allenbach, "Ringkopf"',
+        description: `
+            Auf einem Bergsporn hoch über dem Hahnenbach wurde im 4. Jh. v. Chr. an der einzigen flachen Stelle 
+            ein Abschnittswall errichtet, dahinter eine mit Wall und Graben gesicherte, 1,5 Hektar große 
+            Siedlung. Sie hatte einen zurückgesetzten Torzugang und eine mit einem massiven Zaun abgegrenzte 
+            „Oberburg“, die aus fünf Fachwerkhäusern und fünf Speichern bestand. Dieser Teil wurde 
+            rekonstruiert. Der Gebäudekomplex wurde zwischen 1971 und 1974 vom Rheinischen Landesmuseum Trier 
+            ausgegraben.
+            Das Freilichtmuseum Altburg zeigt die Rekonstruktion eines Teils der Siedlung, wie sie im 2. und 1. 
+            Jh. v. Chr. ausgesehen haben könnte. Die Wiederherstellung zeigt die zweite der drei Bauphasen der 
+            Befestigung. 
+            2. Die Siedlung ist Teil von Reenactment-Veranstaltungen wie dem „Altburgfestival“, verbunden mit 
+            einem „Keltischen Jahrmarkt“ und einem Musikfestival jedes Jahr im August. Einen Teil des Jahres 
+            wird die Siedlung von modernen „Kelten“-Anhängern bewohnt.
+
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
+        shortInfo: 'Befestigte Siedlung, Reenactment',
     },
     {
         coordinates: [49.82548182583125, 7.298186249122467],
@@ -979,6 +996,35 @@ const PLACES_DE = [
     {
         coordinates: [49.62215672921777, 7.002182760164149],
         modernName: 'Otzenhausen',
+        administrativeDivision: "Lkr. St. Wendel, SL",
+        objects: [
+            {
+                name: "Oppidum",
+                culture: "Ältere Hunsrück-Eifel- bis späte Latènekultur; gallorömische Kultur, (Tempel)",
+                period: "5. – 1. Jh. v. Chr.; 3. Jh. (Tempel)",
+                visibility: "gut sichtbar",
+            },
+            {
+                name: "Keltensiedlung",
+            }
+        ],
+        descriptionTitle: 'Hunnenring',
+
+        description: `1. Der 2,5 km lange Befestigungswall auf dem südlichen Teil des Dollberg umschließt ein 
+            dreieckiges Areal von ca. 10 Hektar Größe. Dem südlichen Sporn ist ein weiterer keilförmiger 
+            Befestigungswall vorgelagert. Die ursprüngliche Wallanlage in Bauweise eines murus gallicus wurde 
+            aus über 300.000 m³ Steinen errichtet. Ursprünglich muss der murus gallicus etwa 20 m hoch und 
+            ebenso breit gewesen sein. Diese Dimensionen sind für die Wehranlage eines Oppidums einzigartig. 
+            Es wurden auch Grundmauern eines gallorömischen Tempels gefunden, der anhand von Münzfunden ins 
+            3. Jh. n. Chr. datiert wurde. Neben den Münzen, Scherben und eisernen Speerspitzen wurde die 
+            Terrakottafigur eines Ebers gefunden. Am westlichen Eingang der Wallanlage, etwa 350 m vom Tempel 
+            entfernt, befindet sich eine Quelle.
+            2. Am Fuß der Wallanlage am Dollberg wurde eine Keltensiedlung nach originalen Befunden rekonstruiert. 
+            Sie besteht aus zehn Gebäuden, die Wohn- und Speicherbauten sowie Werkstätten der keltischen Zeit 
+            veranschaulichen.
+            `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
+        shortInfo: 'Hunnenring',
     },
     {
         coordinates: [49.48298166460118, 7.031079347856441],
@@ -1031,9 +1077,9 @@ const PLACES_DE = [
     {
         coordinates: [49.57965, 6.91395],
         ancientName: '*Lustarā',
-        modernName: "Oberlöstern, Löstertal, Stadt Wadern",
+        modernName: "Oberlöstern",
 
-        administrativeDivision: "Lkr. Merzig-Wadern, SL",
+        administrativeDivision: "Löstertal, Stadt Wadern, Lkr. Merzig-Wadern, SL",
         objects: [
             {
                 name: "Grabhügel",
@@ -1132,6 +1178,38 @@ const PLACES_DE = [
         coordinates: [49.684722, 5.815556],
         ancientName: 'Orolaunum',
         modernName: 'Arlon',
+        administrativeDivision: "Prov. Luxembourg, B",
+        objects : [
+            {
+                name: "Inschriften, Jupitersäule",
+                culture: "gallorömisch",
+                period: "1.-4. Jh. n. Chr.",
+                visibility: "teilweise sichtbar im Musée archéologique d’Arlon",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            },
+        ],
+        descriptionTitle: 'Arlon',
+        description: `
+            1. Aus der Umgebung des im 1. Jahrhundert gegründeten 
+            <em class="emphasis-roman-site" aria-label="roman-site">Vicus Orolaunum</em> sind zahlreiche 
+            gallorömische Inschriften bekannt, die keltische Götter nennen wie (Mars) Camulos, Arduinna 
+            oder Epona, oder Personennamen überliefern wie Andecarus, Adiatumarus, Cattonius, Dagotoutus, 
+            Giamillia, Ibliomaria, Litugenius, Moxsius, Sollius, Suarca, Viducus, Vimpuro usw. Ein Teil 
+            einer Jupitergigantensäule aus dem 2./3. Jh. ist aus dem Stadtzentrum bekannt.
+            2. Der römische Vicus wurde <em class="emphasis-ancient-name" aria-label="ancient-name">Orolaunum</em> 
+            genannt, ca. 300 <em class="emphasis-ancient-name" aria-label="ancient-name">Orolauno</em>; ab dem 9. Jh. 
+            aber <em class="emphasis-ancient-name" aria-label="ancient-name">Arlon</em> (a. 870), 
+            <em class="emphasis-ancient-name" aria-label="ancient-name">Erlont</em> (a. 931/56), seit dem späten 
+            11. Jh. auch etymologisierend <em class="emphasis-ancient-name" aria-label="ancient-name">Araleonis</em> 
+            „Löwenaltar“ oder <em class="emphasis-ancient-name" aria-label="ancient-name">Aralune</em> „Mondaltar“ 
+            (oder Luna = Diana). Die Bedeutung des Namens Orolaunum ist unklar. Verbindungen mit gallisch 
+            <em class="emphasis-linguistic" aria-label="linguistic">are-</em> „vor“ überzeugen nicht.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Inschriften, Jupitersäule, Ortsname',
     },
     {
         coordinates: [49.542036032965136, 5.859888862725093],
@@ -1139,7 +1217,7 @@ const PLACES_DE = [
     },
     {
         coordinates: [49.473611, 5.957778],
-        modernName: 'Audun-le-tiche',
+        modernName: 'Audun-le-Tiche',
         administrativeDivision: "Dép. Moselle, F",
         objects : [
             {
@@ -1150,7 +1228,7 @@ const PLACES_DE = [
             },
             {
                 name: "Inschriften",
-                culture: "vorrömisch",
+                culture: "römisch, mit vorrömischen Namen",
             },
         ],
         descriptionTitle: 'Gallorömischer Tempel (Fanum) und Merowingerzeitliches Gräberfeld',
@@ -1346,6 +1424,30 @@ const PLACES_DE = [
             Zeit gelautet haben.
         `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Weihedenkmal und Ortsname',
+    },
+    {
+        coordinates: [49.835089, 6.434403],
+        modernName: 'Ernzen, „Langenberg“, „In der Schaub“',
+        administrativeDivision: "Eifelkreis Bitburg-Prüm, RLP",
+        objects: [
+            {
+                name: "Gräber",
+                culture: "späte Latènekultur (LT D2)",
+                period: "ca. 80 – 45 v. Chr.",
+                visibility: "zerstört",
+            }
+        ],
+        descriptionTitle: 'Weihedenkmal und Ortsname',
+        description: `
+            Südöstlich Ernzen, an der Straße nach Irrel, wurde bei der Erweiterung der Sandgrube „Langenberg“ 
+            1996 ein keltisch-römisches Gräberfeld untersucht. Die meisten der bis zu 100 Bestattungen sind 
+            Brandgrubengräber der frührömischen Zeit. Es fanden sich aber auch einige Brandgräber der 
+            Latènezeit und Körpergräber aus dem 5. Jh. n. Chr. sowie Einzelfunde des 2.–3. Jh. Ein Brandgrab 
+            war bereits 1986 auf dem „Langenberg“ gefunden worden.
+        `,
+        types: [TYPE_PLACE],
+        shortInfo: 'Gräber',
     },
     {
         coordinates: [50.180147, 6.914683],
@@ -1418,8 +1520,8 @@ const PLACES_DE = [
     },
     {
         coordinates: [49.529749, 6.384828],
-        modernName: 'Perl',
-        administrativeDivision: "Lkr. Merzig-Wadern, SL",
+        modernName: 'Nennig',
+        administrativeDivision: "Gmd. Perl, Lkr. Merzig-Wadern, SL",
         objects: [
             {
                 name: "Siedlung?, später römische Villa",
@@ -1454,7 +1556,7 @@ const PLACES_DE = [
     {
         coordinates: [49.497651, 6.457999],
         modernName: 'Borg',
-        administrativeDivision: "Lkr. Merzig-Wadern, SL",
+        administrativeDivision: "Gmd. Perl, Lkr. Merzig-Wadern, SL",
         objects: [
             {
                 name: "Siedlung, später römische Villa",
