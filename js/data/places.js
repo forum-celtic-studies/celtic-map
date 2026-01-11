@@ -1352,7 +1352,7 @@ const PLACES_DE = [
             Rund 600 m südwestlich des Ortes wurde 1972 ein Grabhügel mit einem Durchmesser von
             ursprünglich bis zu 51 m und einer Höhe von bis zu 6 m untersucht. Als Grabkammer
             diente eine Truhe aus Eichenholz, von der 70–80 cm erhalten sind. Als Urne diente ein
-            bronzener Stamnos, der offenbar mit einem Schaffell abgedeckt wurde, von dem sich Reste
+            bronzener Stamnos, der offenbar mit einem Wolltuch abgedeckt wurde, von dem sich Reste
             im Gefäß erhalten haben. Als Beigaben wurden ein goldener Armreif, eine Maskenfibel und
             ein Eisenschwert mit Scheide gefunden, das erst 2025 neu untersucht wurde. Die Funde
             werden im Musée Nationale d’Histoire et d’Art de Luxembourg aufbewahrt.
