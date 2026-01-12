@@ -713,7 +713,35 @@ const PLACES_DE = [
         coordinates: [49.606111, 5.075556],
         ancientName: 'Mosomagos',
         modernName: 'Mouzon',
-        description: ``,
+        administrativeDivision: "Dép. Ardennes, F",
+        objects: [
+            {
+                name: 'Heiligtum',
+                culture: 'a) Eisenzeit, b) gallorömisch',
+                period: 'a) 8.–6. Jh. v. Chr., b) 1.–2. Jh. n. Chr.',
+                visibility: 'Grundmauern sichtbar',
+            },
+            {
+                name: 'Ortsname',
+                culture: 'vorrömisch',
+            }
+        ],
+        descriptionTitle: 'Gallo-Römisches Heiligtum, Ortsname',
+        description: `
+            1. Die französische Gemeinde liegt an der westlichen Grenze des Treverer-Gebietes. In
+            keltischer Zeit gab es wohl einen Hafen und einen Fährdienst über die Maas. In der
+            Römerzeit wurde die Siedlung zu einem Vicus an der Straße von Reims nach Trier
+            ausgebaut. Etwa 3 km südöstlich von Mouzon, im „Bois de Flavier“, wurde ein keltischer
+            Opferplatz aus der Zeit des 8.–6. Jh. v. Chr. gefunden, an dessen Stelle im 1. Jh. ein
+            gallorömisches Heiligtum (Fanum) trat, das 1967 ausgegraben wurde. Die Grundmauern der
+            Tempelanlage sind erhalten geblieben. Das Heiligtum hatte auch einen römischen
+            Vorgänger aus der Zeit des Augustus. Auf dem Gelände wurden mehrere Waffen in
+            Miniaturform gefunden, die im 1. Jh. n. Chr. als Opfergaben verwendet wurden, ebenso
+            wie Knochen von Tieropfern aus dem 2. Jh.
+            2. Der Name Mouzon geht auf das keltische <em class="emphasis-linguistic" aria-label="linguistic">*Moso-magos</em>,
+            ‚Maasfeld‘, zurück. Der Ort erscheint wahrscheinlich auf der berühmten Straßenkarte
+            Tabula Peutingeriana aus dem 4. Jahrhundert unter dem Eintrag „Mosa“.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
         shortInfo: 'Gallo-Römisches Heiligtum',
         images: [
@@ -771,7 +799,47 @@ const PLACES_DE = [
     },
     {
         coordinates: [50.33922878806975, 7.439752298915589],
-        modernName: 'Goloring (Bassenheim)',
+        modernName: 'Wolken "Goloring"',
+        administrativeDivision: "Gmd. Kobern-Gondorf, Lkr. Mayen-Koblenz, RLP",
+        objects: [
+            {
+                name: 'Erdwerk',
+                culture: 'a) Urnenfelder- und b) ältere Hunsrück-Eifel-Kultur',
+                period: 'a) ca. 950 v. Chr. (Vorgängerbau) und b) 8./7. Jh. v. Chr. (Goloring)',
+                visibility: 'sichtbar',
+            }
+        ],
+        descriptionTitle: 'Erdwerk "Goloring"',
+        description: `
+            Der Goloring besteht aus einem kreisförmigen Graben mit 175 Metern Durchmesser und
+            einem äußeren Wall, der sich bis zu 190 Meter erstreckt. Die Anlage wird als
+            „Henge“-Monument bezeichnet, obwohl die Verwendung dieses Begriffs außerhalb
+            Großbritanniens umstritten ist. Der äußere Wall ist etwa 7 Meter breit und 80 cm hoch.
+            Der Graben selbst ist oben 5–6 Meter breit und etwa 80 cm tief. Im Inneren befindet
+            sich eine annähernd kreisförmige, ebene Plattform, die etwa 1 Meter hoch liegt. Die
+            Plattform wurde auf aufgeschüttetem Kies errichtet und hat einen Durchmesser von 95
+            Metern. In der Mitte dieser Plattform wurden die Überreste eines 50 cm dicken
+            Holzpfostens mit einer geschätzten Höhe von 8–12 Metern ausgegraben. Nach allgemeiner
+            Ansicht heute handelt es sich um ein keltisches Heiligtum im Zentrum eines der größten
+            Grabhügelfelder in Rheinland-Pfalz. Die Fläche ist heute von Bäumen befreit.
+            In einer Kiesgrube, ca. 200 m südwestlich des Golorings, wurde eine Vorgängeranlage mit
+            einem Kreisgraben von 86 m Durchmesser nachgewiesen. In deren Zentrum befand sich eine
+            Schachtgrube von 4 m Durchmesser und 7 m Tiefe mit Ascheresten, Knochen-, Keramik- und
+            Bronzefunden.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        shortInfo: 'Erdwerk "Goloring"',
+        images: [
+            {
+                title: 'Goloring bei Wolken',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Goloring_001.jpg',
+                altText: 'Goloring bei Wolken',
+                imageBy: 'Labradormix',
+                imageByLink: 'https://de.wikipedia.org/wiki/Benutzer:Labradormix',
+                license: 'Public domain',
+                licenseLink: 'https://en.wikipedia.org/wiki/Public_domain',
+            }
+        ],
     },
     {
         coordinates: [49.803333, 5.205],
@@ -961,20 +1029,58 @@ const PLACES_DE = [
     },
     {
         coordinates: [49.855393504521366, 7.164632626566603],
-        ancientName: 'Belgīnum',
         modernName: 'Wederath',
+        ancientName: 'Belgīnum',
+        administrativeDivision: "Gmd. Morbach, Lkr. Bernkastel-Wittlich, RLP",
+        objects: [
+            {
+                name: "Museum",
+                culture: "modern",
+                visibility: "Originalfunde und Rekonstruktionen",
+            },
+            {
+                name: "Gräberfeld",
+                culture: "Hunsrück-Eifel-Kultur",
+                period: "ca. 400 v. Chr. bis 400 n. Chr.",
+                visibility: "Sichtbar",
+            },
+            {
+                name: "Tempelbezirk mit Inschrift",
+                culture: "späte Latènekultur, gallorömisch",
+                period: "1. Jh. v. Chr. – 4. Jh. n. Chr.",
+                visibility: "Zerstört, Inschrift nicht vor Ort",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
         descriptionTitle: 'Archäologiepark Belginum',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
+        description: `
+            1. Das Museum zeigt die Funde aus dem Vicus Belginum (römisches Dorf), dem Gräberfeld,
+            der gallorömischen Tempelanlage und einem frühen römischen Militärlager.
+            2. Die Nekropole „Hochgerichtsheide“ ist bemerkenswert, da ihre Gräber eine Zeitspanne
+            von 800 Jahren umfassen. Die über 2500 archäologisch erforschten Gräber reichen von der
+            frühkeltischen Zeit um 400 v. Chr. bis in die römische Spätantike um 400 n. Chr.
+            3. Am östlichen und westlichen Ortsrand des Vicus befanden sich 4 Tempelbezirke, von
+            denen drei durch ihren Grundriss bekannt sind. Ein Kulttheater zum Tempelbezirk 1 kann
+            durch eine Inschrift belegt werden. Tempelbezirk 2 hatte evtl. Einen latènezeitlichen
+            Kultplatz als Vorgänger. Weitere mögliche Deponierungen von Lanzenspitzen und
+            latènezeitlicher Keramik sind von weiteren Orten bekannt.
+            4. Der Name Belginum leitet sich von dem Personen- bzw. Völkernamen Belgos ab, was
+            wahrscheinlich „mit stolzgeschwellter Brust“ bedeutet, von keltisch *belg-o- aus
+            indogermanisch *bʰelgʰ- „schwellen“, vgl. gallisch *bolgā, bulgā „Sack“.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT, TYPE_IMMATERIAL],
         shortInfo: 'Archäologiepark Belginum',
         images: [
             {
                 title: 'Archäologiepark Belginum',
-                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Archaeologiepark_Belginum.jpg/1920px-Archaeologiepark_Belginum.jpg',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Archaeologiepark_Belginum.jpg/1280px-Archaeologiepark_Belginum.jpg',
                 altText: 'Archäologiepark Belginum',
                 imageBy: 'MSeses',
                 imageByLink: 'https://commons.wikimedia.org/wiki/User:MSeses',
-                license: 'CC-BY-SA-3.0',
+                license: 'CC BY-SA 3.0',
                 licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
             }
         ],
@@ -1324,11 +1430,75 @@ const PLACES_DE = [
         ],
     },
     {
-        coordinates: [49.355776978263634, 6.564342943056346],
+        coordinates: [49.368611, 6.678611],
         modernName: 'Niedaltdorf',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
-        shortInfo: '',
+        administrativeDivision: "Gmd. Rehlingen-Siersburg, Lkr. Saarlouis, SL",
+        objects: [
+            {
+                name: "Gräber",
+                culture: "späte Hallstatt- bis mittlere Latènekultur (Ha D – LT C)",
+                period: "ca. 600 bis ca. 200 v. Chr.",
+                visibility: "Zerstört",
+            },
+            {
+                name: "Keltengehöft",
+                visibility: "Rekonstruiert",
+            }
+        ],
+        descriptionTitle: 'Keltische Gräber und Keltengehöft',
+        description: `
+            1. In Niedaltdorf wurden zwölf keltische Gräber aus der späten Hallstatt- bis mittleren
+            Latènezeit entdeckt.
+            2. Zwischen 2003 und 2006 wurde ein keltisches Gehöft, bestehend aus einem Wohnhaus
+            und einem Speicher, rekonstruiert. Das Gehöft ist Teil des „Druidenweges“, eines etwa
+            6 km langen Rundweges an der Grenze zu Frankreich.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        shortInfo: 'Keltische Gräber und Keltengehöft',
+    },
+    {
+        coordinates: [49.35602, 6.711338],
+        modernName: 'Pachten',
+        administrativeDivision: "Stadt Dillingen, Lkr. Saarlouis, SL",
+        objects: [
+            {
+                name: "Gräber, Einzelfund",
+                culture: "a) späte Hallstattkultur (Ha D), b) späte Latènekultur (LT D)",
+                period: "a) 6./5. Jh. v. Chr., b) 1. Jh. v. Chr.",
+                visibility: "zerstört, Einzelfund im Römermuseum Pachten",
+            },
+            {
+                name: "Inschriften mit Personen- und Götternamen",
+                culture: "gallorömisch",
+                period: "2.–4. Jh. n. Chr.",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Keltische Gräber, Inschriften, Ortsname',
+        description: `
+            1. Direkt zu Füßen des Limbergs auf der linken Seite der Saar wurde ein
+            hallstattzeitliches Grab in der Flur „Auf der Ziegelhütte“ gefunden, ebenso wie ein
+            weiteres Grab derselben Zeitstellung auf der rechten Saarseite im „Bierenfeld“. Im
+            Ortsteil Pachten selbst wurde 1967 ein Schwert der Spätlatènezeit gefunden, das
+            ebenfalls zu einer Bestattung gehört haben dürfte.
+            2. Aus Pachten sind eine Reihe von Grabinschriften der römischen Zeit bekannt, die
+            einheimisches Namengut enthalten wie Giamillus, Carantia, Ursus. Daneben gibt es 167
+            Fragmente von Sitzsteinen eines Theaters, die überall im Ort sekundär verbaut waren bzw.
+            noch sind. 76 Theatersteine weisen Beschriftungen auf, die mehrheitlich einheimische
+            Personennamen wiedergeben. Beispiele sind Litugenus, Senomainius, Artto, Tesius oder
+            Tesimarus usw.
+            3. Der Ortsname Contiomagus wurde durch einen Inschriftenfund des Jahres 1955 bestätigt,
+            auf dem die Dorfbewohner genannt werden, vicani Contiomagienses (AE 1959, 76). Der Name
+            erklärt sich aus gallisch Contio- unbekannter Bedeutung und -magos „Feld“ und könnte
+            auf einen Personennamen zurückgehen: „Feld des Contios“. Die weitverbreitete Ansicht
+            einer Zusammensetzung mit condate „Zusammenfluss“ ist nicht nachvollziehbar, zumal es
+            die Form *Condatemagos (in frz. Condéon, dép. Charente) tatsächlich gegeben hat.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Keltische Gräber, Inschriften, Ortsname',
     },
     {
         coordinates: [49.473333, 6.608611],
