@@ -806,19 +806,101 @@ const PLACES_DE = [
         shortInfo: 'Keltische Befestigung',
     },
     {
-        coordinates: [49.411389, 5.230278],
+        coordinates: [49.4114, 5.2303],
         modernName: 'Lion-devant-Dun',
-        description: ``,
+        administrativeDivision: "Dép. Meuse, F",
+        objects: [
+            {
+                name: "Oppidum",
+                culture: "a) späte Latènekultur (LT D), b) römische Kaiserzeit",
+                period: "a) 1. Jh. v. Chr., b) 3.–4. Jh. n. Chr.",
+                visibility: "gut sichtbar",
+            }
+        ],
+        descriptionTitle: 'Oppidum Lion-devant-Dun',
+        description: `
+            Östlich des modernen Dorfes befindet sich ein langgestreckter Bergrücken, auf dem ein
+            Oppidum von etwa 18 Hektar liegt. Die südliche Flanke wird durch einen Wall geschützt,
+            der noch bis zu 6 m hoch ist. Vor dem Wall sind zwei ca. 10 m breite Gräben angelegt
+            worden. Das Oppidum Lion-devant-Dun wurde auf einer Landzunge über der Maas errichtet.
+            Das Oppidum lag auf dem Ende der Landzunge, deren schmalste Stelle durch den
+            Abschnittswall geschützt wurde. Sondagen ergaben Keramik aus der späten Latène- und
+            römischen Kaiserzeit.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-        shortInfo: 'Keltisches oppidum',
+        shortInfo: 'Keltisches Oppidum',
     },
     {
-        coordinates: [49.91561284272628, 5.377023740733322],
+        coordinates: [49.836, 6.5878],
+        modernName: 'Möhn',
+        administrativeDivision: "Gmd. Welschbillig, Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Heiligtum",
+                culture: "späte Latènekultur, römische Kaiserzeit",
+                period: "1. Jh. v. Chr., bis um 400 n. Chr.",
+                visibility: "zerstört",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Gallorömisches Heiligtum und Ortsname Möhn',
+        description: `
+            1. An der Südostflanke des Nosterberges südlich von Möhn wurde 1887 ein gallorömisches
+            Heiligtum teilweise ausgegraben. Am Hügel entlang reihten sich nebeneinander drei Tempel
+            und ein halbrundes Kulttheater. Es wird auch von mehreren gefassten Quellen berichtet.
+            Das Heiligtum setzt offenbar eine keltische Kultstätte fort, da auch Funde der
+            Spätlatènezeit bekannt sind wie typisch späte Drahtfibeln, z.B. die Nauheimer Fibeln,
+            keltische Münzen und andere Votivgaben wie Schwerter, Lanzenspitzen, Radanhänger
+            (sogenannte Rouelles) und Terrakotten. Auch in römischer Zeit wurden noch Münzen
+            geopfert. Die Laufzeit der Tempelanlage dürfte vom 1. Jh. v. Chr. bis ins 4. Jh. n. Chr.
+            gereicht haben. Aus dem Heiligtum ist auch ein Kalksteinsockel mit einer Weihinschrift
+            für die Götter Mars Smertulitanus und Ancamna gefunden worden.
+            2. Der Name Möhn wurde bereits in einer Urkunde von 786/87 (Kopie von 1222) in der Form
+            Medona genannt. Der Name geht wohl auf keltisch
+            <em class="emphasis-linguistic" aria-label="linguistic">*med-on-ā</em> zurück, dessen Bedeutung unklar ist.
+            <em class="emphasis-linguistic" aria-label="linguistic">*med-</em> heißt zunächst „messen“, kann aber auch
+            „abwägen, (be)urteilen“ und evtl. „heilen“ bedeuten. Somit könnte der Ortsname in
+            engerer Verbindung zum Heiligtum stehen.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Gallorömisches Heiligtum, Ortsname',
+    },
+    {
+        coordinates: [49.916667, 5.383333],
         modernName: 'Libramont-Chevigny',
+        administrativeDivision: "Prov. Luxembourg, B",
+        objects: [
+            {
+                name: "Museum",
+                culture: "modern",
+            }
+        ],
         descriptionTitle: 'Musée des Celtes',
-        description: ``,
-        types: [TYPE_OBJECT, TYPE_OTHER],
-        shortInfo: '',
+        description: `
+            Das „Museum der Kelten“ ist dem Studium der keltischen Kultur in den Ardennen gewidmet.
+            Es hat sich zum Ziel gesetzt, zahlreiche kleine Sammlungen zu vereinen, neue Objekte,
+            insbesondere aus den Forschungen des Centre de Recherches Archéologiques en Ardenne,
+            hinzuzufügen, die Funde zu bewahren und sie der Öffentlichkeit zu präsentieren. Das
+            Museum legt besonderen Wert auf die Korrektur der gängigen Stereotypen und Vorurteile
+            über die Kelten. Es beherbergt unter anderem Funde aus Bérismenil, Cherain-Brisy und
+            Cugnon.
+        `,
+        types: [TYPE_OTHER],
+        shortInfo: 'Museum der Kelten',
+        images: [
+            {
+                title: 'Musée des Celtes',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Nouvelle_facade_06.jpg/960px-Nouvelle_facade_06.jpg',
+                altText: 'Musée des Celtes',
+                imageBy: 'Musée des Celtes',
+                imageByLink: 'https://www.museedesceltes.be/',
+                license: 'CC BY-SA 4.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+            }
+        ],
     },
     {
         coordinates: [49.5675, 5.5325],
@@ -933,19 +1015,39 @@ const PLACES_DE = [
         ],
     },
     {
-        coordinates: [49.99312013585362, 7.108027612129568],
+        coordinates: [49.993459, 7.108671],
         modernName: 'Kröv',
-        descriptionTitle: 'Burgberg',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
+        administrativeDivision: "Lkr. Bernkastel-Wittlich, RLP",
+        objects: [
+            {
+                name: "Abschnittswall",
+                culture: "Ältere Hunsrück-Eifel-Kultur (HEK I–II)",
+                period: "7./6. – 5. Jh. v. Chr.",
+                visibility: "Gut sichtbar",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Burgberg und Ortsname',
+        description: `
+            1. Der Burgberg bei Kröv ist eine Spornbefestigung der älteren Hunsrück-Eifel-Kultur
+            (HEK I). An drei Seiten ist das Plateau durch steile Hänge gesichert. Im Nordosten sind
+            zwei Abschnittswälle in zwei Bauphasen als Pfostenschlitzmauer mit schmalen Durchlässen
+            errichtet worden, die eine Nutzfläche von etwa 0,6 Hektar umschließen. In der
+            Nordwestecke zieht sich die Mauer ohne ersichtlichen Grund etwa 60 m weiter. Auf dem
+            Gelände wurden Töpferwaren und eine getriebene Axt der jüngeren Hunsrück-Eifel-Kultur
+            (5. Jh. v. Chr.) gefunden.
+            2. Der Name Kröv, der aus Urkunden der Jahre 747 bis 751 in Abschriften von 1222 bekannt
+            ist, war Crovia, von einem Wort für „krummes Gelände, Hügelflanke“, von indogermanisch
+            *krou̯-, vgl. das französische Toponym Crouy. Eine weitere Ableitung, *krou̯ko-,
+            „Haufen, Hügel“, ist in modernen keltischen Sprachen wie irisch cruach, walisisch crug
+            weit verbreitet.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
         shortInfo: 'Burgberg',
     },
-/* generate new entry based on following info:
-
-
-
-© Rheinisches Landesmuseum Trier/Thomas Zühmer, CC BY-NC-SA https://rlp.museum-digital.de/singleimage?imagenr=7634 
-*/
     {
         coordinates: [49.973333, 7.053611],
         modernName: 'Kindel',
