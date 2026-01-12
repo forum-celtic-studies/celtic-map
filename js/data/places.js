@@ -713,7 +713,35 @@ const PLACES_DE = [
         coordinates: [49.606111, 5.075556],
         ancientName: 'Mosomagos',
         modernName: 'Mouzon',
-        description: ``,
+        administrativeDivision: "Dép. Ardennes, F",
+        objects: [
+            {
+                name: 'Heiligtum',
+                culture: 'a) Eisenzeit, b) gallorömisch',
+                period: 'a) 8.–6. Jh. v. Chr., b) 1.–2. Jh. n. Chr.',
+                visibility: 'Grundmauern sichtbar',
+            },
+            {
+                name: 'Ortsname',
+                culture: 'vorrömisch',
+            }
+        ],
+        descriptionTitle: 'Gallo-Römisches Heiligtum, Ortsname',
+        description: `
+            1. Die französische Gemeinde liegt an der westlichen Grenze des Treverer-Gebietes. In
+            keltischer Zeit gab es wohl einen Hafen und einen Fährdienst über die Maas. In der
+            Römerzeit wurde die Siedlung zu einem Vicus an der Straße von Reims nach Trier
+            ausgebaut. Etwa 3 km südöstlich von Mouzon, im „Bois de Flavier“, wurde ein keltischer
+            Opferplatz aus der Zeit des 8.–6. Jh. v. Chr. gefunden, an dessen Stelle im 1. Jh. ein
+            gallorömisches Heiligtum (Fanum) trat, das 1967 ausgegraben wurde. Die Grundmauern der
+            Tempelanlage sind erhalten geblieben. Das Heiligtum hatte auch einen römischen
+            Vorgänger aus der Zeit des Augustus. Auf dem Gelände wurden mehrere Waffen in
+            Miniaturform gefunden, die im 1. Jh. n. Chr. als Opfergaben verwendet wurden, ebenso
+            wie Knochen von Tieropfern aus dem 2. Jh.
+            2. Der Name Mouzon geht auf das keltische <em class="emphasis-linguistic" aria-label="linguistic">*Moso-magos</em>,
+            ‚Maasfeld‘, zurück. Der Ort erscheint wahrscheinlich auf der berühmten Straßenkarte
+            Tabula Peutingeriana aus dem 4. Jahrhundert unter dem Eintrag „Mosa“.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
         shortInfo: 'Gallo-Römisches Heiligtum',
         images: [
@@ -771,7 +799,47 @@ const PLACES_DE = [
     },
     {
         coordinates: [50.33922878806975, 7.439752298915589],
-        modernName: 'Goloring (Bassenheim)',
+        modernName: 'Wolken "Goloring"',
+        administrativeDivision: "Gmd. Kobern-Gondorf, Lkr. Mayen-Koblenz, RLP",
+        objects: [
+            {
+                name: 'Erdwerk',
+                culture: 'a) Urnenfelder- und b) ältere Hunsrück-Eifel-Kultur',
+                period: 'a) ca. 950 v. Chr. (Vorgängerbau) und b) 8./7. Jh. v. Chr. (Goloring)',
+                visibility: 'sichtbar',
+            }
+        ],
+        descriptionTitle: 'Erdwerk "Goloring"',
+        description: `
+            Der Goloring besteht aus einem kreisförmigen Graben mit 175 Metern Durchmesser und
+            einem äußeren Wall, der sich bis zu 190 Meter erstreckt. Die Anlage wird als
+            „Henge“-Monument bezeichnet, obwohl die Verwendung dieses Begriffs außerhalb
+            Großbritanniens umstritten ist. Der äußere Wall ist etwa 7 Meter breit und 80 cm hoch.
+            Der Graben selbst ist oben 5–6 Meter breit und etwa 80 cm tief. Im Inneren befindet
+            sich eine annähernd kreisförmige, ebene Plattform, die etwa 1 Meter hoch liegt. Die
+            Plattform wurde auf aufgeschüttetem Kies errichtet und hat einen Durchmesser von 95
+            Metern. In der Mitte dieser Plattform wurden die Überreste eines 50 cm dicken
+            Holzpfostens mit einer geschätzten Höhe von 8–12 Metern ausgegraben. Nach allgemeiner
+            Ansicht heute handelt es sich um ein keltisches Heiligtum im Zentrum eines der größten
+            Grabhügelfelder in Rheinland-Pfalz. Die Fläche ist heute von Bäumen befreit.
+            In einer Kiesgrube, ca. 200 m südwestlich des Golorings, wurde eine Vorgängeranlage mit
+            einem Kreisgraben von 86 m Durchmesser nachgewiesen. In deren Zentrum befand sich eine
+            Schachtgrube von 4 m Durchmesser und 7 m Tiefe mit Ascheresten, Knochen-, Keramik- und
+            Bronzefunden.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        shortInfo: 'Erdwerk "Goloring"',
+        images: [
+            {
+                title: 'Goloring bei Wolken',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Goloring_001.jpg',
+                altText: 'Goloring bei Wolken',
+                imageBy: 'Labradormix',
+                imageByLink: 'https://de.wikipedia.org/wiki/Benutzer:Labradormix',
+                license: 'Public domain',
+                licenseLink: 'https://en.wikipedia.org/wiki/Public_domain',
+            }
+        ],
     },
     {
         coordinates: [49.803333, 5.205],
@@ -806,19 +874,101 @@ const PLACES_DE = [
         shortInfo: 'Keltische Befestigung',
     },
     {
-        coordinates: [49.411389, 5.230278],
+        coordinates: [49.4114, 5.2303],
         modernName: 'Lion-devant-Dun',
-        description: ``,
+        administrativeDivision: "Dép. Meuse, F",
+        objects: [
+            {
+                name: "Oppidum",
+                culture: "a) späte Latènekultur (LT D), b) römische Kaiserzeit",
+                period: "a) 1. Jh. v. Chr., b) 3.–4. Jh. n. Chr.",
+                visibility: "gut sichtbar",
+            }
+        ],
+        descriptionTitle: 'Oppidum Lion-devant-Dun',
+        description: `
+            Östlich des modernen Dorfes befindet sich ein langgestreckter Bergrücken, auf dem ein
+            Oppidum von etwa 18 Hektar liegt. Die südliche Flanke wird durch einen Wall geschützt,
+            der noch bis zu 6 m hoch ist. Vor dem Wall sind zwei ca. 10 m breite Gräben angelegt
+            worden. Das Oppidum Lion-devant-Dun wurde auf einer Landzunge über der Maas errichtet.
+            Das Oppidum lag auf dem Ende der Landzunge, deren schmalste Stelle durch den
+            Abschnittswall geschützt wurde. Sondagen ergaben Keramik aus der späten Latène- und
+            römischen Kaiserzeit.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-        shortInfo: 'Keltisches oppidum',
+        shortInfo: 'Keltisches Oppidum',
     },
     {
-        coordinates: [49.91561284272628, 5.377023740733322],
+        coordinates: [49.836, 6.5878],
+        modernName: 'Möhn',
+        administrativeDivision: "Gmd. Welschbillig, Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Heiligtum",
+                culture: "späte Latènekultur, römische Kaiserzeit",
+                period: "1. Jh. v. Chr., bis um 400 n. Chr.",
+                visibility: "zerstört",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Gallorömisches Heiligtum und Ortsname Möhn',
+        description: `
+            1. An der Südostflanke des Nosterberges südlich von Möhn wurde 1887 ein gallorömisches
+            Heiligtum teilweise ausgegraben. Am Hügel entlang reihten sich nebeneinander drei Tempel
+            und ein halbrundes Kulttheater. Es wird auch von mehreren gefassten Quellen berichtet.
+            Das Heiligtum setzt offenbar eine keltische Kultstätte fort, da auch Funde der
+            Spätlatènezeit bekannt sind wie typisch späte Drahtfibeln, z.B. die Nauheimer Fibeln,
+            keltische Münzen und andere Votivgaben wie Schwerter, Lanzenspitzen, Radanhänger
+            (sogenannte Rouelles) und Terrakotten. Auch in römischer Zeit wurden noch Münzen
+            geopfert. Die Laufzeit der Tempelanlage dürfte vom 1. Jh. v. Chr. bis ins 4. Jh. n. Chr.
+            gereicht haben. Aus dem Heiligtum ist auch ein Kalksteinsockel mit einer Weihinschrift
+            für die Götter Mars Smertulitanus und Ancamna gefunden worden.
+            2. Der Name Möhn wurde bereits in einer Urkunde von 786/87 (Kopie von 1222) in der Form
+            Medona genannt. Der Name geht wohl auf keltisch
+            <em class="emphasis-linguistic" aria-label="linguistic">*med-on-ā</em> zurück, dessen Bedeutung unklar ist.
+            <em class="emphasis-linguistic" aria-label="linguistic">*med-</em> heißt zunächst „messen“, kann aber auch
+            „abwägen, (be)urteilen“ und evtl. „heilen“ bedeuten. Somit könnte der Ortsname in
+            engerer Verbindung zum Heiligtum stehen.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Gallorömisches Heiligtum, Ortsname',
+    },
+    {
+        coordinates: [49.916667, 5.383333],
         modernName: 'Libramont-Chevigny',
+        administrativeDivision: "Prov. Luxembourg, B",
+        objects: [
+            {
+                name: "Museum",
+                culture: "modern",
+            }
+        ],
         descriptionTitle: 'Musée des Celtes',
-        description: ``,
-        types: [TYPE_OBJECT, TYPE_OTHER],
-        shortInfo: '',
+        description: `
+            Das „Museum der Kelten“ ist dem Studium der keltischen Kultur in den Ardennen gewidmet.
+            Es hat sich zum Ziel gesetzt, zahlreiche kleine Sammlungen zu vereinen, neue Objekte,
+            insbesondere aus den Forschungen des Centre de Recherches Archéologiques en Ardenne,
+            hinzuzufügen, die Funde zu bewahren und sie der Öffentlichkeit zu präsentieren. Das
+            Museum legt besonderen Wert auf die Korrektur der gängigen Stereotypen und Vorurteile
+            über die Kelten. Es beherbergt unter anderem Funde aus Bérismenil, Cherain-Brisy und
+            Cugnon.
+        `,
+        types: [TYPE_OTHER],
+        shortInfo: 'Museum der Kelten',
+        images: [
+            {
+                title: 'Musée des Celtes',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Nouvelle_facade_06.jpg/960px-Nouvelle_facade_06.jpg',
+                altText: 'Musée des Celtes',
+                imageBy: 'Musée des Celtes',
+                imageByLink: 'https://www.museedesceltes.be/',
+                license: 'CC BY-SA 4.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+            }
+        ],
     },
     {
         coordinates: [49.5675, 5.5325],
@@ -879,20 +1029,58 @@ const PLACES_DE = [
     },
     {
         coordinates: [49.855393504521366, 7.164632626566603],
-        ancientName: 'Belgīnum',
         modernName: 'Wederath',
+        ancientName: 'Belgīnum',
+        administrativeDivision: "Gmd. Morbach, Lkr. Bernkastel-Wittlich, RLP",
+        objects: [
+            {
+                name: "Museum",
+                culture: "modern",
+                visibility: "Originalfunde und Rekonstruktionen",
+            },
+            {
+                name: "Gräberfeld",
+                culture: "Hunsrück-Eifel-Kultur",
+                period: "ca. 400 v. Chr. bis 400 n. Chr.",
+                visibility: "Sichtbar",
+            },
+            {
+                name: "Tempelbezirk mit Inschrift",
+                culture: "späte Latènekultur, gallorömisch",
+                period: "1. Jh. v. Chr. – 4. Jh. n. Chr.",
+                visibility: "Zerstört, Inschrift nicht vor Ort",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
         descriptionTitle: 'Archäologiepark Belginum',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
+        description: `
+            1. Das Museum zeigt die Funde aus dem Vicus Belginum (römisches Dorf), dem Gräberfeld,
+            der gallorömischen Tempelanlage und einem frühen römischen Militärlager.
+            2. Die Nekropole „Hochgerichtsheide“ ist bemerkenswert, da ihre Gräber eine Zeitspanne
+            von 800 Jahren umfassen. Die über 2500 archäologisch erforschten Gräber reichen von der
+            frühkeltischen Zeit um 400 v. Chr. bis in die römische Spätantike um 400 n. Chr.
+            3. Am östlichen und westlichen Ortsrand des Vicus befanden sich 4 Tempelbezirke, von
+            denen drei durch ihren Grundriss bekannt sind. Ein Kulttheater zum Tempelbezirk 1 kann
+            durch eine Inschrift belegt werden. Tempelbezirk 2 hatte evtl. Einen latènezeitlichen
+            Kultplatz als Vorgänger. Weitere mögliche Deponierungen von Lanzenspitzen und
+            latènezeitlicher Keramik sind von weiteren Orten bekannt.
+            4. Der Name Belginum leitet sich von dem Personen- bzw. Völkernamen Belgos ab, was
+            wahrscheinlich „mit stolzgeschwellter Brust“ bedeutet, von keltisch *belg-o- aus
+            indogermanisch *bʰelgʰ- „schwellen“, vgl. gallisch *bolgā, bulgā „Sack“.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT, TYPE_IMMATERIAL],
         shortInfo: 'Archäologiepark Belginum',
         images: [
             {
                 title: 'Archäologiepark Belginum',
-                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Archaeologiepark_Belginum.jpg/1920px-Archaeologiepark_Belginum.jpg',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Archaeologiepark_Belginum.jpg/1280px-Archaeologiepark_Belginum.jpg',
                 altText: 'Archäologiepark Belginum',
                 imageBy: 'MSeses',
                 imageByLink: 'https://commons.wikimedia.org/wiki/User:MSeses',
-                license: 'CC-BY-SA-3.0',
+                license: 'CC BY-SA 3.0',
                 licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
             }
         ],
@@ -933,28 +1121,72 @@ const PLACES_DE = [
         ],
     },
     {
-        coordinates: [49.99312013585362, 7.108027612129568],
+        coordinates: [49.993459, 7.108671],
         modernName: 'Kröv',
-        descriptionTitle: 'Burgberg',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
+        administrativeDivision: "Lkr. Bernkastel-Wittlich, RLP",
+        objects: [
+            {
+                name: "Abschnittswall",
+                culture: "Ältere Hunsrück-Eifel-Kultur (HEK I–II)",
+                period: "7./6. – 5. Jh. v. Chr.",
+                visibility: "Gut sichtbar",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Burgberg und Ortsname',
+        description: `
+            1. Der Burgberg bei Kröv ist eine Spornbefestigung der älteren Hunsrück-Eifel-Kultur
+            (HEK I). An drei Seiten ist das Plateau durch steile Hänge gesichert. Im Nordosten sind
+            zwei Abschnittswälle in zwei Bauphasen als Pfostenschlitzmauer mit schmalen Durchlässen
+            errichtet worden, die eine Nutzfläche von etwa 0,6 Hektar umschließen. In der
+            Nordwestecke zieht sich die Mauer ohne ersichtlichen Grund etwa 60 m weiter. Auf dem
+            Gelände wurden Töpferwaren und eine getriebene Axt der jüngeren Hunsrück-Eifel-Kultur
+            (5. Jh. v. Chr.) gefunden.
+            2. Der Name Kröv, der aus Urkunden der Jahre 747 bis 751 in Abschriften von 1222 bekannt
+            ist, war Crovia, von einem Wort für „krummes Gelände, Hügelflanke“, von indogermanisch
+            *krou̯-, vgl. das französische Toponym Crouy. Eine weitere Ableitung, *krou̯ko-,
+            „Haufen, Hügel“, ist in modernen keltischen Sprachen wie irisch cruach, walisisch crug
+            weit verbreitet.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
         shortInfo: 'Burgberg',
     },
     {
-        coordinates: [49.97043087904943, 7.054190197900325],
-        modernName: 'Kinheim-Kindel',
-        description: ``,
-        types: [TYPE_OBJECT],
-        shortInfo: '',
-        images: [
+        coordinates: [49.973333, 7.053611],
+        modernName: 'Kindel',
+        administrativeDivision: "Gmd. Kinheim, Lkr. Bernkastel-Wittlich, RLP",
+        objects: [
             {
-                title: 'Representation des Gallo-Römischen Gottes Sucellus',
-                href: 'https://www.uni-trier.de/fileadmin/forschung/projekte/ZAT/CEL/Sucellus_2.jpeg',
-                altText: 'Representation des Gallo-Römischen Gottes Sucellus',
-                imageBy: 'Forum Celtic Studies',
-                imageByLink: 'https://www.uni-trier.de/forschung/zat/celtic-studies/start',
-                license: 'Public domain',
-                licenseLink: 'https://creativecommons.org/public-domain/pdm/',
+                name: "Götterrelief",
+                culture: "gallorömisch",
+                period: "3. Jh. n. Chr.",
+                visibility: "Kopie vor dem Spielplatzgelände am Brückenkopf",
+            },
+            {
+                name: "Göttername",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Götterrelief des Sucellus, Göttername',
+        description: `
+            1. In dem Weindorf an der Mosel wurde 1976 in einer Villenanlage ein Hochrelief des
+            gallorömischen Gottes Sucellus gefunden. Es ist 80 cm hoch und stammt aus dem dritten
+            Jahrhundert nach Christus. Eine Kopie des Bildnisses und die Grundmauern der Villa sind
+            an Ort und Stelle zu sehen, andere architektonische Überreste wurden mit Erde bedeckt,
+            um sie zu schützen. Sucellus ist bärtig und mit einem Schlegel, Weintrauben und Fässern
+            dargestellt. Er wird deshalb als Gottheit des Weinbaus aufgefasst.
+            2. Der Name Sucellus bedeutet wahrscheinlich „der, der gut zuschlägt“, von keltisch
+            *su- „gut“ und *kell-, von indogermanisch *kelh₂- „zuschlagen“.
+        `,
+        types: [TYPE_OBJECT, TYPE_IMMATERIAL],
+        shortInfo: 'Götterrelief des Sucellus',
+        furtherLinks: [
+            {
+                text: 'Rheinisches Landesmuseum Trier: Götterrelief des Sucellus',
+                href: 'https://rlp.museum-digital.de/singleimage?imagenr=7634',
             }
         ],
     },
@@ -989,9 +1221,47 @@ const PLACES_DE = [
             ist. In der Kopie einer Echternacher Urkunde aus den Jahren 774/75, die heute in der Landesbibliothek 
             Gotha aufbewahrt wird, heißt es in pago Muslense super fluvio Muselle in monte Ardinigo „im Moselgau, 
             oberhalb des Flusses Model, auf dem Berg Ard(u̯)inius“, d.h. „dem zu *Arduena gehörenden Berg“.
-`,
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
         shortInfo: 'Burgberg',
+    },
+    {
+        coordinates: [49.85464, 6.64377],
+        modernName: 'Kordel',
+        administrativeDivision: "Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Ringwall",
+                culture: "a) Hunsrück-Eifel-Kultur, b) späte Latènekultur",
+                period: "a) 7.–3. Jh. v. Chr., b) 2./1. Jh. v. Chr.",
+                visibility: "gut sichtbar",
+            }
+        ],
+        descriptionTitle: 'Ringwall "Burgberg"',
+        description: `
+            Auf dem weit ins Kylltal vorgeschobenen Höhenzug des Burgbergs, der im Südosten über
+            einen engen Zugang erreichbar ist, wurde in der älteren Hunsrück-Eifel-Kultur,
+            ca. im 7. Jh. v. Chr., eine Pfostenschlitzmauer des Typs „Preist“ angelegt, die den
+            gesamten Bergsporn von 3,8 Hektar Fläche umschloss. In der jüngeren
+            Hunsrück-Eifel-Kultur, etwa im 5.–3. Jh. v. Chr., wurde sie erweitert und in der späten
+            Latènezeit, im 2./1. Jh. v. Chr., durch einen Murus Gallicus ersetzt. Zu dieser Bauphase
+            kann vielleicht ein fast vollständig eingeebneter Vorwall gerechnet werden, der den
+            nördlichsten Teil der Anlage abtrennt. Im Versturz des Murus Gallicus wurden römische
+            Scherben des 2.–3. Jh. gefunden, was für eine spätere Nachnutzung spricht.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        shortInfo: 'Ringwall',
+        images: [
+            {
+                title: 'Ringwall Burgberg Kordel',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/RWA_Burgberg_%28Kordel%29_23.jpg/960px-RWA_Burgberg_%28Kordel%29_23.jpg?20250506124135',
+                altText: 'Ringwall Burgberg Kordel',
+                imageBy: 'Commander-pirx',
+                imageByLink: 'https://commons.wikimedia.org/wiki/User:Commander-pirx',
+                license: 'CC BY-SA 4.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+            }
+        ],
     },
     {
         coordinates: [49.62215672921777, 7.002182760164149],
@@ -1119,31 +1389,116 @@ const PLACES_DE = [
         modernName: 'Weiskirchen',
     },
     {
-        coordinates: [49.336344309886925, 6.606950190519136],
+        coordinates: [49.323333, 6.605],
         ancientName: '*Enjā',
         modernName: 'Ihn',
-        descriptionTitle: 'Sudelfels Wasserheiligtum',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-        shortInfo: 'Gallo-Römisches Wasserheiligtum',
+        administrativeDivision: "Gmd. Wallerfangen, Lkr. Saarlouis, SL",
+        objects: [
+            {
+                name: "Heiligtum",
+                culture: "gallorömisch",
+                period: "150 bis 250 n. Chr.",
+                visibility: "Grundmauern sichtbar",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: '"Sudelfels" Wasserheiligtum und Ortsname Ihn',
+        description: `
+            1. Im Ortsteil Ihn von Wallerfangen befindet sich das gallorömische Quellheiligtum
+            „Sudelfels“, das aus der Zeit von etwa 150 bis 250 n. Chr. stammt. Die sakrale Anlage
+            umfasst ein achteckiges Brunnengebäude. Funde von Figurinen und Inschriften weisen auf
+            Wallfahrten zu gallorömischen Gottheiten wie Rosmerta und Sirona sowie zum überregional
+            verehrten Heilgott Apollo hin.
+            2. Der Ortsname Ihn leitet sich von keltisch *en-i̯ā „(Quelle) mit trübem Wasser“ ab,
+            von indogermanisch *pen- „Schlamm, Sumpf“, vgl. gallisch anam „Sumpf“.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Gallorömisches Wasserheiligtum, Ortsname',
         images: [
             {
-                title: 'Sudelfels water sanctuary',
-                href: 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Quellheiligtum_sudelfels.jpg',
-                altText: 'Sudelfels water sanctuary',
-                imageBy: 'Roger Zenner',
-                imageByLink: 'https://commons.wikimedia.org/wiki/User:Roger_Zenner',
-                license: 'CC-BY-SA-2.0-DE',
-                licenseLink: 'https://creativecommons.org/licenses/by-sa/2.0/de/deed.en',
+                title: 'Sudelfelsbrunnen',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Sudelfelsbrunnen.jpg/960px-Sudelfelsbrunnen.jpg?20181026200256',
+                altText: 'Sudelfelsbrunnen',
+                imageBy: 'Starkiller3010',
+                imageByLink: 'https://commons.wikimedia.org/wiki/User:Starkiller3010',
+                license: 'CC BY-SA 3.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
             }
         ],
     },
     {
-        coordinates: [49.355776978263634, 6.564342943056346],
+        coordinates: [49.368611, 6.678611],
         modernName: 'Niedaltdorf',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
-        shortInfo: '',
+        administrativeDivision: "Gmd. Rehlingen-Siersburg, Lkr. Saarlouis, SL",
+        objects: [
+            {
+                name: "Gräber",
+                culture: "späte Hallstatt- bis mittlere Latènekultur (Ha D – LT C)",
+                period: "ca. 600 bis ca. 200 v. Chr.",
+                visibility: "Zerstört",
+            },
+            {
+                name: "Keltengehöft",
+                visibility: "Rekonstruiert",
+            }
+        ],
+        descriptionTitle: 'Keltische Gräber und Keltengehöft',
+        description: `
+            1. In Niedaltdorf wurden zwölf keltische Gräber aus der späten Hallstatt- bis mittleren
+            Latènezeit entdeckt.
+            2. Zwischen 2003 und 2006 wurde ein keltisches Gehöft, bestehend aus einem Wohnhaus
+            und einem Speicher, rekonstruiert. Das Gehöft ist Teil des „Druidenweges“, eines etwa
+            6 km langen Rundweges an der Grenze zu Frankreich.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        shortInfo: 'Keltische Gräber und Keltengehöft',
+    },
+    {
+        coordinates: [49.35602, 6.711338],
+        modernName: 'Pachten',
+        administrativeDivision: "Stadt Dillingen, Lkr. Saarlouis, SL",
+        objects: [
+            {
+                name: "Gräber, Einzelfund",
+                culture: "a) späte Hallstattkultur (Ha D), b) späte Latènekultur (LT D)",
+                period: "a) 6./5. Jh. v. Chr., b) 1. Jh. v. Chr.",
+                visibility: "zerstört, Einzelfund im Römermuseum Pachten",
+            },
+            {
+                name: "Inschriften mit Personen- und Götternamen",
+                culture: "gallorömisch",
+                period: "2.–4. Jh. n. Chr.",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Keltische Gräber, Inschriften, Ortsname',
+        description: `
+            1. Direkt zu Füßen des Limbergs auf der linken Seite der Saar wurde ein
+            hallstattzeitliches Grab in der Flur „Auf der Ziegelhütte“ gefunden, ebenso wie ein
+            weiteres Grab derselben Zeitstellung auf der rechten Saarseite im „Bierenfeld“. Im
+            Ortsteil Pachten selbst wurde 1967 ein Schwert der Spätlatènezeit gefunden, das
+            ebenfalls zu einer Bestattung gehört haben dürfte.
+            2. Aus Pachten sind eine Reihe von Grabinschriften der römischen Zeit bekannt, die
+            einheimisches Namengut enthalten wie Giamillus, Carantia, Ursus. Daneben gibt es 167
+            Fragmente von Sitzsteinen eines Theaters, die überall im Ort sekundär verbaut waren bzw.
+            noch sind. 76 Theatersteine weisen Beschriftungen auf, die mehrheitlich einheimische
+            Personennamen wiedergeben. Beispiele sind Litugenus, Senomainius, Artto, Tesius oder
+            Tesimarus usw.
+            3. Der Ortsname Contiomagus wurde durch einen Inschriftenfund des Jahres 1955 bestätigt,
+            auf dem die Dorfbewohner genannt werden, vicani Contiomagienses (AE 1959, 76). Der Name
+            erklärt sich aus gallisch Contio- unbekannter Bedeutung und -magos „Feld“ und könnte
+            auf einen Personennamen zurückgehen: „Feld des Contios“. Die weitverbreitete Ansicht
+            einer Zusammensetzung mit condate „Zusammenfluss“ ist nicht nachvollziehbar, zumal es
+            die Form *Condatemagos (in frz. Condéon, dép. Charente) tatsächlich gegeben hat.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Keltische Gräber, Inschriften, Ortsname',
     },
     {
         coordinates: [49.473333, 6.608611],
@@ -1454,11 +1809,33 @@ const PLACES_DE = [
         modernName: 'Steineberg',
     },
     {
-        coordinates: [49.564722, 6.559722],
+        coordinates: [49.567057, 6.566174],
         modernName: 'Kastel-Staadt',
-        description: ``,
+        administrativeDivision: "Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Oppidum",
+                culture: "a) späte Latènekultur; b) gallorömische Kultur",
+                period: "a) 2./1. Jh. v. Chr.; b) 1. Jh. n. Chr.",
+                visibility: "Wall gut sichtbar",
+            },
+        ],
+        descriptionTitle: 'Oppidum Kastel-Staadt, "Castel"',
+        description: `
+            Auf einem Plateau des anstehenden Buntsandsteingebirges von ca. 30 Hektar Fläche, das
+            auf drei Seiten durch steil abfallende Hänge geschützt ist, wurde an der freien
+            Nordseite ein heute noch bis zu 7 m hoher Abschnittswall errichtet, wahrscheinlich ein
+            Murus Gallicus. Grabungen seit 1997 haben im Innern der Befestigung eine mehrphasige,
+            dichte Holzbebauung der späten Latènezeit ergeben, die den Charakter eines Oppidums
+            bestätigt. Die Siedlung hat wahrscheinlich bereits um 100 v. Chr. bestanden. Es gibt
+            auch eine beachtliche Zahl von keltischen Münzen von hier. Der Ort wurde bis in die
+            römische Zeit weiter besiedelt, verlor aber an Bedeutung. Am höchsten Teil des Plateaus
+            befand sich ein Heiligtum, das von einer 106 x 77 m messenden Umfassungsmauer begrenzt
+            war. Es stand mit einem Theater gallorömischen Typs in Verbindung, das 2006 bekannt
+            wurde.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-        shortInfo: 'Keltisches oppidum',
+        shortInfo: 'Oppidum Kastel-Staadt',
     },
     {
         coordinates: [50.20193, 6.67871],
