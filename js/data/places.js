@@ -940,21 +940,45 @@ const PLACES_DE = [
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
         shortInfo: 'Burgberg',
     },
+/* generate new entry based on following info:
+
+
+
+© Rheinisches Landesmuseum Trier/Thomas Zühmer, CC BY-NC-SA https://rlp.museum-digital.de/singleimage?imagenr=7634 
+*/
     {
-        coordinates: [49.97043087904943, 7.054190197900325],
-        modernName: 'Kinheim-Kindel',
-        description: ``,
-        types: [TYPE_OBJECT],
-        shortInfo: '',
-        images: [
+        coordinates: [49.973333, 7.053611],
+        modernName: 'Kindel',
+        administrativeDivision: "Gmd. Kinheim, Lkr. Bernkastel-Wittlich, RLP",
+        objects: [
             {
-                title: 'Representation des Gallo-Römischen Gottes Sucellus',
-                href: 'https://www.uni-trier.de/fileadmin/forschung/projekte/ZAT/CEL/Sucellus_2.jpeg',
-                altText: 'Representation des Gallo-Römischen Gottes Sucellus',
-                imageBy: 'Forum Celtic Studies',
-                imageByLink: 'https://www.uni-trier.de/forschung/zat/celtic-studies/start',
-                license: 'Public domain',
-                licenseLink: 'https://creativecommons.org/public-domain/pdm/',
+                name: "Götterrelief",
+                culture: "gallorömisch",
+                period: "3. Jh. n. Chr.",
+                visibility: "Kopie vor dem Spielplatzgelände am Brückenkopf",
+            },
+            {
+                name: "Göttername",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Götterrelief des Sucellus, Göttername',
+        description: `
+            1. In dem Weindorf an der Mosel wurde 1976 in einer Villenanlage ein Hochrelief des
+            gallorömischen Gottes Sucellus gefunden. Es ist 80 cm hoch und stammt aus dem dritten
+            Jahrhundert nach Christus. Eine Kopie des Bildnisses und die Grundmauern der Villa sind
+            an Ort und Stelle zu sehen, andere architektonische Überreste wurden mit Erde bedeckt,
+            um sie zu schützen. Sucellus ist bärtig und mit einem Schlegel, Weintrauben und Fässern
+            dargestellt. Er wird deshalb als Gottheit des Weinbaus aufgefasst.
+            2. Der Name Sucellus bedeutet wahrscheinlich „der, der gut zuschlägt“, von keltisch
+            *su- „gut“ und *kell-, von indogermanisch *kelh₂- „zuschlagen“.
+        `,
+        types: [TYPE_OBJECT, TYPE_IMMATERIAL],
+        shortInfo: 'Götterrelief des Sucellus',
+        furtherLinks: [
+            {
+                text: 'Rheinisches Landesmuseum Trier: Götterrelief des Sucellus',
+                href: 'https://rlp.museum-digital.de/singleimage?imagenr=7634',
             }
         ],
     },
@@ -989,9 +1013,47 @@ const PLACES_DE = [
             ist. In der Kopie einer Echternacher Urkunde aus den Jahren 774/75, die heute in der Landesbibliothek 
             Gotha aufbewahrt wird, heißt es in pago Muslense super fluvio Muselle in monte Ardinigo „im Moselgau, 
             oberhalb des Flusses Model, auf dem Berg Ard(u̯)inius“, d.h. „dem zu *Arduena gehörenden Berg“.
-`,
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
         shortInfo: 'Burgberg',
+    },
+    {
+        coordinates: [49.85464, 6.64377],
+        modernName: 'Kordel',
+        administrativeDivision: "Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Ringwall",
+                culture: "a) Hunsrück-Eifel-Kultur, b) späte Latènekultur",
+                period: "a) 7.–3. Jh. v. Chr., b) 2./1. Jh. v. Chr.",
+                visibility: "gut sichtbar",
+            }
+        ],
+        descriptionTitle: 'Ringwall "Burgberg"',
+        description: `
+            Auf dem weit ins Kylltal vorgeschobenen Höhenzug des Burgbergs, der im Südosten über
+            einen engen Zugang erreichbar ist, wurde in der älteren Hunsrück-Eifel-Kultur,
+            ca. im 7. Jh. v. Chr., eine Pfostenschlitzmauer des Typs „Preist“ angelegt, die den
+            gesamten Bergsporn von 3,8 Hektar Fläche umschloss. In der jüngeren
+            Hunsrück-Eifel-Kultur, etwa im 5.–3. Jh. v. Chr., wurde sie erweitert und in der späten
+            Latènezeit, im 2./1. Jh. v. Chr., durch einen Murus Gallicus ersetzt. Zu dieser Bauphase
+            kann vielleicht ein fast vollständig eingeebneter Vorwall gerechnet werden, der den
+            nördlichsten Teil der Anlage abtrennt. Im Versturz des Murus Gallicus wurden römische
+            Scherben des 2.–3. Jh. gefunden, was für eine spätere Nachnutzung spricht.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        shortInfo: 'Ringwall',
+        images: [
+            {
+                title: 'Ringwall Burgberg Kordel',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/RWA_Burgberg_%28Kordel%29_23.jpg/960px-RWA_Burgberg_%28Kordel%29_23.jpg?20250506124135',
+                altText: 'Ringwall Burgberg Kordel',
+                imageBy: 'Commander-pirx',
+                imageByLink: 'https://commons.wikimedia.org/wiki/User:Commander-pirx',
+                license: 'CC BY-SA 4.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+            }
+        ],
     },
     {
         coordinates: [49.62215672921777, 7.002182760164149],
@@ -1119,22 +1181,43 @@ const PLACES_DE = [
         modernName: 'Weiskirchen',
     },
     {
-        coordinates: [49.336344309886925, 6.606950190519136],
+        coordinates: [49.323333, 6.605],
         ancientName: '*Enjā',
         modernName: 'Ihn',
-        descriptionTitle: 'Sudelfels Wasserheiligtum',
-        description: ``,
-        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_OBJECT],
-        shortInfo: 'Gallo-Römisches Wasserheiligtum',
+        administrativeDivision: "Gmd. Wallerfangen, Lkr. Saarlouis, SL",
+        objects: [
+            {
+                name: "Heiligtum",
+                culture: "gallorömisch",
+                period: "150 bis 250 n. Chr.",
+                visibility: "Grundmauern sichtbar",
+            },
+            {
+                name: "Ortsname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: '"Sudelfels" Wasserheiligtum und Ortsname Ihn',
+        description: `
+            1. Im Ortsteil Ihn von Wallerfangen befindet sich das gallorömische Quellheiligtum
+            „Sudelfels“, das aus der Zeit von etwa 150 bis 250 n. Chr. stammt. Die sakrale Anlage
+            umfasst ein achteckiges Brunnengebäude. Funde von Figurinen und Inschriften weisen auf
+            Wallfahrten zu gallorömischen Gottheiten wie Rosmerta und Sirona sowie zum überregional
+            verehrten Heilgott Apollo hin.
+            2. Der Ortsname Ihn leitet sich von keltisch *en-i̯ā „(Quelle) mit trübem Wasser“ ab,
+            von indogermanisch *pen- „Schlamm, Sumpf“, vgl. gallisch anam „Sumpf“.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Gallorömisches Wasserheiligtum, Ortsname',
         images: [
             {
-                title: 'Sudelfels water sanctuary',
-                href: 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Quellheiligtum_sudelfels.jpg',
-                altText: 'Sudelfels water sanctuary',
-                imageBy: 'Roger Zenner',
-                imageByLink: 'https://commons.wikimedia.org/wiki/User:Roger_Zenner',
-                license: 'CC-BY-SA-2.0-DE',
-                licenseLink: 'https://creativecommons.org/licenses/by-sa/2.0/de/deed.en',
+                title: 'Sudelfelsbrunnen',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Sudelfelsbrunnen.jpg/960px-Sudelfelsbrunnen.jpg?20181026200256',
+                altText: 'Sudelfelsbrunnen',
+                imageBy: 'Starkiller3010',
+                imageByLink: 'https://commons.wikimedia.org/wiki/User:Starkiller3010',
+                license: 'CC BY-SA 3.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
             }
         ],
     },
@@ -1454,11 +1537,33 @@ const PLACES_DE = [
         modernName: 'Steineberg',
     },
     {
-        coordinates: [49.564722, 6.559722],
+        coordinates: [49.567057, 6.566174],
         modernName: 'Kastel-Staadt',
-        description: ``,
+        administrativeDivision: "Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Oppidum",
+                culture: "a) späte Latènekultur; b) gallorömische Kultur",
+                period: "a) 2./1. Jh. v. Chr.; b) 1. Jh. n. Chr.",
+                visibility: "Wall gut sichtbar",
+            },
+        ],
+        descriptionTitle: 'Oppidum Kastel-Staadt, "Castel"',
+        description: `
+            Auf einem Plateau des anstehenden Buntsandsteingebirges von ca. 30 Hektar Fläche, das
+            auf drei Seiten durch steil abfallende Hänge geschützt ist, wurde an der freien
+            Nordseite ein heute noch bis zu 7 m hoher Abschnittswall errichtet, wahrscheinlich ein
+            Murus Gallicus. Grabungen seit 1997 haben im Innern der Befestigung eine mehrphasige,
+            dichte Holzbebauung der späten Latènezeit ergeben, die den Charakter eines Oppidums
+            bestätigt. Die Siedlung hat wahrscheinlich bereits um 100 v. Chr. bestanden. Es gibt
+            auch eine beachtliche Zahl von keltischen Münzen von hier. Der Ort wurde bis in die
+            römische Zeit weiter besiedelt, verlor aber an Bedeutung. Am höchsten Teil des Plateaus
+            befand sich ein Heiligtum, das von einer 106 x 77 m messenden Umfassungsmauer begrenzt
+            war. Es stand mit einem Theater gallorömischen Typs in Verbindung, das 2006 bekannt
+            wurde.
+        `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE],
-        shortInfo: 'Keltisches oppidum',
+        shortInfo: 'Oppidum Kastel-Staadt',
     },
     {
         coordinates: [50.20193, 6.67871],
