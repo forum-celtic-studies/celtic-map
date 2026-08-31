@@ -805,7 +805,7 @@ const PLACES_DE = [
             {
                 name: 'Erdwerk',
                 culture: 'a) Urnenfelder- und b) ältere Hunsrück-Eifel-Kultur',
-                period: 'a) ca. 950 v. Chr. (Vorgängerbau) und b) 8./7. Jh. v. Chr. (Goloring)',
+                period: 'a) ca. 950 v. Chr. (Vorgängerbau) und b) 8./7. Jh. v. Chr. (Goloring)',                      
                 visibility: 'sichtbar',
             }
         ],
@@ -1016,16 +1016,8 @@ const PLACES_DE = [
         shortInfo: 'Befestigte Siedlung, Reenactment',
     },
     {
-        coordinates: [49.82548182583125, 7.298186249122467],
-        modernName: 'Hottenbach'
-    },
-    {
         coordinates: [50.17835793056453, 7.286190842781618],
         modernName: 'Martberg'
-    },
-    {
-        coordinates: [49.61510671168662, 7.187182191804576],
-        modernName: 'Hoppstädten-Weiersbach'
     },
     {
         coordinates: [49.855393504521366, 7.164632626566603],
@@ -1295,6 +1287,15 @@ const PLACES_DE = [
             `,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_EVENT],
         shortInfo: 'Hunnenring',
+        images: [
+            {
+                href: 'https://upload.wikimedia.org/wikipedia/commons/2/21/Ringwall_Otzenhausen.jpg?uselang=de',
+                imageBy: 'Leiflive',
+                imageByLink: 'https://commons.wikimedia.org/wiki/User:Commander-pirx',
+                license: 'CC BY-SA 4.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+            }
+        ],
     },
     {
         coordinates: [49.48298166460118, 7.031079347856441],
@@ -1383,10 +1384,6 @@ const PLACES_DE = [
                 licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
             }
         ],
-    },
-    {
-        coordinates: [49.5562537385328, 6.819946421895424],
-        modernName: 'Weiskirchen',
     },
     {
         coordinates: [49.323333, 6.605],
@@ -1620,14 +1617,6 @@ const PLACES_DE = [
         ],
     },
     {
-        coordinates: [49.666667, 5.966667],
-        modernName: 'Goeblange'
-    },
-    {
-        coordinates: [50.144875, 5.847911],
-        modernName: 'Cherain-Brisy'
-    },
-    {
         coordinates: [49.481003, 6.083492],
         administrativeDivision: "Kanton Esch-sur-Alzette, L",
         modernName: 'Dudelange',
@@ -1803,10 +1792,6 @@ const PLACES_DE = [
         `,
         types: [TYPE_PLACE],
         shortInfo: 'Gräber',
-    },
-    {
-        coordinates: [50.180147, 6.914683],
-        modernName: 'Steineberg',
     },
     {
         coordinates: [49.567057, 6.566174],
@@ -2046,5 +2031,650 @@ const PLACES_DE = [
                 licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
             }
         ],
-    }
+    },
+    {
+        coordinates: [50.146870, 5.847010],
+        modernName: 'Cherain-Brisy (nl. Keren)',
+        administrativeDivision: "comm. Gouvy, prov. Luxembourg, B",
+        objects: [
+            {
+                name: "Befestigung",
+                culture: "späte Latènekultur (LT D2/3)",
+                period:"2. Hälfte des 1. Jh. v. Chr.",
+                visibility: "Abschnittswall sichtbar",
+            }
+        ],
+        descriptionTitle: 'Befestigung',
+        description: `
+            Auf einem Bergvorsprung über einer Schleife des Flusses Ourthe wurde ein Abschnittswall errichtet, der einen Innenraum 
+            von 1,5 Hektar abgrenzt. Es handelt sich um eine relativ niedrige Doppelwallanlage vom Typ Fécamp, die wohl von einem 
+            Palisadenzaun bekrönt war, von dem sich keine Reste erhalten haben. Die Wallanlage hatte einen Zugang mit seitlich leicht 
+            versetzten Durchlässen durch die Wälle. Am Rande des Plateaus gibt es eine Quelle innerhalb der Anlage. Im Innenbereich 
+            sind nur wenige Funde zu Tage getreten. Schlackenreste weisen auf Metallbearbeitung hin, Lehm- und Ziegelfragmente stammen 
+            von einer Bebauung des Areals. Zudem sind kalzinierte Knochen von Schwein, Rind und Schaf/Ziege gefunden worden, deren 
+            Radiokarbondaten die archäologische Datierung in die 2. Hälfte des 1. Jahrhunderts v. Chr. unterstützen. Nauheimer Fibeln 
+            mit Zickzackverzierung sind im 1. Jh. v. Chr. geläufig, die latènezeitlichen Vorratsgefäße, die in die Form der “Halterner 
+            Kochtöpfe” übergehen, weisen auf die Zeit ab dem Gallischen Krieg hin. Die Befestigung scheint nur kurze Zeit in Benutzung 
+            gewesen zu sein. In der Nähe von Gouvy ist außerdem eine große Nekropole der Latènezeit bekannt.
+            `,
+        types: [TYPE_PLACE],
+        shortInfo: 'Befestigung',
+    },
+    {
+        coordinates: [49.135278, 7.183056],
+        modernName: 'Europäischer Kulturpark Bliesbruck-Reinheim',
+        administrativeDivision: "Bliesbruck, dép. Moselle, F; Reinheim, Gmd. Gersheim, Saarpfalz-Kreis, SL",
+        objects: [
+            {
+                name: "Hügelgräber",
+                culture: "frühe Latènekultur",
+                period:"ca. 370 v. Chr.",
+                visibility: "Rekonstruiert, Funde im Museum Saarbrücken",
+            },
+            {
+                name: "Keltensiedlung, Forschungszentrum",
+                culture: "modern",
+            }
+        ],
+        descriptionTitle: 'Keltensiedlung',
+        description: `
+            1. Das Fürstinnengrab von Reinheim ist eines von drei Hügelgräbern, die durch Erosion bis auf 2 m Höhe eingeebnet wurden. 
+            Die Gräber wurden in den 1950er Jahren systematisch ergraben. Eines davon, das „Fürstinnengrab“, war am prunkvollsten 
+            ausgestattet. Die Grabkammer (3,50 m x 3 m x 1,20 m) aus massiven Eichenbalken wurde mit einem Erdhügel von 20 x 4,60 abgedeckt. 
+            Die beiden anderen Gräber hatten 22 m und 36,5 m Durchmesser. Um die Grabhügel herum fanden sich noch Reste weiterer Bestattungen. 
+            Die Grabbeigaben im Fürstinnengrab lassen auf eine Frau von hohem Ansehen schließen, denn neben ihrer Schmucktracht waren ihr ein 
+            seltener Bronzespiegel, ein mehrteiliges Trinkgeschirr und einer bronzenen Röhrenkanne, auch als „Reinheimer Kanne“ bekannt, mit 
+            dem „Reinheimer Pferdchen“ beigelegt. Die Grabhügel wurden 1996 und 1999 an anderer Stelle rekonstruiert, sie können über einen 
+            Pavillon besucht werden.
+            2. Eine rekonstruierte keltische Siedlung in der Nähe will Einblicke in das Alltagsleben vor 2000 Jahren vermitteln. Neben dieser 
+            Siedlung befindet sich eine gallorömische Palastvilla mit Torhaus und Thermalbad sowie Wirtschaftsgebäuden. Auch ein gallorömischer 
+            Vicus ist südlich der Villa festgestellt worden. Eine latènezeitliche Vorgängersiedlung ist nicht bekannt. Es wird aber diskutiert, 
+            ob es eine Nachfolge einer keltischen Führungsschicht gegeben hat. Der Archäologiepark beherbergt zudem ein archäologisches Forschungszentrum.
+`,
+        types: [TYPE_PLACE],
+        shortInfo: 'Hügelgräber; Keltensiedlung, Forschungszentrum',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/A_recreation_of_the_wooden_funeral_chamber_of_the_%27Princess_of_Reinheim%27%2C_Reconstructions_of_Celtic_burial_mounds%2C_European_Archaeological_Park_of_Bliesbruck-Reinheim%2C_Germany_France_%2834640233723%29.jpg/1280px-thumbnail.jpg ',
+                altText: '',
+                imageBy: 'Carole Raddato',
+                license: 'CC BY-SA 2.0 Generic',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/2.0/',
+            }
+        ],
+    },
+    {
+        coordinates: [49.394407, 7.276050],
+        modernName: 'Glan',
+        administrativeDivision: "Quelle: Höchen, Stadt Bexbach, Saarpfalz-Kreis, SL",
+        objects: [
+            {
+                name: "Gewässername",
+                culture: "keltisch",
+                visibility: "sichtbar",
+            }
+        ],
+        descriptionTitle: 'Gewässername',
+        description: `
+            Der Glan, selten die Glan (1719), ein knapp 90 km langer rechter Nebenfluss der Nahe (eines linken Nebenflusses des Rheins) erscheint in Urkunden 
+            1127 und 1147 (Kopie 19. und 14. Jh.) als Glan, ca. 1330 (Kopie ca. 1500) Glanum (Akk.). Der Name geht zurück auf keltisch <em class="emphasis-linguistic" aria-label="linguistic">*glanos</em> „der reine, klare 
+            (Fluss)“, evtl. gab es neben der maskulinen Form auch ein Femininum <em class="emphasis-linguistic" aria-label="linguistic">*glana</em> oder <em class="emphasis-linguistic" aria-label="linguistic">*glania</em>. Der Name ist auch für andere Flüsse belegt, z.B. Glan in 
+            Kärnten und Glanbach bei Salzburg. Auch zahlreiche Orte sind nach dem Gewässernamen benannt, wie z.B. Altenglan bei Kusel. Das Adjektiv lebt in modernen 
+            Sprachen weiter, wie irisch und walisisch <em class="emphasis-linguistic" aria-label="linguistic">glan</em> „klar, sauber, rein“. Der Glan liegt am Südrand des Verbreitungsgebietes der Hunsrück-Eifel-Kultur.
+`,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Gewässername',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Glantal_bei_Odernheim_-_panoramio.jpg/500px-Glantal_bei_Odernheim_-_panoramio.jpg ',
+                altText: '',
+                imageBy: '',
+                license: 'CC BY 3.0',
+                licenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+            }
+        ],
+    },
+    {
+        coordinates: [49.556977, 6.819792],
+        modernName: 'Weiskirchen',
+        administrativeDivision: "Lkr. Merzig-Wadern, SL",
+        objects: [
+            {
+                name: "Grabhügel",
+                culture: "frühe Latènekultur",
+                period: "5./4. Jh. v. Chr",
+                visibility: "nicht sichtbar",
+            },
+            {
+                name: "Ausstellung",
+            }
+        ],
+        descriptionTitle: 'Grabhügel',
+        description: `
+            1. Die drei Grabhügel wurden in den Jahren 1830, 1851 und 1866 im Westen des Ortes entdeckt. Es handelt sich um reich ausgestattete frühkeltische Kriegergräber 
+            und Weiskirchen zählt bis heute zu den bekanntesten Fundorten der keltischen Archäologie.
+            2. Funde aus den Grabhügeln sind im „Haus des Gastes“ ausgestellt. Bei den Exponaten handelt es sich unter anderem um Importgefäße, Trachtenzubehör, Prunkwaffen 
+            und frühkeltische Schmuckstücke.
+`,
+        types: [TYPE_PLACE],
+        shortInfo: 'Grabhügel',
+    },
+    {
+        coordinates: [50.253611, 6.934722],
+        modernName: 'Ueß',
+        administrativeDivision: "Lkr. Vulkaneifel, RLP",
+        objects: [
+            {
+                name: "Inschrift mit Götternamen",
+                culture: "Inschrift gallorömisch, Namen vorrömisch",
+                period: "2. Hälfte 2. Jh.",
+                visibility: "sichtbar",
+            },
+            {
+                name: "Ausstellung",
+            }
+        ],
+        descriptionTitle: 'Inschrift',
+        description: `
+            In der Kirche St. Lucia in Ueß wurde eine Sandsteinplatte (81 x 52,5 x 12 cm) als Altar verwendet. Die Platte war ursprünglich eine gallorömische Votivinschrift 
+            an die Götter Mercurius Excingiorigiatis und Rosmerta. Der Beiname des Merkur, Excingiorigiatis, bedeutet in etwa so viel wie „der (Gott) derer, die die Angreifer 
+            leiten“, aus <em class="emphasis-linguistic" aria-label="linguistic">ex-cing(o)-</em> „ausschreitend, angreifend“, <em class="emphasis-linguistic" aria-label="linguistic">rīg-</em> 
+            „König, Leiter; reich an“ u.ä. und dem Ableitungssuffix <em class="emphasis-linguistic" aria-label="linguistic">*-iati-</em>. Der Name der Rosmertā bedeutet wohl 
+            „die Vorausschauende“ im Sinne der Vorsorgenden oder der das Schicksal Bestimmenden, <em class="emphasis-linguistic" aria-label="linguistic">ro-</em> „vor; (Verstärkung) zu (sehr)“, 
+            <em class="emphasis-linguistic" aria-label="linguistic">*smer-</em> „vorhersehen, vorsorgen“.
+`,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Inschrift',
+    },
+    {
+        coordinates: [49.6809704, 5.9827899],
+        modernName: 'Goeblingen-Nospelt (lux. Giewel-Nouspelt)',
+        administrativeDivision: "Gmd. Kehlen, Kant. Capellen, L",
+        objects: [
+            {
+                name: "Hügel- und andere Gräber",
+                culture: "späte Latènekultur",
+                period: "1. Jh. v. Chr.",
+                visibility: "nicht sichtbar, Funde im MNHA",
+            }
+        ],
+        descriptionTitle: 'Hügel- und andere Gräber',
+        description: `
+            Fünf Hügelgräber aus dem Übergang der Latène- zur römischen Zeit wurden 1966 im Bereich „Rockelsdréisch“ ausgegraben. 1993 wurden bei einer Untersuchung im weiteren Umfeld acht weitere 
+            Gräber gefunden. Hügelgrab B war das am reichsten ausgestattete. In einer Eichenholzkammer wurden Aschenreste einer Brandbestattung festgestellt. Es fanden sich Beigaben einer Bronzefibel, 
+            eines Bronze- und Eisenkessels, zwei Eimer aus Eibenholz mit verzierten Bronzeringen (siehe Abb.), ein Eisenschwert und Keramik. Auch Importware aus Italien gehörte zur Ausstattung: ein 
+            Sieb und mehrere Gefäße. Aus dem Fund des Schwertes und von Sporen wurde darauf geschlossen, dass es sich bei vier der Bestattungen um Angehörige der treverischen Reiterei gehandelt haben kann.`,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Hügel- und andere Gräber',
+    },
+    {
+        coordinates: [49.6771572, 5.9782687],
+        modernName: 'Goeblingen, Miecher (lux. Giewel)',
+        administrativeDivision: "Gmd. Kehlen, Kant. Capellen, L",
+        objects: [
+            {
+                name: "Keltisches Gehöft (Viereckschanze)",
+                culture: "Latènekultur",
+                period: "2.–1. Jh. v. Chr.",
+                visibility: "nicht sichtbar",
+            },
+            {
+                name: "Gallorömische Villa mit Heiligtum",
+                culture: "gallorömisch",
+                period: "1.–4. Jh. n. Chr.",
+                visibility: "sichtbar,",
+            }
+        ],
+        descriptionTitle: 'Keltisches Gehöft',
+        description: `
+            1. Das keltische Gehöft (Viereckschanze, 2.–1. Jahrhundert v. Chr.) ist durch Pfostenlöcher, Gruben und eine Wallanlage dokumentiert. Von dort stammen zahlreiche latènezeitliche Münzen, Glasarmringe 
+            und Keramikscherben. Die in etwa 500 m in nordöstlicher Richtung entfernten Adelsgräber in Goeblingen-Nospelt könnten zu diesem keltischen Gehöft gehört haben.
+            2. Im 1. Jahrhundert n. Chr. löste eine gallo-römische Villa rustica die Bauten der Latènezeit ab. Auf 5 Hektar Land wurden mindestens 8 Steingebäude errichtet, darunter im 3. Jahrhundert ein kleines 
+            Heiligtum von 8 m² („Gebäude 7“), das möglicherweise einen vorrömischen Vorgängerbau ablöste. Von dort stammen ca. 50 Münzen und komplett erhaltene Gefäße. In der Nähe befand sich ein Grab der 
+            Urnenfelderzeit mit Keramik- und Bronzebeigaben. Der Villenkomplex wurde bis ins 4. Jh. genutzt. Zuletzt wurde das Hauptgebäude des 3. Jh. in einen Burgus mit vorgelagerten Gräben, Erdwällen und einer Holzpalisade ausgebaut.
+`,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Keltisches Gehöft',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Villa_Rustica_of_Goeblange-Miecher%2C_Luxembourg_-_50345996081.jpg/1280px-Villa_Rustica_of_Goeblange-Miecher%2C_Luxembourg_-_50345996081.jpg ',
+                altText: '',
+                imageBy: 'Carola Raddato',
+                license: 'CC BY-SA 2.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/2.0/',
+            }
+        ],
+    },
+    {
+        coordinates: [49.703885, 6.705036],
+        modernName: 'Gusterath, Beim Lindenkreuz',
+        administrativeDivision: "Lkr. Trier-Saarburg, RLP",
+        objects: [
+            {
+                name: "Heiligtum",
+                culture: "gallorömisch",
+                period: "ca. 1.–4. Jh. (Münzschatz spätes 1. Jh. v. Chr.)",
+                visibility: "Hinweisschild",
+            }
+        ],
+        descriptionTitle: 'Heiligtum',
+        description: `
+            Etwa 1 km nordwestlich von Gusterath wurde 1989 vom RLM Trier das Areal eines gallo-römischen Umgangstempels untersucht. Anhand der Gräben konnte eine Gesamtausdehnung von 16,5 x 14,5 m festgestellt werden. 
+            Die Maße der Cella betrügen 9 x 7,5 m, der Eingang befand sich im Südosten.
+            Wenige Meter nordöstlich der Anlage wurde 1990 ein augustäischer Münzschatz geborgen, dessen Schlussmünze in die Zeit 15/13 v. Chr. datiert. Insgesamt wurden 38 Denare gefunden. Es wird angenommen, dass zu 
+            dieser Zeit bereits ein Heiligtum an dieser Stelle bestanden hat.
+`,
+        types: [TYPE_PLACE],
+        shortInfo: 'Heiligtum',
+    },
+    {
+        coordinates: [49.6121038, 7.2142893],
+        modernName: 'Hoppstädten-Weiersbach, Altburg',
+        administrativeDivision: "Lkr. Birkenfeld, RLP",
+        objects: [
+            {
+                name: "Befestigung",
+                culture: "Hunsrück-Eifel- und Latènekultur",
+                period: "4.–1. Jh. v. Chr",
+                visibility: "Mauerreste sichtbar",
+            }
+        ],
+        descriptionTitle: 'Befestigung',
+        description: `
+            Auf einem langgestreckten Bergrücken oberhalb der Nahe liegt die keltische Befestigung „Altburg“ mit dem Gräberfeld „Heidenbiegel“. Ein Zusammenhang beider Objekte ist eher unwahrscheinlich.
+            Die Befestigung nutzt den natürlichen Steilhang im Nordosten und Osten des Felssporns zur Nahe hin aus. Der Rest der Nordseite und die übrigen Seiten sind durch Abschnittswälle gesichert. Die 
+            Anlage hat eine Innenfläche von ca. 1,5 ha. Sie war wohl nur kurze Zeit besiedelt. Die „Altburg“ weist einige Eigentümlichkeiten auf, die sonst nur selten zu beobachten sind. So ist im Innern 
+            des Befestigungswerkes keine Holzkonstruktion verwendet worden. Zudem konnte im Wall ein Trockenmauerwerk aus Stein nachgewiesen werden, das ursprünglich eine Höhe von 2,4 m und eine Breite von 4 m aufwies.
+
+        `,
+        types: [TYPE_PLACE],
+        shortInfo: 'Befestigung',
+    },
+    {
+        coordinates: [49.6128233, 7.2103947],
+        modernName: 'Hoppstädten-Weiersbach, Heidenbiegel',
+        administrativeDivision: "Lkr. Birkenfeld, RLP",
+        objects: [
+            {
+                name: "Gräberfeld",
+                culture: "Latène- und gallo-römische Kultur",
+                period: "2. Jh. v. Chr. bis 2. Jh. n. Chr.",
+                visibility: "nicht sichtbar, durch Baumkreis markiert",
+            }
+        ],
+        descriptionTitle: 'Gräberfeld',
+        description: `
+            500 m westlich der „Altburg“ befindet sich das seit 2007 mit Bäumen markierte Brandgräberfeld „Heidenbiegel“, das oberflächlich nicht zu erkennen ist. Es wurde ca. 400 Jahre genutzt, von der 
+            spätkeltischen bis zur frührömischen Zeit. Das gesamte Areal wird einer lokalen Adelsfamilie zugeordnet. An Funden sind zahlreiche Keramikgefäße unterschiedlicher Größe und Form zu nennen. 
+            Daneben wurden rituell verbogene Schwerter und Fibeln nachgewiesen. Der Leichenbrand wurde aus dem Scheiterhaufen aufgelesen und in einer Urne bestattet. Der Fund eines Siebtrichters mit 
+            umlaufendem Tierfries zählt zu den Meisterwerken der frühen keltischen Kunst. Das Gräberfeld wurde bis 1997 vollständig untersucht.
+        `,
+        types: [TYPE_PLACE],
+        shortInfo: 'Gräberfeld',
+    },
+    {
+        coordinates: [49.8240452, 7.2980119],
+        modernName: 'Hottenbach, Evangelische Kirche',
+        administrativeDivision: "Lkr. Birkenfeld, RLP",
+        objects: [
+            {
+                name: "Viergötterstein",
+                culture: "gallorömisch",
+                period: "2./3. Jh.",
+                visibility: "sichtbar",
+            }
+        ],
+        descriptionTitle: 'Viergötterstein',
+        description: `
+            Im Chorturm der evangelischen Kirche im Ortskern von Hottenbach, direkt am Sironaweg, befindet sich ein Viergötterstein, d.h. ein Quader, auf dessen vier Seiten jeweils eine gallorömische 
+            Gottheit abgebildet ist: Juno, Minerva, Herkules und Merkur (s. Abb.). Was heute nur noch als Steinquader vorhanden ist, gehörte einst zu einer Jupitergigantensäule, die der einheimischen 
+            religiösen Tradition verpflichtet ist und zu den weit verbreiteten Denkmälern der Region gehört. Ursprünglich stammt der Stein aus einer Tempelanlage auf der Hochfläche in der Nähe von Sulzbach. 
+            Im 13. Jahrhundert war er in den christlichen Hochaltar verbaut worden. Was danach mit dem Stein geschah, kann nicht mit Sicherheit festgestellt werden. Bekannt ist lediglich, dass er im Zuge des 
+            Umbaus der Kirche im Jahre 1903 wiederentdeckt wurde. Erwähnenswert ist ferner, dass die Kirche in Hottenbach auf dem Areal einer römischen villa rustica erbaut wurde.
+        `,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Viergötterstein',
+    },
+    {
+        coordinates: [49.41708, 6.84395],
+        modernName: 'Hüttersdorf, Ortsteil Buprich',
+        administrativeDivision: "Gmd. Schmelz, Lkr. Saarlouis, SL",
+        objects: [
+            {
+                name: "Ortsname",
+                culture: "keltisch",
+                period: " 3. Jh. (Namensbeleg)",
+            }
+        ],
+        descriptionTitle: 'Ortsname',
+        description: `
+            Im Itinerarium Antonini 374.2, einem Verzeichnis der wichtigsten römischen Reichsstraßen aus dem 3. Jahrhundert, wird an der Straße von Trier über Pachten nach Straßburg der Ort Baudobriga erwähnt. 
+            Der Name geht auf gallisch *Boudobrigā zurück, das man mit „Siegburg“ übersetzen kann. Der Ort wird seit F. Cramer (1901) mit Buprich identifiziert, doch ist die Lokalisierung nicht gesichert. Der 
+            Ortsname Boppard (am Rhein) geht ebenfalls auf *Boudobrigā zurück.
+        `,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Ortsname',
+    },
+    {
+        coordinates: [50.0930595, 6.5254925],
+        modernName: 'Neidenbach',
+        administrativeDivision: "Eifelkreis Bitburg-Prüm, RLP",
+        objects: [
+            {
+                name: "Inschrift",
+                culture: "Name keltisch, vorrömische Zeit; Inschrift gallorömisch",
+                period: "1.–3. Jh.",
+                visibilty: "Nicht sichtbar, Fund im RLM Trier",
+            }
+        ],
+        descriptionTitle: 'Inschrift',
+        description: `
+            Bei dem Ort Neidenbach nahe Kyllburg wurde ein römischer Grenzstein des 1.–3. Jh. gefunden, der die Inschrift trägt: „Grenze des Pagus (Bezirks) der Carucer“ (finis pagi Carucum, CIL XIII 4143). 
+            Die Caruces waren der nordwestliche Pagus („Gau“) des Treverergebietes. Ein Zusammenhang mit dem Volksnamen Caerosi bei Caesar und dem frühmittelalterlichen Carosgau wird diskutiert. Der Name könnte 
+            mit keltisch *karu̯o- „Hirsch“ zusammenhängen.
+        `,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Inschrift',
+    },
+    {
+        coordinates: [50.2563883, 7.4521916],
+        modernName: 'Oberfell, Bleidenberg',
+        administrativeDivision: "Lkr. Mayen-Koblenz, RLP",
+        objects: [
+            {
+                name: "Ringwall",
+                culture: "Jüngere Hunsrück-Eifelkultur (HEK II A) und Spätlatènekultur",
+                period: "5. Jh. v. Chr. und 1. Jh. v. Chr.",
+                visibility: "Gut sichtbar, Pfostenschlitzmauer teilweise rekonstruiert",
+            }
+        ],
+        descriptionTitle: 'Ringwall',
+        description: `
+            Das Bergplateau am Bleidenberg zwischen Oberfeller und Alkener Bach war bereits in der Jungsteinzeit und in der mittleren Urnenfelderzeit (9./8. Jh. v. Chr.) besiedelt. Auch aus dem 6./5. Jh. v. Chr. 
+            gibt es Spuren. Um 450 v. Chr. wurde eine Pfostenschlitzmauer vom Typ Kelheim angelegt. In der Zeit um 100 v. Chr. wurde diese in drei Bauphasen als Murus Gallicus erneuert. Fundamente eines Zangentores 
+            aus dieser Zeit konnten nachgewiesen werden. Das Oppidum umfasst mit seiner rund 2,5 km langen Randbefestigung eine Innenfläche von 18 ha. In römischer Zeit wurde es aufgegeben.
+`,
+        types: [TYPE_ARCHITECTURE, TYPE_PLACE],
+        shortInfo: 'Ringwall',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Ringwall_Bleidenberg_am_Schanzenkopf.jpg/960px-Ringwall_Bleidenberg_am_Schanzenkopf.jpg',
+                altText: '',
+                imageBy: 'JS Lonscet',
+                license: 'CC BY-SA 4.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+            }
+        ],
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Ringwall_Bleidenberg_Pfostenschlitzmauer_Reko_B2.jpg/960px-Ringwall_Bleidenberg_Pfostenschlitzmauer_Reko_B2.jpg ',
+                altText: '',
+                imageBy: 'JS Lonscet',
+                license: 'CC BY-SA 4.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+            }
+        ],
+    },
+    {
+        coordinates: [50.24106, 6.58436],
+        modernName: 'Oos, Stadt Gerolstein',
+        administrativeDivision: "Lkr. Vulkaneifel, RLP",
+        objects: [
+            {
+                name: "Ortsname",
+                culture: "(vor)keltische Hydronymie; vorrömische Zeit",
+            }
+        ],
+        descriptionTitle: 'Ortsname',
+        description: `
+            Der Ortsname Oos geht auf den Gewässernamen Oos(bach) zurück, eines rechten Nebenflusses der Kyll. Der Name lautete nach Quellen des 4. Jh. Ausava (Itinerarium Antonini 372; Tabula Peutingeriana) 
+            und bezog sich damals auf einen römischen Vicus an der Straße von Trier nach Köln, der nicht lokalisiert werden kann. Ausavā dürfte auch die keltische Namensform gewesen sein, die wohl auf indogermanisch 
+            *h₂eus- „schöpfen“ zurückgeht, keltisch oder schon vorkeltisch *aus-V-u̯ā „(Gewässer,) aus dem man (Wasser) schöpft“. Ähnliche Namen sind in keltischen Regionen, aber auch in Italien, verbreitet.
+            `,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Ortsname',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Oosbach_%28Kyll%29_02.jpg/1280px-Oosbach_%28Kyll%29_02.jpg ',
+                altText: '',
+                imageBy: 'Thomas Hummel',
+                license: 'CC BY-SA 4.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/4.0/',
+            }
+        ],
+    },
+    {
+        coordinates: [50.2158452, 6.4211426],
+        modernName: 'Prüm, Burgberg',
+        administrativeDivision: "Eifelkreis Bitburg-Prüm, RLP",
+        objects: [
+            {
+                name: "Befestigung",
+                culture: "Hunsrück-Eifel- und Latènekultur",
+                period: "6.–1. Jh. v. Chr.",
+                visibility: "Wallreste sichtbar",
+            },
+            {
+                name: "Orts- und Flussname",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Befestigung',
+        description: `
+            1. An der Südwestspitze des „Tettenbusch“ genannten Höhenzuges nördlich von Prüm befinden sich die Überreste eines vermutlich im 6. Jh. v. Chr. errichteten keltischen Ringwalls. Ausgrabungen im 
+            Jahr 1974 legten die typisch keltische Bauweise des Walls offen. Es wurde zudem Keramik der Hunsrück-Eifel- und der Latènekultur (6.–1. Jh. v. Chr.) gefunden. Der jetzt stark verschliffene Wall 
+            umschließt in ovaler Form eine Fläche von 300 m und ist an seiner weitesten Ausbuchtung 170 m breit. Die Gesamtfläche der Anlage beträgt ca. 4,6 ha. Ein kleines Stück der Wehrmauer liegt in rekonstruiertem 
+            Zustand vor. Die überlappende Wallführung im Nordosten verrät die Lage der alten Torgasse. An einigen Stellen ist noch eine um ca. 4 m versetzte zweite Befestigungslinie zu erkennen. Die Ausmaße der 
+            Überreste lassen darauf schließen, dass in keltischer Zeit hier eine größere Siedlung lag. — Eine Erhöhung des Walles im 9./10. Jh. könnte auf eine Wiedernutzung der Anlage als Fluchtburg des karolingischen 
+            Klosters Prüm hindeuten.
+            2. Der Flussname Prüm ist im 4. Jh. als Prōmea belegt (Ausonius, Mosella 354), 777 (Kopie 11./12. Jh.) in fluvio Prumia; der Ortsname: 720 Prumia, 9. Jh. Promia (Hincmar von Reims). Wahrscheinlich kommt der 
+            Flussname von gallisch *brōmi̯ā aus *brou̯mi̯ā zu indogermanisch *bʰreu̯H- „sprudeln“, also der „sprudelnde (Fluss)“ oder die „sprudelnde (Quelle)“.
+
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Befestigung',
+    },
+    {
+        coordinates: [49.257922, 7.094459],
+        modernName: 'St. Ingbert, Großer Stiefel, Hänsel und Gretel',
+        administrativeDivision: "Saar-Pfalz-Kreis, SL",
+        objects: [
+            {
+                name: "Felsen",
+                culture: "Urnenfelderkultur",
+                period: "1200-800 v. Chr.",
+                visibility: "sichtbar",
+            },
+            {
+                name: "Felsrelief",
+                culture: "gallorömisch",
+                period: "2./3. Jh. n. Chr.",
+                visibility: "stark verwittert",
+            }
+        ],
+        descriptionTitle: 'Felsen',
+        description: `
+            1. Der Fels „Stiefel“ oder „Riesentisch“, wegen seiner Form so genannt, ist wohl namensgebend für den Bergrücken. Während dieser durch natürliche Erosion entstand, wurde der wenige Meter entfernte „Teufelstisch“, 
+            ein 3,20 m hoher fünfkantiger Monolith, durch Menschenhand behauen. Man weiß, aufgrund von Bodenfunden, dass sich auf dem Bergrücken bereits in der Spätbronzezeit eine Höhensiedlung befunden hat, deren 
+            Befestigungsanlagen teilweise noch zu erkennen sind. Der „Teufelsfelsen“ und womöglich auch der „Stiefelfels“ dürften Orte bronzezeitlicher und auch späterer keltischer Kulte gewesen sein.
+            2. In der Nähe des „Stiefels“ liegt auch das Felsrelief, das im Volksmund als „Hänsel und Gretel“ bezeichnet wird. Es handelt sich hierbei wohl um einen Altar, der im 2. bis 3. Jh. n. Chr. errichtet wurde. Die 
+            männliche und weibliche Darstellung verkörpern vermutlich gallo-römische Gottheiten. Das Bild ist schon stark verwittert, doch lässt die Pose der 1,20 m hohen männlichen Gestalt im knielangen Gewand vermuten, 
+            dass sie einen Stab oder ähnliches hält. Die 1 m hohe Frauengestalt im langen Kleid trägt vermutlich vor ihrem Körper einen Korb oder eine Schale mit Früchten. Es könnte sich bei den Figuren um die gallorömischen 
+            Waldgottheiten Sucellus und Nantosuelta handeln.
+
+        `,
+        types: [TYPE_PLACE],
+        shortInfo: 'Felsen',
+    },
+    {
+        coordinates: [50.172421, 6.918089],
+        modernName: 'Steineberg, Steineberger Ley',
+        administrativeDivision: "Verbandsgmd. Daun, Lkr. Vulkaneifel, RLP",
+        objects: [
+            {
+                name: "Hügelgräberfeld",
+                culture: "Ältere bis jüngere Hunsrück-Eifel-Kultur (HEK I A – HEK II)",
+                period: "spätes 7.–4. Jh. v. Chr.",
+                visibility: "Einige Hügel erkennbar",
+            }
+        ],
+        descriptionTitle: 'Hügelgräberfeld',
+        description: `
+            Das Gräberfeld, das auf einer Art Plateau liegt, ist in eine östliche und eine westliche Gruppe untergliedert und umfasst insgesamt 92 Hügel und 3 Dämme. Von den Hügeln wurden 31 ausgegraben. Es fanden sich sowohl 
+            Körper- als auch Brandgräber mit Beigaben. Neben Keramik wie bauchigen Töpfen, Schalen, Becher, in der jüngeren Phase Flaschen, wurden eiserne Lanzenspitzen (meist 1–3 Stück pro Grab) eiserne Messer, einige Pfeilspitzen 
+            sowie Bronzeschmuck festgestellt: Schläfenwendelringe, Arm- und Halsringe aus Bronzeblech, aber auch ein massiv gegossener Halsring (Hügel 15) und eine bronzene Rippenziste (Hügel 9). Die Funktion der Dammanlagen, 
+            die nur in der westlichen Hunsrück-Eifel-Kultur vorkommen, ist nicht geklärt. Möglicherweise hatten sie zu verschiedenen Zeiten unterschiedliche Zwecke. Man hat sie als längliche Grabhügel, Begrenzungen und 
+            Wege/Prozessionsstraßen angesprochen und dabei die Anlagen am Glauberg verglichen.
+        `,
+        types: [TYPE_PLACE],
+        shortInfo: 'Hügelgräberfeld',
+    },
+    {
+        coordinates: [50.1755, 6.917],
+        modernName: 'Steineberg, Steineberger Ley',
+        administrativeDivision: "Verbandsgmd. Daun, Lkr. Vulkaneifel, RLP",
+        objects: [
+            {
+                name: "Ringwall",
+                culture: "Hunsrück-Eifel- und/oder Latènekultur",
+                period: "6.–1. Jh. v. Chr.",
+                visibility: "sichtbar",
+            }
+        ],
+        descriptionTitle: 'Ringwall',
+        description: `
+            Am südlichen Ende der  „Steineberger Ley“ befindet sich eine Ringwallanlage mit einer Innenfläche von 2,2 ha. Das Trockenmauerwerk, das wahrscheinlich eine innere Stützkonstruktion aus Holz aufwies, ist vor allem 
+            im Norden so stark verfallen, dass es kaum von natürlichen Steinlagen zu unterscheiden ist. Seitlich versetzte Wallenden im Süden weisen auf einen Zugang zum Inneren des Ringwalls hin (Tangentialtor). Aufgrund fehlender 
+            Grabungsbefunde kann das Alter der Anlage nur allgemein auf das 6.–1. Jh. v. Chr. geschätzt werden. Aus spätkeltischer Zeit (1. Jh. v. Chr.) ist der Fund einer Goldmünze bekannt, sowie Keramikscherben aus spätrömischer 
+            Zeit (4. Jh.). Rund 200 m südlich des Ringwalls liegt das Hügelgräberfeld der Hunsrück-Eifel-Kultur mit 92 bekannten Hügeln.
+        `,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE],
+        shortInfo: 'Ringwall',
+    },
+    {
+        coordinates: [49.67223, 6.10815],
+        modernName: 'Steinsel, „op Rëlent“',
+        administrativeDivision: "Kant. Luxemburg, L",
+        objects: [
+            {
+                name: "Heiligtum",
+                culture: "gallorömisch",
+                period: "spätes 1. Jh. bis frühes 5. Jh.",
+                visibility: "Wiederhergestellte Grundmauern sichtbar",
+            },
+            {
+                name: "Götter- und Personennamen",
+                culture: "vorrömisch",
+            }
+        ],
+        descriptionTitle: 'Heiligtum',
+        description: `
+            1.  Im Wald Rëlent westlich von Steinsel wurde 1957–1961 eine Tempelanlage untersucht und z.T. wiederhergestellt. Es wurden Fingerringe aus Bronze und Eisen gefunden, sowie Fibeln, Bronzeglöckchen, eine Bronzestatuette 
+            (12,6 cm), 2 Kultstatuen aus Kalkstein und 2 Terrakotta-Fragmente von Muttergottheiten. 1981 wurde in der Nordwestecke des Heiligtums eine Bronzetafel (tabula ansata) mit einer Weihinschrift entdeckt. Von dem Fundplatz 
+            stammen mehr als 900 Fundmünzen, die vom 1. bis ins 5. Jahrhundert streuen.
+            2. Die Weihetafel nennt den Gott Cerunincus, der nur hier begegnet. Der Name wird mit einem Wort für „Horn“ in Verbindung gebracht, das auf indogermanisch *k̑eru- zurückgeht; *Cerun(o)- könnte dann „der mit Hörnern“ 
+            bedeuten und eine Verbindung zu dem bekannten Gott Cernunnos herstellen. Die Bronzestatuette einer nackten männlichen Figur (ohne Hörner) unterstützt diese These allerdings nicht.
+
+        `,
+        types: [TYPE_PLACE, TYPE_IMMATERIAL],
+        shortInfo: 'Heiligtum',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Steinsel_Gallo-Roman_Temple_in_Luxembourg_-_51128961009.jpg/960px-Steinsel_Gallo-Roman_Temple_in_Luxembourg_-_51128961009.jpg?_=20220711171539',
+                altText: '',
+                imageBy: 'TimeTravelRome',
+                license: 'CC BY 2.0',
+                licenseLink: 'https://creativecommons.org/licenses/by/2.0/',
+            }
+        ],
+    },
+    {
+        coordinates: [49.755909, 6.643986],
+        modernName: 'Trier, Domschatz',
+        administrativeDivision: "Stadt Trier, RLP",
+        objects: [
+            {
+                name: "Thomas-Evangeliar",
+                culture: "anglo-irische und merowingische Buchkultur",
+                period: "1. Hälfte des 8. Jh.",
+                visibility: "sichtbar",
+            }
+        ],
+        descriptionTitle: 'Thomas-Evangeliar',
+        description: `
+            In der Domschatzkammer der Hohen Domkirche St. Peter wird eine Handschrift verwahrt, die zu den bedeutendsten Werken der insularen Buchmalerei gehört: das Thomas-Evangeliar (auch Trierer Evangeliar, Ms. 61/134). 
+            Es umfasst 208 Pergamentblätter mit 16 illuminierten Seiten, die Kanontafeln, Miniaturen und kunstvolle Initialen tragen. Die Schreiber und Künstler, von denen ein gewisser „Thomas“ persönlich signiert hat (siehe 
+            Abb., Thomas scribsit [so] „Thomas hat (es) geschrieben“), hatten entweder ihre Ausbildung in einem irischen oder anglo-irischen Kloster erhalten oder pflegten enge Kontakte dorthin. Die Handschrift stammt 
+            wahrscheinlich aus dem Skriptorium Echternach und entstand in der 1. Hälfte des 8. Jahrhunderts. Neben dem starken inselkeltischen Einfluss, der mit der iroschottischen Mission einherging, zeigt das Manuskript 
+            auch Merkmale der merowingischen Buchkunst und mediterrane Formelemente.
+        `,
+        types: [TYPE_DOCUMENT],
+        shortInfo: 'Thomas-Evangeliar',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Evangeliar_aus_Trier_-_Der_Tetramorph.jpg/960px-Evangeliar_aus_Trier_-_Der_Tetramorph.jpg',
+                altText: '',
+                imageBy: 'The Yorck Project',
+                license: 'Public domain',
+                licenseLink: 'https://creativecommons.org/public-domain/',
+            }
+        ],
+    },
+    {
+        coordinates: [49.7219, 6.5790],
+        modernName: 'Trier-Zewen',
+        administrativeDivision: "Stadt Trier, RLP",
+        objects: [
+            {
+                name: "Ortsname",
+                culture: "keltisch, vorrömische Zeit",
+            }
+        ],
+        descriptionTitle: 'Ortsname',
+        description: `
+            Das Terrain von Zewen war im Bereich des Ortskerns bereits in prähistorischer Zeit besiedelt. Der Name erscheint in einer Urkunde des 11. Jahrhunderts als Cebenna mons „Berg Cebenna“ (bzw. Cevenna), bezieht 
+            sich also primär auf einen Berg (der Name ist ein Oronym). Ab 1200 erscheint der Ort als Ceuena, Zeuena und Sceuena in den Urkunden. Er leitet sich ab von dem keltischen Wort *kebennā oder *kemennā „Bergrücken“. 
+            Dasselbe Wort hat auch den Cevennen, französisch Cévennes, ihren Namen gegeben. Im heutigen Walisischen kann man cefn ['kevn] „Rücken“ vergleichen.
+        `,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Ortsname',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Zewen_Panorama.jpg ',
+                altText: '',
+                imageBy: 'Rotwurst',
+                license: 'Public domain',
+                licenseLink: 'https://creativecommons.org/public-domain/',
+            }
+        ],
+    },
+    {
+        coordinates: [49.71383, 6.58652],
+        modernName: 'Trier-Zewen, Oberkirch',
+        administrativeDivision: "Stadt Trier, RLP",
+        objects: [
+            {
+                name: "Ortsname",
+                culture: "gallisch/keltisch, vorrömische Zeit",
+            }
+        ],
+        descriptionTitle: 'Ortsname',
+        description: `
+            Der heutige Ortsteil von Zewen, Oberkirch, ein ehemaliges kleines Dorf, liegt am linken Moselufer nahe beim Fluss. Sein Name wird urkundlich im Jahre 1190 als Cherriche, 1247 als Kerriche überliefert. Er 
+            geht zurück auf eine gallische Form *Karriākon, was seinerseits wahrscheinlich von dem Substratwort *karr- „Stein, Steinhaufen“ abgeleitet ist. Der Ort könnte demnach als „der steinige, durch Steinhaufen 
+            gekennzeichnete (Ort)“ zu verstehen sein. Nicht weit oberhalb von Oberkirch befand sich eine Kiesgrube, in der auch Reste einer kleinen römischen Villa festgestellt wurden. Vielleicht ist also der Kies 
+            namengebend für eine frühe Ansiedlung geworden.
+        `,
+        types: [TYPE_IMMATERIAL],
+        shortInfo: 'Ortsname',
+    },
 ];
