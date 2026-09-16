@@ -1397,23 +1397,46 @@ const PLACES_DE = [
                 culture: "gallorömisch",
                 period: "2./3. Jhd. n. Chr.",
                 visibility: "rekonstruiert",
-            },
+            }
+        ],
+        descriptionTitle: 'Grabhügel',
+
+        description: `In der Nähe von frühkeltischen Grabhügeln wurden von 1991 bis 1995 zwei gallorömische Grabhügel aus dem 
+            zweiten oder dritten Jahrhundert n. Chr. ausgegraben. Diese repräsentativen Bauten mit einem Durchmesser von 20 m wurden 
+            von quadratischen Sandsteinsetzungen umrahmt und von Pinienzapfen aus Stein gekrönt. Die Hügelform ist untypisch für diese 
+            Zeit.`,
+        types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
+        shortInfo: 'Grabhügel',
+        images: [
+            {
+                title: '',
+                href: 'https://upload.wikimedia.org/wikipedia/commons/4/43/Wadern_Oberl%C3%B6stern_Gr%C3%A4ber.JPG',
+                altText: '',
+                imageBy: 'L. Sieht',
+                license: 'CC-BY-SA-3.0',
+                licenseLink: 'https://creativecommons.org/licenses/by-sa/3.0/',
+            }
+        ],
+    },
+    {
+        coordinates: [49.54, 6.89],
+        ancientName: 'Waderella',
+        modernName: "Wadern",
+
+        administrativeDivision: "Löstertal, Stadt Wadern, Lkr. Merzig-Wadern, SL",
+        objects: [
             {
                 name: "Ortsname",
                 culture: "vorrömisch",
             }
         ],
-        descriptionTitle: 'Grabhügel',
+        descriptionTitle: 'Ortsname',
 
-        description: `<p>1. In der Nähe von frühkeltischen Grabhügeln wurden von 1991 bis 1995 zwei gallorömische Grabhügel aus dem 
-            zweiten oder dritten Jahrhundert n. Chr. ausgegraben. Diese repräsentativen Bauten mit einem Durchmesser von 20 m wurden 
-            von quadratischen Sandsteinsetzungen umrahmt und von Pinienzapfen aus Stein gekrönt. Die Hügelform ist untypisch für diese 
-            Zeit.</p>
-            <p>2. Der Name Wadern, in einer Urkunde von 950 n. Chr. als Waderella bezeugt, leitet sich vom spätgallischen *u̯adr-ellā 
+        description: `Der Name Wadern, in einer Urkunde von 950 n. Chr. als Waderella bezeugt, leitet sich vom spätgallischen *u̯adr-ellā 
             „kleines Wasser“ und letztlich vom indogermanischen *u̯odr̥-, *u̯edōr „Wasser“ und dem Diminutivsuffix *-ellā ab; der Vokal 
-            o wird nach dem Halbvokal u̯ wie im Gallischen und im Britannischen allgemein zu a.</p>`,
+            o wird nach dem Halbvokal u̯ wie im Gallischen und im Britannischen allgemein zu a.`,
         types: [TYPE_PLACE, TYPE_ARCHITECTURE, TYPE_IMMATERIAL],
-        shortInfo: 'Grabhügel',
+        shortInfo: 'Ortsname',
         images: [
             {
                 title: '',
